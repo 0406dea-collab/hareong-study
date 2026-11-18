@@ -132,6 +132,7 @@ textarea.memo-in{width:100%;min-height:72px;font-family:var(--f-hand);font-size:
 .xsec.book{border-left:4px solid var(--rose)}
 .xsec.ai{border-left:4px solid var(--blue);background:color-mix(in srgb,var(--blue-soft) 35%,transparent)}
 .tgroups{display:grid;gap:10px}
+#tmiText{font:inherit;min-height:90px;line-height:1.6}
 .tmi{display:grid;gap:10px}.tmi-item{padding:10px 12px;border-radius:10px;background:var(--sunk)}.tmi-item.big{background:color-mix(in srgb,var(--rose-soft) 55%,var(--surface));padding:14px 16px}.tmi-item.big .tmi-text{font-size:1.05rem}.tmi-date{font-size:12px;color:var(--muted)}.tmi-text{white-space:pre-wrap;color:var(--ink)}
 .cheer .qlab{font-size:12px;font-weight:700;color:var(--rose)}.cheer .qsrc{font-size:12px;opacity:.7}
 .tgroup{border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
@@ -158,6 +159,32 @@ textarea.memo-in{width:100%;min-height:72px;font-family:var(--f-hand);font-size:
 .titem.done .tcheck{background:var(--rose)}
 .tcheck[disabled]{cursor:default;opacity:.7}
 @media (max-width:560px){h1{font-size:1.55rem}.terms{grid-template-columns:1fr}.terms>div:nth-child(2){border-top:1px solid var(--line)}.terms .t{border-top:1px solid var(--line)}}
+@media (max-width:600px){
+body{font-size:16.5px;line-height:1.75}
+.small{font-size:.92rem}.pill{font-size:.82rem;padding:2px 9px}.eyebrow{font-size:.82rem}
+h1{font-size:1.6rem}h2{font-size:1.3rem}
+.top .wrap{gap:6px 10px;padding-block:8px 0}
+nav.tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px;padding:2px 16px 8px;width:calc(100% + 32px);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs{gap:2px}nav.tabs a{font-size:.97rem;padding:7px 10px;white-space:nowrap;flex:0 0 auto}
+main{padding-block:18px 60px;gap:22px}
+.card{padding:16px}
+.cheer{padding:16px}.cheer .big{font-size:1.15rem;line-height:1.55}.cheer .qlab,.cheer .qsrc{font-size:13px}
+.btn{min-height:42px;padding:9px 16px}
+.btn.small,.q-head .btn{min-height:36px;padding:6px 12px;font-size:.9rem}
+.tasks.card{padding:14px 12px}
+.tgroup>summary{padding:12px}
+.gname{font-size:1.05rem;flex:1 0 calc(100% - 24px);white-space:nowrap}.tgroup>summary{gap:6px 8px}.tgroup>summary>.pill:first-of-type{margin-left:22px}
+.titem{padding:12px;gap:12px;align-items:flex-start}
+.tcheck{flex-basis:32px;width:32px;height:32px;margin-top:2px}
+.tmi-date{font-size:13px}
+#tmiText{font:inherit;min-height:96px;line-height:1.6;padding:10px 12px}
+.titem>.btn{flex:0 0 auto;white-space:nowrap}
+.passage{font-size:1rem;padding:14px;line-height:1.8}
+.list a.item{padding:14px}
+footer{font-size:.95rem}
+footer a,footer button{padding:8px 0}
+}
 @media (prefers-reduced-motion:reduce){.flash .inner{transition:none}}
 </style>
 </head>
