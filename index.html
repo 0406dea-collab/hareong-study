@@ -250,10 +250,10 @@ function viewLogin(){
   <form class="login" id="loginForm"><input class="field" id="em" type="email" autocomplete="username" placeholder="이메일" required><input class="field" id="pw" type="password" autocomplete="current-password" placeholder="비밀번호" required><div class="row"><button class="btn pri" type="submit">로그인</button><a href="#home" class="small">취소</a></div><div class="err" id="loginErr"></div></form>`;
 }
 document.addEventListener("submit",e=>{
-  if(e.target.id!=="taskForm")return;e.preventDefault();if(!(isSisView()||!S.isSister)||!S.db)return;
+  if(e.target.id!=="taskForm")return;e.preventDefault();if(!S.db)return;
   const title=$("#tTitle").value.trim();if(!title)return;const due=$("#tDue").value||null;
   const id="t"+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
-  queueWrite(()=>S.db.doc("tasks/"+id).set({title,due,by:S.isSister?"sister":"hareong",done:false,doneAt:null,createdAt:new Date().toISOString()})).then(()=>toast(S.isSister?"과제를 추가했어요":"할 일 추가! 스스로 계획 세우는 거 멋있다"));
+  queueWrite(()=>S.db.doc("tasks/"+id).set({title,due,by:isSisView()?"sister":"hareong",done:false,doneAt:null,createdAt:new Date().toISOString()})).then(()=>toast(isSisView()?"과제를 추가했어요":"할 일 추가! 스스로 계획 세우는 거 멋있다"));
   $("#tTitle").value="";$("#tDue").value="";
 });
 document.addEventListener("submit",async e=>{
@@ -456,11 +456,11 @@ async function seedSisterTasks(){
 }
 function sortTasks(a){return [...a].sort((x,y)=>(x.done-y.done)||String(x.due||"9999").localeCompare(String(y.due||"9999"))||String(x.createdAt).localeCompare(String(y.createdAt)))}
 function viewTasks(){
-  const ts=sortTasks(S.tasks);const left=ts.filter(t=>!t.done).length;const sis=isSisView();const kid=!S.isSister;
+  const ts=sortTasks(S.tasks);const left=ts.filter(t=>!t.done).length;const sis=isSisView();const kid=!sis;
   const canDel=t=>sis||(kid&&t.by==="hareong");
   return `<section class="card tasks" style="display:grid;gap:12px"><div class="row"><h2>${sis?"하령이 과제":"내 과제"}</h2><span class="pill ${left?"new":"good"}" style="margin-left:auto">${left?`남은 과제 ${left}개`:"다 했어! 🎉"}</span></div>
   ${sis||kid?`<form id="taskForm" class="taskform"><input class="field" id="tTitle" placeholder="${sis?"과제 (예: 자이스토리 D단원 D02–D10 풀기)":"내가 할 일 추가 (예: 단어 카드 20장)"}" required maxlength="200"><input class="field" id="tDue" type="date" aria-label="마감일"><button class="btn rose" type="submit">추가</button></form>`:""}
-  ${ts.length?`<div class="tlist">${ts.map(t=>`<div class="titem ${t.done?"done":""}"><button class="tcheck" data-act="tdone" data-id="${esc(t.id)}" aria-label="${t.done?"완료 취소":"완료"}" ${S.isSister&&!sis?"disabled":""}>${t.done?"✓":""}</button><div class="grow"><div class="ttl">${esc(t.title)}</div>${t.note?`<div class="small muted" style="white-space:pre-wrap">${esc(t.note)}</div>`:""}<div class="row small muted">${t.by==="hareong"?`<span class="pill">하령이 추가</span>`:`<span class="pill sis-tag">언니가 준 과제</span>`}${dueInfo(t)}${t.done&&t.doneAt?`<span>${fmtDate(t.doneAt)} 완료</span>`:""}</div></div>${canDel(t)?`<button class="btn small" data-act="tdel" data-id="${esc(t.id)}">${S.confirmDel===t.id?"정말 삭제":"삭제"}</button>`:""}</div>`).join("")}</div>`:`<div class="empty">${sis?"위 칸에 과제를 적고 추가를 누르면 하령이 화면 맨 위에 보여요.":"아직 과제가 없어요. 스스로 할 일을 적어봐도 좋아!"}</div>`}
+  ${ts.length?`<div class="tlist">${ts.map(t=>`<div class="titem ${t.done?"done":""}"><button class="tcheck" data-act="tdone" data-id="${esc(t.id)}" aria-label="${t.done?"완료 취소":"완료"}" >${t.done?"✓":""}</button><div class="grow"><div class="ttl">${esc(t.title)}</div>${t.note?`<div class="small muted" style="white-space:pre-wrap">${esc(t.note)}</div>`:""}<div class="row small muted">${t.by==="hareong"?`<span class="pill">하령이 추가</span>`:`<span class="pill sis-tag">언니가 준 과제</span>`}${dueInfo(t)}${t.done&&t.doneAt?`<span>${fmtDate(t.doneAt)} 완료</span>`:""}</div></div>${canDel(t)?`<button class="btn small" data-act="tdel" data-id="${esc(t.id)}">${S.confirmDel===t.id?"정말 삭제":"삭제"}</button>`:""}</div>`).join("")}</div>`:`<div class="empty">${sis?"위 칸에 과제를 적고 추가를 누르면 하령이 화면 맨 위에 보여요.":"아직 과제가 없어요. 스스로 할 일을 적어봐도 좋아!"}</div>`}
   </section>`;
 }
 function viewRecords(){
@@ -473,8 +473,8 @@ document.addEventListener("click",async e=>{
   const b=e.target.closest("[data-act]");if(!b)return;const act=b.dataset.act;
   if(act==="pick"){const q=+b.dataset.q,c=+b.dataset.c;examState.answers[q]=examState.answers[q]===c?undefined:c;b.parentElement.querySelectorAll(".choice").forEach((el,j)=>el.classList.toggle("sel",examState.answers[q]===j));saveDraft();return}
   if(act==="submit"){submitExam();return}
-  if(act==="tdone"){const t=S.tasks.find(x=>x.id===b.dataset.id);if(!t||!S.db)return;const done=!t.done;queueWrite(()=>S.db.doc("tasks/"+t.id).update({done,doneAt:done?new Date().toISOString():null}));if(done&&!S.isSister)toast(["과제 하나 끝! 최고야","언니가 보면 좋아하겠다","이 기세로 다음 것도!"][Math.floor(Math.random()*3)]);return}
-  if(act==="tdel"){const id=b.dataset.id;const tt=S.tasks.find(x=>x.id===id);if(!tt||!(isSisView()||(!S.isSister&&tt.by==="hareong")))return;if(S.confirmDel!==id){S.confirmDel=id;render();return}S.confirmDel=null;queueWrite(()=>S.db.doc("tasks/"+id).delete());return}
+  if(act==="tdone"){const t=S.tasks.find(x=>x.id===b.dataset.id);if(!t||!S.db)return;const done=!t.done;queueWrite(()=>S.db.doc("tasks/"+t.id).update({done,doneAt:done?new Date().toISOString():null}));if(done&&!isSisView())toast(["과제 하나 끝! 최고야","언니가 보면 좋아하겠다","이 기세로 다음 것도!"][Math.floor(Math.random()*3)]);return}
+  if(act==="tdel"){const id=b.dataset.id;const tt=S.tasks.find(x=>x.id===id);if(!tt||!(isSisView()||tt.by==="hareong"))return;if(S.confirmDel!==id){S.confirmDel=id;render();return}S.confirmDel=null;queueWrite(()=>S.db.doc("tasks/"+id).delete());return}
   if(act==="ex"){const el=document.getElementById("ex"+b.dataset.q);if(el){el.hidden=!el.hidden;b.textContent=el.hidden?"해설 보기":"해설 닫기"}return}
   if(act==="seen"){const id=location.hash.slice(3);if(S.db)queueWrite(()=>S.db.doc("attempts/"+id).update({seenFeedbackAt:new Date().toISOString()})).then(()=>toast("언니한테 확인했다고 전했어!"));return}
   if(act==="mode-sis"||act==="mode-kid"){if(!S.isSister)return;S.mode=act==="mode-sis"?"sis":"kid";ls("mode",S.mode);render();toast(S.mode==="sis"?"언니 모드: 코멘트를 쓸 수 있어요":"동생 모드: 하령이가 보는 화면이에요");return}
