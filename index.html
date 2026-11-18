@@ -66,7 +66,7 @@ footer a,footer button{color:var(--muted);background:none;border:0;padding:0;tex
 .list a.item{display:flex;gap:12px;align-items:center;padding:12px 16px;text-decoration:none;color:inherit;border-top:1px solid var(--line);min-width:0;flex-wrap:wrap}
 .list .item:first-child{border-top:0}
 .list a.item:hover{background:var(--sunk)}
-.item .grow{flex:1;min-width:0}
+.item .grow{flex:1 1 220px;min-width:0}
 .item .score{font-variant-numeric:tabular-nums;font-weight:600}
 .empty{padding:22px;border:1.5px dashed var(--line);border-radius:var(--r);color:var(--muted);text-align:center}
 .crumbs{font-size:.88rem;color:var(--muted)} .crumbs a{color:var(--muted)}
@@ -181,7 +181,7 @@ main{padding-block:18px 60px;gap:22px}
 #tmiText{font:inherit;min-height:96px;line-height:1.6;padding:10px 12px}
 .titem>.btn{flex:0 0 auto;white-space:nowrap}
 .passage{font-size:1rem;padding:14px;line-height:1.8}
-.list a.item{padding:14px}
+.list a.item{padding:14px;gap:8px 10px}.list a.item .grow{flex-basis:100%}
 footer{font-size:.95rem}
 footer a,footer button{padding:8px 0}
 }
