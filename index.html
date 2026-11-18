@@ -138,8 +138,8 @@ textarea.memo-in{width:100%;min-height:72px;font-family:var(--f-hand);font-size:
 .tgroup>summary::-webkit-details-marker{display:none}
 .tgroup>summary::before{content:"▸";color:var(--muted);transition:transform .2s}
 .tgroup[open]>summary::before{transform:rotate(90deg)}
-.tgroup.sis>summary{border-left:4px solid var(--rose)}
-.tgroup.mine>summary{border-left:4px solid var(--blue)}
+.tgroup.g-sis>summary{border-left:4px solid var(--rose)}
+.tgroup.g-mine>summary{border-left:4px solid var(--blue)}
 .gname{font-weight:600;flex:1;min-width:0}
 .tgroup .tlist{border:0;border-top:1px solid var(--line);border-radius:0}
 .titem details>summary{cursor:pointer;list-style:none}
@@ -477,7 +477,7 @@ async function seedSisterTasks(){
     const todo=S.sisterTasks.filter(t=>!done.includes(t.id));
     for(const t of todo){if(!S.tasks.some(x=>x.id===t.id))await S.db.doc("tasks/"+t.id).set({title:t.title,note:t.note||null,due:t.due||null,link:t.link||null,group:t.group||null,by:"sister",done:false,doneAt:null,createdAt:new Date().toISOString()})}
     if(todo.length){await ref.set({ids:[...done,...todo.map(t=>t.id)]});toast(`과제 ${todo.length}개를 하령이에게 보냈어요`)}
-    for(const t of S.sisterTasks){const ex=S.tasks.find(x=>x.id===t.id);if(ex&&(t.due||null)!==(ex.due||null))await S.db.doc("tasks/"+t.id).update({due:t.due||null})}
+    for(const t of S.sisterTasks){const ex=S.tasks.find(x=>x.id===t.id);if(ex&&((t.due||null)!==(ex.due||null)||(t.note||null)!==(ex.note||null)||(t.group||null)!==(ex.group||null)))await S.db.doc("tasks/"+t.id).update({due:t.due||null,note:t.note||null,group:t.group||null})}
   }catch(e){console.warn(e)}seeding=false;
 }
 function taskGroupName(t){if(t.group)return t.group;if(t.by==="hareong")return"내가 추가한 할 일";if(/^s2027-/.test(t.id))return"2027 수능 실전";if(/^ai-/.test(t.id))return"AI 연습문제";return"언니가 준 과제"}
@@ -496,7 +496,7 @@ function taskGroups(ts,sis,canDel){
   return `<div class="tgroups">${names.map(n=>{const list=g[n];const done=list.filter(t=>t.done).length;const left=list.filter(t=>!t.done);
     const due=left.map(t=>t.due).filter(Boolean).sort()[0];const key="g:"+n;const open=key in openState?openState[key]:left.length>0;
     const mine=n==="내가 추가한 할 일";
-    return `<details class="tgroup ${mine?"mine":"sis"}" data-open="${esc(key)}" ${open?"open":""}><summary><span class="gname">${esc(n==="내가 추가한 할 일"&&sis?"하령이가 추가한 할 일":n)}</span><span class="pill ${done===list.length?"good":""}">${done}/${list.length}</span>${due?dueInfo({due,done:false}):""}</summary><div class="tlist">${list.map(t=>taskItem(t,canDel)).join("")}</div></details>`}).join("")}</div>`;
+    return `<details class="tgroup ${mine?"g-mine":"g-sis"}" data-open="${esc(key)}" ${open?"open":""}><summary><span class="gname">${esc(n==="내가 추가한 할 일"&&sis?"하령이가 추가한 할 일":n)}</span><span class="pill ${done===list.length?"good":""}">${done}/${list.length}</span>${due?dueInfo({due,done:false}):""}</summary><div class="tlist">${list.map(t=>taskItem(t,canDel)).join("")}</div></details>`}).join("")}</div>`;
 }
 document.addEventListener("toggle",e=>{const k=e.target?.dataset?.open;if(!k)return;openState[k]=e.target.open;try{localStorage.setItem("taskOpen",JSON.stringify(openState))}catch(_){}},true);
 function sortTasks(a){return [...a].sort((x,y)=>(x.done-y.done)||String(x.due||"9999").localeCompare(String(y.due||"9999"))||String(x.createdAt).localeCompare(String(y.createdAt)))}
