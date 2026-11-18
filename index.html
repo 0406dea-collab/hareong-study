@@ -459,7 +459,7 @@ async function seedSisterTasks(){
   if(seeding||!S.isSister||!S.tasksLoaded||!S.sisterTasks?.length)return;seeding=true;
   try{const ref=S.db.doc("progress/sisterSeeds");const snap=await ref.get();const done=(snap.exists&&snap.data().ids)||[];
     const todo=S.sisterTasks.filter(t=>!done.includes(t.id));
-    for(const t of todo){if(!S.tasks.some(x=>x.id===t.id))await S.db.doc("tasks/"+t.id).set({title:t.title,note:t.note||null,due:t.due||null,by:"sister",done:false,doneAt:null,createdAt:new Date().toISOString()})}
+    for(const t of todo){if(!S.tasks.some(x=>x.id===t.id))await S.db.doc("tasks/"+t.id).set({title:t.title,note:t.note||null,due:t.due||null,link:t.link||null,by:"sister",done:false,doneAt:null,createdAt:new Date().toISOString()})}
     if(todo.length){await ref.set({ids:[...done,...todo.map(t=>t.id)]});toast(`과제 ${todo.length}개를 하령이에게 보냈어요`)}
     for(const t of S.sisterTasks){const ex=S.tasks.find(x=>x.id===t.id);if(ex&&(t.due||null)!==(ex.due||null))await S.db.doc("tasks/"+t.id).update({due:t.due||null})}
   }catch(e){console.warn(e)}seeding=false;
@@ -470,7 +470,7 @@ function viewTasks(){
   const canDel=t=>sis||(kid&&t.by==="hareong");
   return `<section class="card tasks" style="display:grid;gap:12px"><div class="row"><h2>${sis?"하령이 과제":"내 과제"}</h2><span class="pill ${left?"new":"good"}" style="margin-left:auto">${left?`남은 과제 ${left}개`:"다 했어! 🎉"}</span></div>
   ${sis||kid?`<form id="taskForm" class="taskform"><input class="field" id="tTitle" placeholder="${sis?"과제 (예: 자이스토리 D단원 D02–D10 풀기)":"내가 할 일 추가 (예: 단어 카드 20장)"}" required maxlength="200"><input class="field" id="tDue" type="date" aria-label="마감일"><button class="btn rose" type="submit">추가</button></form>`:""}
-  ${ts.length?`<div class="tlist">${ts.map(t=>`<div class="titem ${t.done?"done":""}"><button class="tcheck" data-act="tdone" data-id="${esc(t.id)}" aria-label="${t.done?"완료 취소":"완료"}" >${t.done?"✓":""}</button><div class="grow"><div class="ttl">${esc(t.title)}</div>${t.note?`<div class="small muted" style="white-space:pre-wrap">${esc(t.note)}</div>`:""}<div class="row small muted">${t.by==="hareong"?`<span class="pill">하령이 추가</span>`:`<span class="pill sis-tag">언니가 준 과제</span>`}${dueInfo(t)}${t.done&&t.doneAt?`<span>${fmtDate(t.doneAt)} 완료</span>`:""}</div></div>${canDel(t)?`<button class="btn small" data-act="tdel" data-id="${esc(t.id)}">${S.confirmDel===t.id?"정말 삭제":"삭제"}</button>`:""}</div>`).join("")}</div>`:`<div class="empty">${sis?"위 칸에 과제를 적고 추가를 누르면 하령이 화면 맨 위에 보여요.":"아직 과제가 없어요. 스스로 할 일을 적어봐도 좋아!"}</div>`}
+  ${ts.length?`<div class="tlist">${ts.map(t=>`<div class="titem ${t.done?"done":""}"><button class="tcheck" data-act="tdone" data-id="${esc(t.id)}" aria-label="${t.done?"완료 취소":"완료"}" >${t.done?"✓":""}</button><div class="grow"><div class="ttl">${esc(t.title)}</div>${t.note?`<div class="small muted" style="white-space:pre-wrap">${esc(t.note)}</div>`:""}${t.link&&/^#[A-Za-z0-9-]+$/.test(t.link)?`<a class="small" href="${t.link}">시험 풀러 가기 →</a>`:""}<div class="row small muted">${t.by==="hareong"?`<span class="pill">하령이 추가</span>`:`<span class="pill sis-tag">언니가 준 과제</span>`}${dueInfo(t)}${t.done&&t.doneAt?`<span>${fmtDate(t.doneAt)} 완료</span>`:""}</div></div>${canDel(t)?`<button class="btn small" data-act="tdel" data-id="${esc(t.id)}">${S.confirmDel===t.id?"정말 삭제":"삭제"}</button>`:""}</div>`).join("")}</div>`:`<div class="empty">${sis?"위 칸에 과제를 적고 추가를 누르면 하령이 화면 맨 위에 보여요.":"아직 과제가 없어요. 스스로 할 일을 적어봐도 좋아!"}</div>`}
   </section>`;
 }
 function viewRecords(){
