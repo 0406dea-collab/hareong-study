@@ -273,7 +273,7 @@ document.addEventListener("submit",e=>{
   if(e.target.id!=="taskForm")return;e.preventDefault();if(!S.db)return;
   const title=$("#tTitle").value.trim();if(!title)return;const due=$("#tDue").value||null;
   const id="t"+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
-  queueWrite(()=>S.db.doc("tasks/"+id).set({title,due,by:isSisView()?"sister":"hareong",done:false,doneAt:null,createdAt:new Date().toISOString()})).then(()=>toast(isSisView()?"과제를 추가했어요":"할 일 추가! 스스로 계획 세우는 거 멋있다"));
+  queueWrite(()=>S.db.doc("tasks/"+id).set({title,due,by:S.isSister?"sister":"hareong",done:false,doneAt:null,createdAt:new Date().toISOString()})).then(()=>toast(S.isSister?"과제를 추가했어요":"할 일 추가! 스스로 계획 세우는 거 멋있다"));
   $("#tTitle").value="";$("#tDue").value="";
 });
 document.addEventListener("submit",async e=>{
@@ -429,6 +429,7 @@ async function submitExam(){
   submitting=true;btn&&(btn.disabled=true);
   const answers=qs.map((q,i)=>examState.answers[i]??null);
   const correct=qs.map((q,i)=>isRight(q,examState.answers[i]));
+  if(S.isSister){submitting=false;btn&&(btn.disabled=false,btn.dataset.sure="");toast(`미리보기 채점: ${correct.filter(Boolean).length} / ${qs.length}. 언니 계정이라 기록과 풀이 횟수에는 안 남겨요`);return}
   const id="a"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
   const doc={examId:x.id,by:S.isSister?"sister":"hareong",answers,correct,score:correct.filter(Boolean).length,total:qs.length,seconds:Math.round((Date.now()-examState.start)/1000),submittedAt:new Date().toISOString()};
   try{await S.db.doc("attempts/"+id).set(doc);ls("draft:"+x.id,null);examState.id=null;examState.mounted=false;location.hash="a-"+id}
@@ -517,7 +518,7 @@ document.addEventListener("click",async e=>{
   const b=e.target.closest("[data-act]");if(!b)return;const act=b.dataset.act;
   if(act==="pick"){const q=+b.dataset.q,c=+b.dataset.c;examState.answers[q]=examState.answers[q]===c?undefined:c;b.parentElement.querySelectorAll(".choice").forEach((el,j)=>el.classList.toggle("sel",examState.answers[q]===j));saveDraft();return}
   if(act==="submit"){submitExam();return}
-  if(act==="tdone"){const t=S.tasks.find(x=>x.id===b.dataset.id);if(!t||!S.db)return;const done=!t.done;queueWrite(()=>S.db.doc("tasks/"+t.id).update({done,doneAt:done?new Date().toISOString():null}));if(done&&!isSisView())toast(["과제 하나 끝! 최고야","언니가 보면 좋아하겠다","이 기세로 다음 것도!"][Math.floor(Math.random()*3)]);return}
+  if(act==="tdone"){const t=S.tasks.find(x=>x.id===b.dataset.id);if(!t||!S.db)return;if(S.isSister){toast("완료 체크는 하령이만 할 수 있어요");return}const done=!t.done;queueWrite(()=>S.db.doc("tasks/"+t.id).update({done,doneAt:done?new Date().toISOString():null}));if(done&&!isSisView())toast(["과제 하나 끝! 최고야","언니가 보면 좋아하겠다","이 기세로 다음 것도!"][Math.floor(Math.random()*3)]);return}
   if(act==="tdel"){const id=b.dataset.id;const tt=S.tasks.find(x=>x.id===id);if(!tt||!(isSisView()||tt.by==="hareong"))return;if(S.confirmDel!==id){S.confirmDel=id;render();return}S.confirmDel=null;queueWrite(()=>S.db.doc("tasks/"+id).delete());return}
   if(act==="ex"){const el=document.getElementById("ex"+b.dataset.q);if(el){el.hidden=!el.hidden;b.textContent=el.hidden?"해설 보기":"해설 닫기"}return}
   if(act==="fbskip"){const id=location.hash.slice(3);const v=b.dataset.v==="1";if(S.db)queueWrite(()=>S.db.doc("feedback/"+id).set({skip:v,updatedAt:new Date().toISOString()},{merge:true})).then(()=>toast(v?"대기 목록에서 뺐어요":"다시 코멘트 대기로 돌렸어요"));return}
