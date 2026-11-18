@@ -452,6 +452,7 @@ async function seedSisterTasks(){
     const todo=S.sisterTasks.filter(t=>!done.includes(t.id));
     for(const t of todo){if(!S.tasks.some(x=>x.id===t.id))await S.db.doc("tasks/"+t.id).set({title:t.title,note:t.note||null,due:t.due||null,by:"sister",done:false,doneAt:null,createdAt:new Date().toISOString()})}
     if(todo.length){await ref.set({ids:[...done,...todo.map(t=>t.id)]});toast(`과제 ${todo.length}개를 하령이에게 보냈어요`)}
+    for(const t of S.sisterTasks){const ex=S.tasks.find(x=>x.id===t.id);if(ex&&(t.due||null)!==(ex.due||null))await S.db.doc("tasks/"+t.id).update({due:t.due||null})}
   }catch(e){console.warn(e)}seeding=false;
 }
 function sortTasks(a){return [...a].sort((x,y)=>(x.done-y.done)||String(x.due||"9999").localeCompare(String(y.due||"9999"))||String(x.createdAt).localeCompare(String(y.createdAt)))}
