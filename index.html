@@ -125,6 +125,16 @@ textarea.memo-in{width:100%;min-height:72px;font-family:var(--f-hand);font-size:
 .modes button.on.k{background:var(--blue);color:var(--bg)}
 .login{max-width:420px;display:grid;gap:12px}
 .err{color:var(--bad);font-size:.9rem}
+.pill.late{background:var(--bad-soft);color:var(--bad);border-color:transparent;font-weight:600}
+.taskform{display:flex;gap:8px;flex-wrap:wrap}.taskform #tTitle{flex:1 1 220px;max-width:none}.taskform #tDue{flex:0 0 auto;width:auto}
+.tlist{display:grid;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.titem{display:flex;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid var(--line);min-width:0}
+.titem:first-child{border-top:0}
+.titem .ttl{overflow-wrap:anywhere}
+.titem.done .ttl{text-decoration:line-through;color:var(--muted)}
+.tcheck{flex:0 0 28px;width:28px;height:28px;border-radius:8px;border:2px solid var(--rose);background:var(--surface);color:var(--bg);font-weight:700;display:grid;place-items:center;padding:0}
+.titem.done .tcheck{background:var(--rose)}
+.tcheck[disabled]{cursor:default;opacity:.7}
 @media (max-width:560px){h1{font-size:1.55rem}.terms{grid-template-columns:1fr}.terms>div:nth-child(2){border-top:1px solid var(--line)}.terms .t{border-top:1px solid var(--line)}}
 @media (prefers-reduced-motion:reduce){.flash .inner{transition:none}}
 </style>
@@ -161,7 +171,7 @@ const CHEERS=[
   ["어제보다 하나 더","플래시카드 10장이면 충분해."],
   ["언니가 기다리고 있어","시험 풀면 언니가 코멘트 달아줄게."]
 ];
-const S={topics:[],exams:[],attempts:[],feedback:{},known:{},contentLoaded:false,dataLoaded:false,db:null,auth:null,isSister:false,mode:"kid",noDb:false,stale:false};
+const S={topics:[],exams:[],attempts:[],feedback:{},tasks:[],known:{},contentLoaded:false,dataLoaded:false,db:null,auth:null,isSister:false,mode:"kid",noDb:false,stale:false};
 const isSisView=()=>S.isSister&&S.mode==="sis";
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -199,6 +209,7 @@ async function boot(){
     const done=()=>{if(got.a&&got.f){S.dataLoaded=true;S.stale=false;clearTimeout(timer)}render()};
     const fail=e=>{console.warn(e);S.stale=true;clearTimeout(timer);render()};
     S.db.collection("attempts").onSnapshot(s=>{S.attempts=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>String(b.submittedAt).localeCompare(String(a.submittedAt)));got.a=true;done()},fail);
+    S.db.collection("tasks").onSnapshot(s=>{S.tasks=s.docs.map(d=>({id:d.id,...d.data()}));render()},e=>console.warn(e));
     S.db.collection("feedback").onSnapshot(s=>{const m={};s.docs.forEach(d=>m[d.id]=d.data());S.feedback=m;got.f=true;done()},fail);
     S.db.doc("progress/hareong").onSnapshot(s=>{S.known=(s.exists&&s.data().known)||{};render()},e=>console.warn(e));
   });
@@ -223,7 +234,7 @@ function render(){
   else if((m=h.match(/^cards-(s|t)-(.+)$/))){setTabs(m[1]==="s"?m[2]:S.topics.find(x=>x.id===m[2])?.subject);app.innerHTML=viewCards(m[1],m[2])}
   else if(h.startsWith("x-")){const x=S.exams.find(e=>e.id===h.slice(2));setTabs(x?.subject);if(examState.id!==h.slice(2)||!examState.mounted||!Object.values(examState.answers).some(v=>v!==undefined&&v!==""))app.innerHTML=banner()+viewExam(x)}
   else if(h.startsWith("a-")){const a=S.attempts.find(e=>e.id===h.slice(2));const x=a&&S.exams.find(e=>e.id===a.examId);setTabs(x?.subject);if(!document.activeElement||!document.activeElement.classList.contains("memo-in"))app.innerHTML=banner()+viewAttempt(a,x)}
-  else if(h==="records"){setTabs("records");app.innerHTML=banner()+viewRecords()}
+  else if(h==="records"){setTabs("records");const ae=document.activeElement;if(!(ae&&(ae.id==="tTitle"||ae.id==="tDue")))app.innerHTML=banner()+viewRecords()}
   else if(h==="login"){setTabs("");if(!app.querySelector("#loginForm"))app.innerHTML=viewLogin()}
   else{setTabs("home");app.innerHTML=banner()+viewHome()}
   if(!h.startsWith("x-"))examState.mounted=false;
@@ -236,6 +247,13 @@ function viewLogin(){
   return`<div style="display:grid;gap:4px"><h1>언니 로그인</h1><div class="muted">코멘트를 쓰려면 Firebase에 등록한 언니 이메일과 비밀번호로 로그인해요.</div></div>
   <form class="login" id="loginForm"><input class="field" id="em" type="email" autocomplete="username" placeholder="이메일" required><input class="field" id="pw" type="password" autocomplete="current-password" placeholder="비밀번호" required><div class="row"><button class="btn pri" type="submit">로그인</button><a href="#home" class="small">취소</a></div><div class="err" id="loginErr"></div></form>`;
 }
+document.addEventListener("submit",e=>{
+  if(e.target.id!=="taskForm")return;e.preventDefault();if(!isSisView()||!S.db)return;
+  const title=$("#tTitle").value.trim();if(!title)return;const due=$("#tDue").value||null;
+  const id="t"+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+  queueWrite(()=>S.db.doc("tasks/"+id).set({title,due,done:false,doneAt:null,createdAt:new Date().toISOString()})).then(()=>toast("과제를 추가했어요"));
+  $("#tTitle").value="";$("#tDue").value="";
+});
 document.addEventListener("submit",async e=>{
   if(e.target.id!=="loginForm")return;e.preventDefault();
   if(!S.auth){$("#loginErr").textContent="저장소가 아직 연결되지 않았어요.";return}
@@ -257,6 +275,7 @@ function viewHome(){
   <div class="cheer"><div><div class="big">${isSisView()?"":"하령아, "}${esc(c[0])}</div><div>${esc(c[1])}</div></div></div>
   ${isSisView()&&waiting.length?`<div class="card"><div class="row"><span class="sis">언니에게</span><b>코멘트를 기다리는 시험 ${waiting.length}개</b></div><div class="list" style="margin-top:10px">${waiting.slice(0,5).map(attemptRow).join("")}</div></div>`:""}
   ${!isSisView()&&fresh.length?`<div class="card"><div class="row"><span class="pill new">새 코멘트</span><b>언니가 코멘트를 남겼어!</b></div><div class="list" style="margin-top:10px">${fresh.map(attemptRow).join("")}</div></div>`:""}
+  ${S.tasks.filter(t=>!t.done).length?`<a class="card subj" href="#records" style="display:flex;gap:10px;align-items:center"><span class="pill new">과제</span><b>언니가 준 과제 ${S.tasks.filter(t=>!t.done).length}개가 남았어</b><span class="small muted" style="margin-left:auto">기록에서 보기 →</span></a>`:""}
   <section class="stats">
     <div class="stat"><span class="small muted">푼 시험</span><b>${mine.length}</b></div>
     <div class="stat"><span class="small muted">평균 점수</span><b>${avg==null?"–":avg+"점"}</b></div>
@@ -423,8 +442,17 @@ function saveFeedback(id){
   const body={overall,perQ,updatedAt:new Date().toISOString()};
   queueWrite(async()=>{await S.db.doc("feedback/"+id).set(body);const st=$("#fb-status");st&&(st.textContent="저장됨 · "+fmtDate(body.updatedAt))});
 }
+function dueInfo(t){if(!t.due)return"";const d=Math.round((new Date(t.due+"T00:00:00")-new Date(new Date().toDateString()))/864e5);const [y,m,dd]=t.due.split("-");const lab=`${+m}/${+dd}까지`;if(t.done)return`<span class="pill">${lab}</span>`;if(d<0)return`<span class="pill late">${lab} · ${-d}일 지남</span>`;if(d===0)return`<span class="pill new">오늘까지!</span>`;return`<span class="pill">${lab} · D-${d}</span>`}
+function sortTasks(a){return [...a].sort((x,y)=>(x.done-y.done)||String(x.due||"9999").localeCompare(String(y.due||"9999"))||String(x.createdAt).localeCompare(String(y.createdAt)))}
+function viewTasks(){
+  const ts=sortTasks(S.tasks);const left=ts.filter(t=>!t.done).length;const sis=isSisView();
+  return `<section class="card tasks" style="display:grid;gap:12px"><div class="row"><h2>${sis?"하령이에게 준 과제":"언니가 준 과제"}</h2><span class="pill ${left?"new":"good"}" style="margin-left:auto">${left?`남은 과제 ${left}개`:"다 했어! 🎉"}</span></div>
+  ${sis?`<form id="taskForm" class="taskform"><input class="field" id="tTitle" placeholder="과제 (예: 자이스토리 D단원 D02–D10 풀기)" required maxlength="200"><input class="field" id="tDue" type="date" aria-label="마감일"><button class="btn rose" type="submit">추가</button></form>`:""}
+  ${ts.length?`<div class="tlist">${ts.map(t=>`<div class="titem ${t.done?"done":""}"><button class="tcheck" data-act="tdone" data-id="${esc(t.id)}" aria-label="${t.done?"완료 취소":"완료"}" ${S.isSister&&!sis?"disabled":""}>${t.done?"✓":""}</button><div class="grow"><div class="ttl">${esc(t.title)}</div><div class="row small muted">${dueInfo(t)}${t.done&&t.doneAt?`<span>${fmtDate(t.doneAt)} 완료</span>`:""}</div></div>${sis?`<button class="btn small" data-act="tdel" data-id="${esc(t.id)}">${S.confirmDel===t.id?"정말 삭제":"삭제"}</button>`:""}</div>`).join("")}</div>`:`<div class="empty">${sis?"위 칸에 과제를 적고 추가를 누르면 하령이 화면 맨 위에 보여요.":"아직 받은 과제가 없어요."}</div>`}
+  </section>`;
+}
 function viewRecords(){
-  return `<div style="display:grid;gap:4px"><h1>기록</h1><div class="muted">푼 시험과 언니 코멘트를 한곳에서 볼 수 있어요.</div></div>
+  return `${S.db?viewTasks():""}<div style="display:grid;gap:4px"><h1>기록</h1><div class="muted">푼 시험과 언니 코멘트를 한곳에서 볼 수 있어요.</div></div>
   ${loadingOr(S.attempts.length?`<div class="list">${S.attempts.map(attemptRow).join("")}</div>`:`<div class="empty">아직 푼 시험이 없어요.</div>`)}`;
 }
 
@@ -433,6 +461,8 @@ document.addEventListener("click",async e=>{
   const b=e.target.closest("[data-act]");if(!b)return;const act=b.dataset.act;
   if(act==="pick"){const q=+b.dataset.q,c=+b.dataset.c;examState.answers[q]=examState.answers[q]===c?undefined:c;b.parentElement.querySelectorAll(".choice").forEach((el,j)=>el.classList.toggle("sel",examState.answers[q]===j));saveDraft();return}
   if(act==="submit"){submitExam();return}
+  if(act==="tdone"){const t=S.tasks.find(x=>x.id===b.dataset.id);if(!t||!S.db)return;const done=!t.done;queueWrite(()=>S.db.doc("tasks/"+t.id).update({done,doneAt:done?new Date().toISOString():null}));if(done&&!S.isSister)toast(["과제 하나 끝! 최고야","언니가 보면 좋아하겠다","이 기세로 다음 것도!"][Math.floor(Math.random()*3)]);return}
+  if(act==="tdel"){if(!isSisView())return;const id=b.dataset.id;if(S.confirmDel!==id){S.confirmDel=id;render();return}S.confirmDel=null;queueWrite(()=>S.db.doc("tasks/"+id).delete());return}
   if(act==="ex"){const el=document.getElementById("ex"+b.dataset.q);if(el){el.hidden=!el.hidden;b.textContent=el.hidden?"해설 보기":"해설 닫기"}return}
   if(act==="seen"){const id=location.hash.slice(3);if(S.db)queueWrite(()=>S.db.doc("attempts/"+id).update({seenFeedbackAt:new Date().toISOString()})).then(()=>toast("언니한테 확인했다고 전했어!"));return}
   if(act==="mode-sis"||act==="mode-kid"){if(!S.isSister)return;S.mode=act==="mode-sis"?"sis":"kid";ls("mode",S.mode);render();toast(S.mode==="sis"?"언니 모드: 코멘트를 쓸 수 있어요":"동생 모드: 하령이가 보는 화면이에요");return}
