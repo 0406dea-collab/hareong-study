@@ -26,6 +26,7 @@ service cloud.firestore {
         || (signedIn() && resource.data.by == "hareong" && request.resource.data.by == "hareong");
     }
     // 플래시카드 외운 기록
+    match /tmi/{id} { allow read: if signedIn(); allow write: if isSister(); }
     match /progress/{id} {
       allow read, write: if signedIn();
     }
