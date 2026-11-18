@@ -1,0 +1,24 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function isSister() { return signedIn() && request.auth.token.email == "여기에_언니_이메일"; }
+
+    // 하령이 시험 기록: 누구나(익명 로그인) 읽고 새로 제출 가능, 하령은 '확인했어요'만 바꿀 수 있음
+    match /attempts/{id} {
+      allow read: if signedIn();
+      allow create: if signedIn();
+      allow update: if isSister() || (signedIn() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['seenFeedbackAt']));
+      allow delete: if isSister();
+    }
+    // 언니 코멘트: 언니만 쓰기
+    match /feedback/{id} {
+      allow read: if signedIn();
+      allow write: if isSister();
+    }
+    // 플래시카드 외운 기록
+    match /progress/{id} {
+      allow read, write: if signedIn();
+    }
+  }
+}
