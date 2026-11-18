@@ -126,6 +126,11 @@ textarea.memo-in{width:100%;min-height:72px;font-family:var(--f-hand);font-size:
 .login{max-width:420px;display:grid;gap:12px}
 .err{color:var(--bad);font-size:.9rem}
 .pill.sis-tag{background:var(--rose-soft);color:var(--rose);border-color:transparent}
+.pill.book{background:var(--rose-soft);color:var(--rose);border-color:transparent}
+.pill.ai{background:var(--blue-soft);color:var(--blue);border-color:transparent}
+.xsec{padding:16px;border-radius:var(--r);border:1px dashed var(--line)}
+.xsec.book{border-left:4px solid var(--rose)}
+.xsec.ai{border-left:4px solid var(--blue);background:color-mix(in srgb,var(--blue-soft) 35%,transparent)}
 .pill.late{background:var(--bad-soft);color:var(--bad);border-color:transparent;font-weight:600}
 .taskform{display:flex;gap:8px;flex-wrap:wrap}.taskform #tTitle{flex:1 1 220px;max-width:none}.taskform #tDue{flex:0 0 auto;width:auto}
 .tlist{display:grid;border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -293,7 +298,7 @@ function viewHome(){
 function attemptRow(a){
   const x=S.exams.find(e=>e.id===a.examId);const f=S.feedback[a.id];const p=a.total?Math.round(a.score/a.total*100):0;
   const tag=a.by==="sister"?`<span class="pill">언니가 풀어봄</span>`:hasFeedback(f)?(a.seenFeedbackAt?`<span class="pill good">코멘트 확인</span>`:`<span class="pill new">새 코멘트</span>`):`<span class="pill">코멘트 대기</span>`;
-  return `<a class="item" href="#a-${esc(a.id)}"><div class="grow"><div>${esc(x?.title||"삭제된 시험")}</div><div class="small muted">${esc(subj(x?.subject).name)} · ${a.fromBook?"책에 처음 푼 기록":fmtDate(a.submittedAt)}</div></div>${tag}<span class="score">${a.score}/${a.total}</span><span class="small muted" style="min-width:3.2em;text-align:right">${p}점</span></a>`;
+  return `<a class="item" href="#a-${esc(a.id)}"><div class="grow"><div>${esc(x?.title||"삭제된 시험")}</div><div class="small muted">${esc(subj(x?.subject).name)} · ${a.fromBook?"책에 처음 푼 기록":fmtDate(a.submittedAt)}</div></div>${x?(x.kind==="book"?`<span class="pill book">책 기출</span>`:`<span class="pill ai">AI 연습문제</span>`):""}${tag}<span class="score">${a.score}/${a.total}</span><span class="small muted" style="min-width:3.2em;text-align:right">${p}점</span></a>`;
 }
 function viewSubject(k){
   const s=subj(k);const ts=S.topics.filter(t=>t.subject===k).sort(byOrder);const xs=S.exams.filter(x=>x.subject===k).sort(byOrder);
@@ -304,13 +309,17 @@ function viewSubject(k){
   <section style="display:grid;gap:14px"><h2>분야별 개념 정리</h2>
   ${S.contentLoaded?(ts.length?areas.map(ar=>`<div style="display:grid;gap:8px"><div class="eyebrow">${esc(ar)}</div><div class="list">${ts.filter(t=>(t.area||"기타")===ar).map(t=>`<a class="item" href="#t-${esc(t.id)}"><div class="grow"><div>${esc(t.title)}</div>${t.source?`<div class="small muted">${esc(t.source)}</div>`:""}</div><span class="pill">카드 ${(t.terms||[]).length}</span></a>`).join("")}</div></div>`).join(""):`<div class="empty">아직 ${s.name} 자료가 없어요. 언니가 교재 범위와 푼 문제를 올려주면 여기에 분야별로 정리돼요.</div>`):`<div class="empty">불러오는 중…</div>`}
   </section>
-  <section style="display:grid;gap:12px"><h2>시험</h2>
-  ${S.contentLoaded?(xs.length?`<div class="list">${xs.map(examRow).join("")}</div>`:`<div class="empty">아직 만들어진 시험이 없어요.</div>`):""}
-  </section>`;
+  ${S.contentLoaded?examSections(xs,"시험"):""}`;
+}
+function examSections(xs,label){
+  const book=xs.filter(x=>x.kind==="book"),ai=xs.filter(x=>x.kind!=="book");
+  if(!xs.length)return`<section style="display:grid;gap:12px"><h2>${label}</h2><div class="empty">아직 만들어진 시험이 없어요.</div></section>`;
+  return `${book.length?`<section class="xsec book" style="display:grid;gap:10px"><div><h2>책 기출 · 하령이가 푼 문제</h2><div class="small muted">언니가 보내준 문제집 그대로예요. 책을 펴고 답안지처럼 풀어요.</div></div><div class="list">${book.map(examRow).join("")}</div></section>`:""}
+  ${ai.length?`<section class="xsec ai" style="display:grid;gap:10px"><div><h2>AI 연습문제</h2><div class="small muted">책 문제 유형을 본떠서 AI가 새로 만든 문제예요. 책에는 없어요.</div></div><div class="list">${ai.map(examRow).join("")}</div></section>`:""}`;
 }
 function examRow(x){
   const tries=kidAttempts().filter(a=>a.examId===x.id);const best=tries.length?Math.max(...tries.map(a=>a.total?Math.round(a.score/a.total*100):0)):null;
-  return `<a class="item" href="#x-${esc(x.id)}"><div class="grow"><div>${esc(x.title)}</div><div class="small muted">${(x.questions||[]).length}문항${x.minutes?` · 권장 ${x.minutes}분`:""}${x.basedOn?` · ${esc(x.basedOn)}`:""}</div></div>${x.kind==="book"?`<span class="pill">책 기출</span>`:`<span class="pill">연습 문제</span>`}<span class="pill ${tries.length?"good":""}">${tries.length}회 풀이</span>${best!=null?`<span class="pill">최고 ${best}점</span>`:""}</a>`;
+  return `<a class="item" href="#x-${esc(x.id)}"><div class="grow"><div>${esc(x.title)}</div><div class="small muted">${(x.questions||[]).length}문항${x.minutes?` · 권장 ${x.minutes}분`:""}${x.basedOn?` · ${esc(x.basedOn)}`:""}</div></div>${x.kind==="book"?`<span class="pill book">책 기출</span>`:`<span class="pill ai">AI 연습문제</span>`}<span class="pill ${tries.length?"good":""}">${tries.length}회 풀이</span>${best!=null?`<span class="pill">최고 ${best}점</span>`:""}</a>`;
 }
 function viewTopic(t){
   if(!t)return S.contentLoaded?`<div class="empty">이 단원을 찾을 수 없어요. <a href="#home">홈으로</a></div>`:`<div class="empty">불러오는 중…</div>`;
@@ -319,7 +328,7 @@ function viewTopic(t){
   <div style="display:grid;gap:6px">${t.source?`<div class="row"><span class="pill">${esc(t.source)}</span></div>`:""}<h1>${esc(t.title)}</h1>${t.intro?`<div class="muted" style="max-width:68ch">${fmt(t.intro)}</div>`:""}</div>
   <section class="notes">${(t.sections||[]).map((sec,i)=>`<div class="card sec"><h3><span class="n">${String(i+1).padStart(2,"0")}</span>${esc(sec.heading)}</h3>${sec.body?`<p>${fmt(sec.body)}</p>`:""}${sec.points?.length?`<ul>${sec.points.map(p=>`<li>${fmt(p)}</li>`).join("")}</ul>`:""}${sec.example?`<div class="ex-box"><div class="lab">${esc(sec.example.label||"예문")}</div><div>${fmt(sec.example.text)}</div></div>`:""}${sec.tip?`<div class="tip">${fmt(sec.tip)}</div>`:""}</div>`).join("")}</section>
   ${(t.terms||[]).length?`<section style="display:grid;gap:10px"><div class="row"><h2>용어 · 단어</h2><a class="btn rose" style="margin-left:auto" href="#cards-t-${esc(t.id)}">이 단원 카드로 외우기</a></div><div class="terms">${t.terms.map(c=>`<div class="t">${fmt(c.front)}</div><div>${fmt(c.back)}</div>`).join("")}</div></section>`:""}
-  ${xs.length?`<section style="display:grid;gap:10px"><h2>이 단원 시험</h2><div class="list">${xs.map(examRow).join("")}</div></section>`:""}`;
+  ${xs.length?examSections(xs,"이 단원 시험"):""}`;
 }
 
 /* ---------- flashcards ---------- */
@@ -378,7 +387,7 @@ function viewExam(x){
   clearInterval(examState.tick);examState.tick=setInterval(()=>{const el=$("#timer");if(!el||!location.hash.startsWith("#x-")){clearInterval(examState.tick);return}el.textContent=mins((Date.now()-examState.start)/1000)},1000);
   const s=subj(x.subject);const qs=x.questions||[];
   return `<div class="crumbs"><a href="#home">홈</a> › <a href="#s-${s.key}">${s.name}</a> › 시험</div>
-  <div style="display:grid;gap:6px">${x.basedOn?`<div class="row"><span class="pill">${esc(x.basedOn)}</span></div>`:""}<h1>${esc(x.title)}</h1><div class="muted">${qs.length}문항${x.minutes?` · 권장 시간 ${x.minutes}분`:""}. 다 풀고 맨 아래에서 제출해줘.</div></div>
+  <div style="display:grid;gap:6px"><div class="row">${x.kind==="book"?`<span class="pill book">책 기출</span>`:`<span class="pill ai">AI 연습문제</span>`}${x.basedOn?`<span class="pill">${esc(x.basedOn)}</span>`:""}</div><h1>${esc(x.title)}</h1><div class="muted">${qs.length}문항${x.minutes?` · 권장 시간 ${x.minutes}분`:""}. 다 풀고 맨 아래에서 제출해줘.</div></div>
   ${x.kind==="book"?`<div class="tip">책을 펴고 문제 번호를 보면서 답만 골라줘. 한 번 이상 푼 문제는 옆의 <b>해설 보기</b>를 누를 수 있어.</div>`:""}
   ${qs.map((q,i)=>{const n=solveCount(x.id,i);const head=x.kind==="book"?`<b>${esc(q.no)}</b> <span class="small muted">${esc(q.source||"")}${q.page?` · p.${q.page}`:""}</span>${q.prompt?`<div>${fmt(q.prompt)}</div>`:""}`:fmt(q.prompt);
     return `<div class="card q-card"><div class="q-head"><span class="q-num">${i+1}</span><div class="grow" style="min-width:0">${head}</div><span class="pill ${n?"good":""}">${n}회 풀이</span><button class="btn small" data-act="ex" data-q="${i}" ${n?"":"disabled"}>해설 보기</button></div>
