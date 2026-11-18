@@ -131,6 +131,21 @@ textarea.memo-in{width:100%;min-height:72px;font-family:var(--f-hand);font-size:
 .xsec{padding:16px;border-radius:var(--r);border:1px dashed var(--line)}
 .xsec.book{border-left:4px solid var(--rose)}
 .xsec.ai{border-left:4px solid var(--blue);background:color-mix(in srgb,var(--blue-soft) 35%,transparent)}
+.tgroups{display:grid;gap:10px}
+.cheer .qlab{font-size:12px;font-weight:700;color:#c2185b}.cheer .qsrc{font-size:12px;opacity:.7}
+.tgroup{border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
+.tgroup>summary{display:flex;gap:10px;align-items:center;padding:10px 14px;cursor:pointer;list-style:none;flex-wrap:wrap}
+.tgroup>summary::-webkit-details-marker{display:none}
+.tgroup>summary::before{content:"▸";color:var(--muted);transition:transform .2s}
+.tgroup[open]>summary::before{transform:rotate(90deg)}
+.tgroup.sis>summary{border-left:4px solid var(--rose)}
+.tgroup.mine>summary{border-left:4px solid var(--blue)}
+.gname{font-weight:600;flex:1;min-width:0}
+.tgroup .tlist{border:0;border-top:1px solid var(--line);border-radius:0}
+.titem details>summary{cursor:pointer;list-style:none}
+.titem details>summary::-webkit-details-marker{display:none}
+.titem details>summary::after{content:" ⌄";color:var(--muted);font-size:.8rem}
+.tmore{display:grid;gap:4px;padding-top:6px}
 .pill.late{background:var(--bad-soft);color:var(--bad);border-color:transparent;font-weight:600}
 .taskform{display:flex;gap:8px;flex-wrap:wrap}.taskform #tTitle{flex:1 1 220px;max-width:none}.taskform #tDue{flex:0 0 auto;width:auto}
 .tlist{display:grid;border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -198,7 +213,7 @@ function queueWrite(fn){writing=writing.then(fn).catch(e=>{console.warn(e);toast
 async function boot(){
   render();
   window.addEventListener("hashchange",()=>{render();window.scrollTo(0,0)});
-  try{const r=await fetch("content/content.json?v="+Date.now());const c=await r.json();S.topics=c.topics||[];S.exams=c.exams||[];S.sisterTasks=c.sisterTasks||[]}catch(e){console.warn(e);toast("자료를 불러오지 못했어요. 새로고침해 볼래?")}
+  try{const r=await fetch("content/content.json?v="+Date.now());const c=await r.json();S.topics=c.topics||[];S.exams=c.exams||[];S.sisterTasks=c.sisterTasks||[];S.quotes=c.quotes||[]}catch(e){console.warn(e);toast("자료를 불러오지 못했어요. 새로고침해 볼래?")}
   S.contentLoaded=true;render();
   if(!window.FIREBASE_CONFIG||!window.firebase){S.noDb=true;render();return}
   firebase.initializeApp(window.FIREBASE_CONFIG);
@@ -272,14 +287,14 @@ document.addEventListener("submit",async e=>{
 function hasFeedback(f){return !!(f&&((f.overall&&f.overall.trim())||Object.values(f.perQ||{}).some(v=>v&&v.trim())))}
 const kidAttempts=()=>S.attempts.filter(a=>a.by!=="sister");
 function viewHome(){
-  const day=Math.floor(Date.now()/864e5);const c=CHEERS[day%CHEERS.length];
+  const day=Math.floor((Date.now()-new Date().getTimezoneOffset()*6e4)/864e5);const c=CHEERS[day%CHEERS.length];const a0=`<div class="cheer"><div><div class="big">${isSisView()?"":"하령아, "}${esc(c[0])}</div><div>${esc(c[1])}</div></div></div>`;
   const mine=kidAttempts();
   const avg=mine.length?Math.round(mine.reduce((s,a)=>s+(a.total?a.score/a.total*100:0),0)/mine.length):null;
   const knownN=Object.keys(S.known).length;
   const fresh=mine.filter(a=>hasFeedback(S.feedback[a.id])&&!a.seenFeedbackAt);
-  const waiting=mine.filter(a=>!hasFeedback(S.feedback[a.id]));
+  const waiting=mine.filter(a=>!hasFeedback(S.feedback[a.id])&&!S.feedback[a.id]?.skip);
   return `
-  <div class="cheer"><div><div class="big">${isSisView()?"":"하령아, "}${esc(c[0])}</div><div>${esc(c[1])}</div></div></div>
+  ${(()=>{const q=S.quotes||[];if(!q.length)return a0;const x=q[day%q.length];return `<div class="cheer"><div style="display:grid;gap:6px"><div class="qlab">오늘의 정한 한 마디 💎</div><div class="big">“${esc(x.text)}”</div><div class="qsrc">정한, ${esc(x.source)}</div><div>${isSisView()?"":"하령아, "}${esc(x.cheer)}</div></div></div>`})()}
   ${isSisView()&&waiting.length?`<div class="card"><div class="row"><span class="sis">언니에게</span><b>코멘트를 기다리는 시험 ${waiting.length}개</b></div><div class="list" style="margin-top:10px">${waiting.slice(0,5).map(attemptRow).join("")}</div></div>`:""}
   ${!isSisView()&&fresh.length?`<div class="card"><div class="row"><span class="pill new">새 코멘트</span><b>언니가 코멘트를 남겼어!</b></div><div class="list" style="margin-top:10px">${fresh.map(attemptRow).join("")}</div></div>`:""}
   ${S.tasks.filter(t=>!t.done).length?`<a class="card subj" href="#records" style="display:flex;gap:10px;align-items:center"><span class="pill new">과제</span><b>남은 과제 ${S.tasks.filter(t=>!t.done).length}개</b><span class="small muted" style="margin-left:auto">기록에서 보기 →</span></a>`:""}
@@ -297,7 +312,7 @@ function viewHome(){
 }
 function attemptRow(a){
   const x=S.exams.find(e=>e.id===a.examId);const f=S.feedback[a.id];const p=a.total?Math.round(a.score/a.total*100):0;
-  const tag=a.by==="sister"?`<span class="pill">언니가 풀어봄</span>`:hasFeedback(f)?(a.seenFeedbackAt?`<span class="pill good">코멘트 확인</span>`:`<span class="pill new">새 코멘트</span>`):`<span class="pill">코멘트 대기</span>`;
+  const tag=a.by==="sister"?`<span class="pill">언니가 풀어봄</span>`:hasFeedback(f)?(a.seenFeedbackAt?`<span class="pill good">코멘트 확인</span>`:`<span class="pill new">새 코멘트</span>`):f?.skip?`<span class="pill">${isSisView()?"코멘트 안 함":"언니가 확인함"}</span>`:`<span class="pill">코멘트 대기</span>`;
   return `<a class="item" href="#a-${esc(a.id)}"><div class="grow"><div>${esc(x?.title||"삭제된 시험")}</div><div class="small muted">${esc(subj(x?.subject).name)} · ${a.fromBook?"책에 처음 푼 기록":fmtDate(a.submittedAt)}</div></div>${x?(x.kind==="book"?`<span class="pill book">책 기출</span>`:`<span class="pill ai">AI 연습문제</span>`):""}${tag}<span class="score">${a.score}/${a.total}</span><span class="small muted" style="min-width:3.2em;text-align:right">${p}점</span></a>`;
 }
 function viewSubject(k){
@@ -429,9 +444,9 @@ function viewAttempt(a,x){
   return `<div class="crumbs"><a href="#home">홈</a> › <a href="#records">기록</a> › ${esc(x?.title||"")}</div>
   <div class="result"><div class="small muted">${who} · ${a.fromBook?"책에 처음 푼 기록":fmtDate(a.submittedAt)+" · "+mins(a.seconds)}</div><div class="sc">${a.score} / ${a.total}</div><div style="font-family:var(--f-display);font-size:1.15rem">${p}점. ${scoreMsg(p)}</div></div>
   <section style="display:grid;gap:10px"><h2>언니의 한마디</h2>
-    ${edit?`<textarea class="memo-in" id="fb-overall" data-fb="overall" placeholder="하령이에게 전체 코멘트를 남겨줘">${esc(f.overall||"")}</textarea>`:(f.overall?`<div class="memo"><span class="who">언니가</span>${esc(f.overall)}</div>`:`<div class="empty">언니가 아직 코멘트를 쓰지 않았어요. 곧 올 거야!</div>`)}
+    ${edit?`<textarea class="memo-in" id="fb-overall" data-fb="overall" placeholder="하령이에게 전체 코멘트를 남겨줘">${esc(f.overall||"")}</textarea>`:(f.overall?`<div class="memo"><span class="who">언니가</span>${esc(f.overall)}</div>`:hasFeedback(f)?"":f.skip?`<div class="empty">언니가 확인했어! 이번 시험은 따로 코멘트 없이 넘어갈게.</div>`:`<div class="empty">언니가 아직 코멘트를 쓰지 않았어요. 곧 올 거야!</div>`)}
     ${!edit&&!S.isSister&&hasFeedback(f)&&!a.seenFeedbackAt?`<div class="row"><button class="btn rose" data-act="seen">코멘트 확인했어요</button></div>`:""}
-    ${edit?`<div class="row small muted"><span id="fb-status">${f.updatedAt?`마지막 저장 ${fmtDate(f.updatedAt)}`:"입력하고 잠시 멈추면 자동 저장돼요"}</span>${a.seenFeedbackAt?`<span class="pill good">하령이 확인함 · ${fmtDate(a.seenFeedbackAt)}</span>`:""}</div>`:""}
+    ${edit?`<div class="row small muted"><span id="fb-status">${f.updatedAt?`마지막 저장 ${fmtDate(f.updatedAt)}`:"입력하고 잠시 멈추면 자동 저장돼요"}</span>${!hasFeedback(f)?(f.skip?`<span class="pill">코멘트 안 함 · 대기 목록에서 빠짐</span><button class="btn small" data-act="fbskip" data-v="0" style="padding:4px 10px">다시 대기로</button>`:`<button class="btn small" data-act="fbskip" data-v="1" style="padding:4px 10px">코멘트 안 함</button>`):""}${a.seenFeedbackAt?`<span class="pill good">하령이 확인함 · ${fmtDate(a.seenFeedbackAt)}</span>`:""}</div>`:""}
   </section>
   ${!x?`<div class="empty">시험 원본이 없어 문항을 보여줄 수 없어요.</div>`:qs.map((q,i)=>{const ans=a.answers?.[i];const ok=a.correct?.[i];const pq=(f.perQ||{})[i];return`
   <div class="card q-card"><div class="q-head"><span class="q-num">${i+1}</span><div class="grow" style="min-width:0">${fmt(q.prompt)}</div><span class="verdict ${ok?"ok":"no"}">${ok?"정답":"오답"}</span></div>
@@ -450,7 +465,7 @@ function saveFeedback(id){
   if(!S.db)return;
   const overall=$("#fb-overall")?.value||"";const perQ={};
   document.querySelectorAll('textarea[data-fb]').forEach(t=>{if(t.dataset.fb!=="overall"&&t.value.trim())perQ[t.dataset.fb]=t.value});
-  const body={overall,perQ,updatedAt:new Date().toISOString()};
+  const hasTxt=overall.trim()||Object.keys(perQ).length;const body={overall,perQ,skip:hasTxt?false:!!S.feedback[id]?.skip,updatedAt:new Date().toISOString()};
   queueWrite(async()=>{await S.db.doc("feedback/"+id).set(body);const st=$("#fb-status");st&&(st.textContent="저장됨 · "+fmtDate(body.updatedAt))});
 }
 function dueInfo(t){if(!t.due)return"";const d=Math.round((new Date(t.due+"T00:00:00")-new Date(new Date().toDateString()))/864e5);const [y,m,dd]=t.due.split("-");const lab=`${+m}/${+dd}까지`;if(t.done)return`<span class="pill">${lab}</span>`;if(d<0)return`<span class="pill late">${lab} · ${-d}일 지남</span>`;if(d===0)return`<span class="pill new">오늘까지!</span>`;return`<span class="pill">${lab} · D-${d}</span>`}
@@ -459,18 +474,37 @@ async function seedSisterTasks(){
   if(seeding||!S.isSister||!S.tasksLoaded||!S.sisterTasks?.length)return;seeding=true;
   try{const ref=S.db.doc("progress/sisterSeeds");const snap=await ref.get();const done=(snap.exists&&snap.data().ids)||[];
     const todo=S.sisterTasks.filter(t=>!done.includes(t.id));
-    for(const t of todo){if(!S.tasks.some(x=>x.id===t.id))await S.db.doc("tasks/"+t.id).set({title:t.title,note:t.note||null,due:t.due||null,link:t.link||null,by:"sister",done:false,doneAt:null,createdAt:new Date().toISOString()})}
+    for(const t of todo){if(!S.tasks.some(x=>x.id===t.id))await S.db.doc("tasks/"+t.id).set({title:t.title,note:t.note||null,due:t.due||null,link:t.link||null,group:t.group||null,by:"sister",done:false,doneAt:null,createdAt:new Date().toISOString()})}
     if(todo.length){await ref.set({ids:[...done,...todo.map(t=>t.id)]});toast(`과제 ${todo.length}개를 하령이에게 보냈어요`)}
     for(const t of S.sisterTasks){const ex=S.tasks.find(x=>x.id===t.id);if(ex&&(t.due||null)!==(ex.due||null))await S.db.doc("tasks/"+t.id).update({due:t.due||null})}
   }catch(e){console.warn(e)}seeding=false;
 }
+function taskGroupName(t){if(t.group)return t.group;if(t.by==="hareong")return"내가 추가한 할 일";if(/^s2027-/.test(t.id))return"2027 수능 실전";if(/^ai-/.test(t.id))return"AI 연습문제";return"언니가 준 과제"}
+const openState=(()=>{try{return JSON.parse(localStorage.getItem("taskOpen")||"{}")}catch(e){return{}}})();
+function taskItem(t,canDel){
+  const hasMore=t.note||t.link;
+  return `<div class="titem ${t.done?"done":""}"><button class="tcheck" data-act="tdone" data-id="${esc(t.id)}" aria-label="${t.done?"완료 취소":"완료"}">${t.done?"✓":""}</button><div class="grow">
+    ${hasMore?`<details data-open="t:${esc(t.id)}" ${openState["t:"+t.id]?"open":""}><summary><span class="ttl">${esc(t.shortTitle||t.title)}</span> ${dueInfo(t)}</summary><div class="tmore">${t.note?`<div class="small muted" style="white-space:pre-wrap">${esc(t.note)}</div>`:""}${t.link&&/^#[A-Za-z0-9-]+$/.test(t.link)?`<a class="small" href="${t.link}">시험 풀러 가기 →</a>`:""}${t.done&&t.doneAt?`<div class="small muted">${fmtDate(t.doneAt)} 완료</div>`:""}</div></details>`
+    :`<div><span class="ttl">${esc(t.title)}</span> ${dueInfo(t)}</div>${t.done&&t.doneAt?`<div class="small muted">${fmtDate(t.doneAt)} 완료</div>`:""}`}
+  </div>${canDel(t)?`<button class="btn small" data-act="tdel" data-id="${esc(t.id)}">${S.confirmDel===t.id?"정말 삭제":"삭제"}</button>`:""}</div>`;
+}
+function taskGroups(ts,sis,canDel){
+  const order=["2027 수능 실전","AI 연습문제","언니가 준 과제","내가 추가한 할 일"];const g={};
+  ts.forEach(t=>{const n=taskGroupName(t);(g[n]=g[n]||[]).push(t)});
+  const names=Object.keys(g).sort((a,b)=>((order.indexOf(a)+1)||9)-((order.indexOf(b)+1)||9));
+  return `<div class="tgroups">${names.map(n=>{const list=g[n];const done=list.filter(t=>t.done).length;const left=list.filter(t=>!t.done);
+    const due=left.map(t=>t.due).filter(Boolean).sort()[0];const key="g:"+n;const open=key in openState?openState[key]:left.length>0;
+    const mine=n==="내가 추가한 할 일";
+    return `<details class="tgroup ${mine?"mine":"sis"}" data-open="${esc(key)}" ${open?"open":""}><summary><span class="gname">${esc(n==="내가 추가한 할 일"&&sis?"하령이가 추가한 할 일":n)}</span><span class="pill ${done===list.length?"good":""}">${done}/${list.length}</span>${due?dueInfo({due,done:false}):""}</summary><div class="tlist">${list.map(t=>taskItem(t,canDel)).join("")}</div></details>`}).join("")}</div>`;
+}
+document.addEventListener("toggle",e=>{const k=e.target?.dataset?.open;if(!k)return;openState[k]=e.target.open;try{localStorage.setItem("taskOpen",JSON.stringify(openState))}catch(_){}},true);
 function sortTasks(a){return [...a].sort((x,y)=>(x.done-y.done)||String(x.due||"9999").localeCompare(String(y.due||"9999"))||String(x.createdAt).localeCompare(String(y.createdAt)))}
 function viewTasks(){
   const ts=sortTasks(S.tasks);const left=ts.filter(t=>!t.done).length;const sis=isSisView();const kid=!sis;
   const canDel=t=>sis||(kid&&t.by==="hareong");
   return `<section class="card tasks" style="display:grid;gap:12px"><div class="row"><h2>${sis?"하령이 과제":"내 과제"}</h2><span class="pill ${left?"new":"good"}" style="margin-left:auto">${left?`남은 과제 ${left}개`:"다 했어! 🎉"}</span></div>
   ${sis||kid?`<form id="taskForm" class="taskform"><input class="field" id="tTitle" placeholder="${sis?"과제 (예: 자이스토리 D단원 D02–D10 풀기)":"내가 할 일 추가 (예: 단어 카드 20장)"}" required maxlength="200"><input class="field" id="tDue" type="date" aria-label="마감일"><button class="btn rose" type="submit">추가</button></form>`:""}
-  ${ts.length?`<div class="tlist">${ts.map(t=>`<div class="titem ${t.done?"done":""}"><button class="tcheck" data-act="tdone" data-id="${esc(t.id)}" aria-label="${t.done?"완료 취소":"완료"}" >${t.done?"✓":""}</button><div class="grow"><div class="ttl">${esc(t.title)}</div>${t.note?`<div class="small muted" style="white-space:pre-wrap">${esc(t.note)}</div>`:""}${t.link&&/^#[A-Za-z0-9-]+$/.test(t.link)?`<a class="small" href="${t.link}">시험 풀러 가기 →</a>`:""}<div class="row small muted">${t.by==="hareong"?`<span class="pill">하령이 추가</span>`:`<span class="pill sis-tag">언니가 준 과제</span>`}${dueInfo(t)}${t.done&&t.doneAt?`<span>${fmtDate(t.doneAt)} 완료</span>`:""}</div></div>${canDel(t)?`<button class="btn small" data-act="tdel" data-id="${esc(t.id)}">${S.confirmDel===t.id?"정말 삭제":"삭제"}</button>`:""}</div>`).join("")}</div>`:`<div class="empty">${sis?"위 칸에 과제를 적고 추가를 누르면 하령이 화면 맨 위에 보여요.":"아직 과제가 없어요. 스스로 할 일을 적어봐도 좋아!"}</div>`}
+  ${ts.length?taskGroups(ts,sis,canDel):`<div class="empty">${sis?"위 칸에 과제를 적고 추가를 누르면 하령이 화면 맨 위에 보여요.":"아직 과제가 없어요. 스스로 할 일을 적어봐도 좋아!"}</div>`}
   </section>`;
 }
 function viewRecords(){
@@ -486,6 +520,7 @@ document.addEventListener("click",async e=>{
   if(act==="tdone"){const t=S.tasks.find(x=>x.id===b.dataset.id);if(!t||!S.db)return;const done=!t.done;queueWrite(()=>S.db.doc("tasks/"+t.id).update({done,doneAt:done?new Date().toISOString():null}));if(done&&!isSisView())toast(["과제 하나 끝! 최고야","언니가 보면 좋아하겠다","이 기세로 다음 것도!"][Math.floor(Math.random()*3)]);return}
   if(act==="tdel"){const id=b.dataset.id;const tt=S.tasks.find(x=>x.id===id);if(!tt||!(isSisView()||tt.by==="hareong"))return;if(S.confirmDel!==id){S.confirmDel=id;render();return}S.confirmDel=null;queueWrite(()=>S.db.doc("tasks/"+id).delete());return}
   if(act==="ex"){const el=document.getElementById("ex"+b.dataset.q);if(el){el.hidden=!el.hidden;b.textContent=el.hidden?"해설 보기":"해설 닫기"}return}
+  if(act==="fbskip"){const id=location.hash.slice(3);const v=b.dataset.v==="1";if(S.db)queueWrite(()=>S.db.doc("feedback/"+id).set({skip:v,updatedAt:new Date().toISOString()},{merge:true})).then(()=>toast(v?"대기 목록에서 뺐어요":"다시 코멘트 대기로 돌렸어요"));return}
   if(act==="seen"){const id=location.hash.slice(3);if(S.db)queueWrite(()=>S.db.doc("attempts/"+id).update({seenFeedbackAt:new Date().toISOString()})).then(()=>toast("언니한테 확인했다고 전했어!"));return}
   if(act==="mode-sis"||act==="mode-kid"){if(!S.isSister)return;S.mode=act==="mode-sis"?"sis":"kid";ls("mode",S.mode);render();toast(S.mode==="sis"?"언니 모드: 코멘트를 쓸 수 있어요":"동생 모드: 하령이가 보는 화면이에요");return}
   if(act==="logout"){await S.auth.signOut();ls("mode",null);location.hash="home";toast("로그아웃했어요");return}
