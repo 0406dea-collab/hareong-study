@@ -19,8 +19,11 @@ service cloud.firestore {
     // 언니가 주는 과제: 언니만 만들고 지우기, 하령은 완료 체크만
     match /tasks/{id} {
       allow read: if signedIn();
-      allow create, delete: if isSister();
-      allow update: if isSister() || (signedIn() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['done','doneAt']));
+      allow create: if isSister() || (signedIn() && request.resource.data.by == "hareong");
+      allow delete: if isSister() || (signedIn() && resource.data.by == "hareong");
+      allow update: if isSister()
+        || (signedIn() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['done','doneAt']))
+        || (signedIn() && resource.data.by == "hareong" && request.resource.data.by == "hareong");
     }
     // 플래시카드 외운 기록
     match /progress/{id} {
