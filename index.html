@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>하령이 공부방</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Gaegu:wght@400;700&display=swap">
+<style>
+:root{
+  --bg:#FBF8FA; --surface:#FFFFFF; --sunk:#F5EFF3; --ink:#2A2733; --muted:#6E6878; --line:#ECE3EA;
+  --rose:#C9627A; --rose-soft:#F9DDE2; --blue:#4F6FAF; --blue-soft:#DEE6F5;
+  --good:#2E8463; --good-soft:#DDF1E8; --bad:#C0503A; --bad-soft:#F8E1DB; --note:#FFF6D9; --note-ink:#5A4A14;
+  --f-display:"Gowun Dodum","IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-hand:"Gaegu","Gowun Dodum","Apple SD Gothic Neo",cursive;
+  --r:14px; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#1A1920; --surface:#23222B; --sunk:#1F1E26; --ink:#EEEAF2; --muted:#A7A1B3; --line:#353340;
+  --rose:#F0A0B1; --rose-soft:#43303A; --blue:#A3B8E3; --blue-soft:#2C3348;
+  --good:#7FD3AE; --good-soft:#1F3A30; --bad:#F2A08E; --bad-soft:#47291F; --note:#3B3520; --note-ink:#F2E3B0; color-scheme:dark}}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+[hidden]{display:none!important}
+img{max-width:100%}
+a{color:var(--blue)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,textarea:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;text-wrap:balance;line-height:1.35;margin:0}
+h1{font-size:1.9rem} h2{font-size:1.4rem} h3{font-size:1.12rem}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:14px;padding-block:10px;flex-wrap:wrap}
+.brand{font-family:var(--f-display);font-size:1.15rem;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:8px}
+.brand .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--rose) 50%,var(--blue) 50%)}
+nav.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.tabs a{text-decoration:none;color:var(--muted);padding:4px 10px;border-radius:999px;font-size:.9rem}
+nav.tabs a.on{background:var(--rose-soft);color:var(--ink)}
+main{padding-block:24px 60px;display:grid;gap:28px}
+footer{padding-block:20px 40px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+footer a,footer button{color:var(--muted);background:none;border:0;padding:0;text-decoration:underline}
+.muted{color:var(--muted)} .small{font-size:.86rem}
+.eyebrow{font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:10px;font-weight:500;text-decoration:none;color:var(--ink);display:inline-block}
+.btn:hover{border-color:var(--blue)}
+.btn.pri{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.rose{background:var(--rose);color:var(--bg);border-color:var(--rose)}
+.btn[disabled]{opacity:.5;cursor:default}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;min-width:0}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.pill{display:inline-block;font-size:.76rem;padding:1px 9px;border-radius:999px;background:var(--sunk);color:var(--muted);border:1px solid var(--line);white-space:nowrap}
+.pill.good{background:var(--good-soft);color:var(--good);border-color:transparent}
+.pill.new{background:var(--rose-soft);color:var(--rose);border-color:transparent;font-weight:600}
+.cheer{display:flex;gap:14px;align-items:center;padding:16px 20px;border-radius:var(--r);background:linear-gradient(110deg,var(--rose-soft),var(--blue-soft))}
+.cheer .big{font-family:var(--f-display);font-size:1.25rem}
+.subj{text-decoration:none;color:inherit;display:grid;gap:6px}
+.subj:hover{border-color:var(--rose)}
+.subj .k{font-family:var(--f-display);font-size:1.35rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{padding:12px 14px;border-radius:12px;background:var(--sunk)}
+.stat b{display:block;font-size:1.4rem;font-variant-numeric:tabular-nums;font-family:var(--f-display);font-weight:400}
+.list{display:grid;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.list a.item{display:flex;gap:12px;align-items:center;padding:12px 16px;text-decoration:none;color:inherit;border-top:1px solid var(--line);min-width:0;flex-wrap:wrap}
+.list .item:first-child{border-top:0}
+.list a.item:hover{background:var(--sunk)}
+.item .grow{flex:1;min-width:0}
+.item .score{font-variant-numeric:tabular-nums;font-weight:600}
+.empty{padding:22px;border:1.5px dashed var(--line);border-radius:var(--r);color:var(--muted);text-align:center}
+.crumbs{font-size:.88rem;color:var(--muted)} .crumbs a{color:var(--muted)}
+.notes{display:grid;gap:14px}
+.sec h3{display:flex;gap:10px;align-items:baseline}
+.sec h3 .n{font-family:var(--f-body);font-size:.8rem;color:var(--rose);font-weight:700;font-variant-numeric:tabular-nums}
+.sec ul{margin:8px 0 0;padding-left:1.2em} .sec li{margin:3px 0}
+.sec p{margin:8px 0 0;max-width:68ch}
+.ex-box{margin-top:10px;padding:10px 14px;border-radius:10px;background:var(--blue-soft)}
+.ex-box .lab{font-size:.78rem;color:var(--blue);font-weight:600;letter-spacing:.04em}
+.tip{margin-top:10px;padding:10px 14px;border-radius:10px;background:var(--note);color:var(--note-ink)}
+mark{background:var(--rose-soft);color:inherit;padding:0 2px;border-radius:3px}
+.terms{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.terms>div{padding:9px 14px;border-top:1px solid var(--line);min-width:0}
+.terms>div:nth-child(-n+2){border-top:0}
+.terms .t{font-weight:600;background:var(--sunk)}
+.flash{perspective:1200px;max-width:560px;width:100%;margin:0 auto}
+.flash .inner{position:relative;min-height:260px;transition:transform .45s;transform-style:preserve-3d;cursor:pointer}
+.flash.flip .inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;padding:28px;text-align:center;overflow:auto}
+.face.back{transform:rotateY(180deg);background:var(--blue-soft)}
+.face .q{font-family:var(--f-display);font-size:1.5rem}
+.face .a{font-size:1.05rem;max-width:44ch}
+.bar{height:6px;border-radius:99px;background:var(--sunk);overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--rose),var(--blue))}
+.q-card{display:grid;gap:10px}
+.q-head{display:flex;gap:10px;align-items:baseline}
+.q-num{font-family:var(--f-display);font-size:1.25rem;color:var(--rose);font-variant-numeric:tabular-nums}
+.passage{padding:14px 16px;background:var(--sunk);border-radius:10px;white-space:pre-wrap;line-height:1.85;font-size:.98rem}
+.choices{display:grid;gap:6px}
+.choice{display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+button.choice:hover{border-color:var(--blue)}
+.choice.sel{border-color:var(--blue);background:var(--blue-soft)}
+.choice.right{border-color:var(--good);background:var(--good-soft)}
+.choice.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.choice .no{font-weight:700;min-width:1.3em}
+.choices.omr{grid-template-columns:repeat(5,minmax(0,64px));gap:8px}
+.choices.omr .choice{justify-content:center;font-size:1.15rem;padding:8px 0}
+.q-head{flex-wrap:wrap}
+.q-head .btn{padding:3px 10px;font-size:.82rem}
+input.short,input.field{font:inherit;width:100%;max-width:420px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
+.submitbar{position:sticky;bottom:0;padding-block:12px calc(12px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.result{display:grid;gap:6px;padding:22px;border-radius:var(--r);background:linear-gradient(110deg,var(--rose-soft),var(--blue-soft));text-align:center}
+.result .sc{font-family:var(--f-display);font-size:2.6rem;font-variant-numeric:tabular-nums}
+.verdict{font-weight:700} .verdict.ok{color:var(--good)} .verdict.no{color:var(--bad)}
+.explain{padding:10px 14px;border-left:3px solid var(--blue);background:var(--sunk);border-radius:0 10px 10px 0}
+.memo{font-family:var(--f-hand);font-size:1.25rem;line-height:1.45;background:var(--note);color:var(--note-ink);padding:12px 16px;border-radius:4px 14px 14px 14px;white-space:pre-wrap;transform:rotate(-.4deg)}
+.memo .who{display:block;font-size:.95rem;opacity:.75}
+textarea.memo-in{width:100%;min-height:72px;font-family:var(--f-hand);font-size:1.2rem;line-height:1.4;padding:10px 12px;border:1.5px dashed var(--rose);border-radius:10px;background:var(--surface);color:var(--ink);resize:vertical}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 18px;border-radius:999px;font-size:.92rem;z-index:20;max-width:calc(100% - 32px)}
+.kid{font-size:.78rem;padding:2px 9px;border-radius:99px;background:var(--blue);color:var(--bg)}
+.sis{font-size:.78rem;padding:2px 9px;border-radius:99px;background:var(--rose);color:var(--bg)}
+.modes{display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:2px;background:var(--surface)}
+.modes button{border:0;background:transparent;font-size:.8rem;padding:2px 10px;border-radius:99px;color:var(--muted)}
+.modes button.on.s{background:var(--rose);color:var(--bg)}
+.modes button.on.k{background:var(--blue);color:var(--bg)}
+.login{max-width:420px;display:grid;gap:12px}
+.err{color:var(--bad);font-size:.9rem}
+@media (max-width:560px){h1{font-size:1.55rem}.terms{grid-template-columns:1fr}.terms>div:nth-child(2){border-top:1px solid var(--line)}.terms .t{border-top:1px solid var(--line)}}
+@media (prefers-reduced-motion:reduce){.flash .inner{transition:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#home"><span class="dot"></span>하령이 공부방</a>
+  <span id="role"></span>
+  <nav class="tabs" id="tabs"></nav>
+</div></header>
+<div class="wrap"><main id="app">
+  <div class="cheer"><div><div class="big">공부방 문을 여는 중이야</div><div class="small muted">단원과 시험을 불러오고 있어요.</div></div></div>
+</main>
+<footer id="foot"></footer></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script>
+const SUBJECTS=[
+  {key:"eng",name:"영어",desc:"수능 독해·어휘·문법"},
+  {key:"kor",name:"국어",desc:"독서·문학·언어와 매체"},
+  {key:"math",name:"수학",desc:"대수: 지수·로그"},
+  {key:"hist",name:"한국사",desc:"시대별 흐름과 사건"},
+  {key:"soc",name:"사탐",desc:"사회탐구"}
+];
+const CHEERS=[
+  ["정한이도 응원 중이야","오늘은 딱 한 세트만 끝내보자."],
+  ["열세 명이 무대 하나를 만들듯","개념도 하나씩 쌓으면 돼."],
+  ["노래 세 곡 길이만큼만","10분 집중하고 쉬어도 괜찮아."],
+  ["캐럿봉 대신 형광펜 들고","오늘 단원 하나만 정리해보자."],
+  ["어제보다 하나 더","플래시카드 10장이면 충분해."],
+  ["언니가 기다리고 있어","시험 풀면 언니가 코멘트 달아줄게."]
+];
+const S={topics:[],exams:[],attempts:[],feedback:{},known:{},contentLoaded:false,dataLoaded:false,db:null,auth:null,isSister:false,mode:"kid",noDb:false,stale:false};
+const isSisView=()=>S.isSister&&S.mode==="sis";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function fmt(s){let h=esc(s);h=h.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/==(.+?)==/g,"<mark>$1</mark>").replace(/__(.+?)__/g,"<u>$1</u>").replace(/\n/g,"<br>");return h}
+const subj=k=>SUBJECTS.find(s=>s.key===k)||{key:k,name:k,desc:""};
+const NUM=["①","②","③","④","⑤","⑥","⑦"];
+const byOrder=(a,b)=>(a.order??999)-(b.order??999)||String(a.title).localeCompare(String(b.title),"ko");
+function toast(t){const el=$("#toast");el.textContent=t;el.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>el.hidden=true,2400)}
+function ls(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k)||"null");if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
+function fmtDate(iso){if(!iso)return"";const d=new Date(iso);return `${d.getMonth()+1}월 ${d.getDate()}일 ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`}
+function mins(sec){sec=Math.max(0,Math.round(sec||0));return `${Math.floor(sec/60)}분 ${sec%60}초`}
+function scoreMsg(p){if(p>=90)return"완벽해! 언니한테 바로 자랑하자";if(p>=70)return"잘했어! 틀린 것만 다시 보면 끝";if(p>=50)return"반 넘었어! 해설 보고 한 번 더 가보자";return"괜찮아, 이제 어디가 약한지 알았잖아"}
+const ready=()=>S.contentLoaded&&(S.dataLoaded||S.noDb||S.stale);
+let writing=Promise.resolve();
+function queueWrite(fn){writing=writing.then(fn).catch(e=>{console.warn(e);toast("저장하지 못했어요. 인터넷을 확인하고 다시 해볼래?")});return writing}
+
+/* ---------- boot ---------- */
+async function boot(){
+  render();
+  window.addEventListener("hashchange",()=>{render();window.scrollTo(0,0)});
+  try{const r=await fetch("content/content.json?v="+Date.now());const c=await r.json();S.topics=c.topics||[];S.exams=c.exams||[]}catch(e){console.warn(e);toast("자료를 불러오지 못했어요. 새로고침해 볼래?")}
+  S.contentLoaded=true;render();
+  if(!window.FIREBASE_CONFIG||!window.firebase){S.noDb=true;render();return}
+  firebase.initializeApp(window.FIREBASE_CONFIG);
+  S.auth=firebase.auth();S.db=firebase.firestore();
+  const timer=setTimeout(()=>{if(!S.dataLoaded){S.stale=true;render()}},10000);
+  let subscribed=false;
+  S.auth.onAuthStateChanged(async u=>{
+    if(!u){try{await S.auth.signInAnonymously()}catch(e){console.warn(e);S.noDb=true;render()}return}
+    S.isSister=!u.isAnonymous;
+    S.mode=S.isSister?(ls("mode")||"sis"):"kid";
+    render();
+    if(subscribed)return;subscribed=true;
+    let got={a:false,f:false};
+    const done=()=>{if(got.a&&got.f){S.dataLoaded=true;S.stale=false;clearTimeout(timer)}render()};
+    const fail=e=>{console.warn(e);S.stale=true;clearTimeout(timer);render()};
+    S.db.collection("attempts").onSnapshot(s=>{S.attempts=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>String(b.submittedAt).localeCompare(String(a.submittedAt)));got.a=true;done()},fail);
+    S.db.collection("feedback").onSnapshot(s=>{const m={};s.docs.forEach(d=>m[d.id]=d.data());S.feedback=m;got.f=true;done()},fail);
+    S.db.doc("progress/hareong").onSnapshot(s=>{S.known=(s.exists&&s.data().known)||{};render()},e=>console.warn(e));
+  });
+}
+
+/* ---------- shell ---------- */
+function setTabs(active){
+  $("#tabs").innerHTML=[`<a href="#home" class="${active==="home"?"on":""}">홈</a>`,...SUBJECTS.map(s=>`<a href="#s-${s.key}" class="${active===s.key?"on":""}">${s.name}</a>`),`<a href="#records" class="${active==="records"?"on":""}">기록</a>`].join("");
+  $("#role").innerHTML=S.isSister?`<span class="modes" role="group" aria-label="보기 모드"><button class="s ${S.mode==="sis"?"on":""}" data-act="mode-sis">언니 모드</button><button class="k ${S.mode==="kid"?"on":""}" data-act="mode-kid">동생 모드</button></span>`:`<span class="kid">동생 모드</span>`;
+  $("#foot").innerHTML=S.isSister?`<span>언니로 로그인됨</span><button data-act="logout">로그아웃</button>`:`<a href="#login">언니 로그인</a>`;
+}
+function banner(){
+  if(S.noDb)return`<div class="tip">시험 기록 저장소가 아직 연결되지 않았어요. 개념 정리와 플래시카드는 지금도 쓸 수 있어요.</div>`;
+  if(S.stale)return`<div class="tip">기록을 아직 불러오지 못했어요. 인터넷 연결을 확인하면 자동으로 다시 이어져요.</div>`;
+  return"";
+}
+const examState={id:null,answers:{},start:0,mounted:false,tick:null};
+function render(){
+  const h=(location.hash||"#home").slice(1);const app=$("#app");let m;
+  if(h.startsWith("s-")){setTabs(h.slice(2));app.innerHTML=banner()+viewSubject(h.slice(2))}
+  else if(h.startsWith("t-")){const t=S.topics.find(x=>x.id===h.slice(2));setTabs(t?.subject);app.innerHTML=viewTopic(t)}
+  else if((m=h.match(/^cards-(s|t)-(.+)$/))){setTabs(m[1]==="s"?m[2]:S.topics.find(x=>x.id===m[2])?.subject);app.innerHTML=viewCards(m[1],m[2])}
+  else if(h.startsWith("x-")){const x=S.exams.find(e=>e.id===h.slice(2));setTabs(x?.subject);if(examState.id!==h.slice(2)||!examState.mounted||!Object.values(examState.answers).some(v=>v!==undefined&&v!==""))app.innerHTML=banner()+viewExam(x)}
+  else if(h.startsWith("a-")){const a=S.attempts.find(e=>e.id===h.slice(2));const x=a&&S.exams.find(e=>e.id===a.examId);setTabs(x?.subject);if(!document.activeElement||!document.activeElement.classList.contains("memo-in"))app.innerHTML=banner()+viewAttempt(a,x)}
+  else if(h==="records"){setTabs("records");app.innerHTML=banner()+viewRecords()}
+  else if(h==="login"){setTabs("");if(!app.querySelector("#loginForm"))app.innerHTML=viewLogin()}
+  else{setTabs("home");app.innerHTML=banner()+viewHome()}
+  if(!h.startsWith("x-"))examState.mounted=false;
+}
+const loadingOr=html=>ready()?html:`<div class="empty">불러오는 중…</div>`;
+
+/* ---------- login ---------- */
+function viewLogin(){
+  if(S.isSister)return`<div class="cheer"><div class="big">이미 언니로 로그인되어 있어요.</div></div><a class="btn" href="#home">홈으로</a>`;
+  return`<div style="display:grid;gap:4px"><h1>언니 로그인</h1><div class="muted">코멘트를 쓰려면 Firebase에 등록한 언니 이메일과 비밀번호로 로그인해요.</div></div>
+  <form class="login" id="loginForm"><input class="field" id="em" type="email" autocomplete="username" placeholder="이메일" required><input class="field" id="pw" type="password" autocomplete="current-password" placeholder="비밀번호" required><div class="row"><button class="btn pri" type="submit">로그인</button><a href="#home" class="small">취소</a></div><div class="err" id="loginErr"></div></form>`;
+}
+document.addEventListener("submit",async e=>{
+  if(e.target.id!=="loginForm")return;e.preventDefault();
+  if(!S.auth){$("#loginErr").textContent="저장소가 아직 연결되지 않았어요.";return}
+  try{await S.auth.signInWithEmailAndPassword($("#em").value.trim(),$("#pw").value);ls("mode","sis");location.hash="home";toast("언니 모드로 들어왔어요")}
+  catch(err){$("#loginErr").textContent="이메일이나 비밀번호가 맞지 않아요."}
+});
+
+/* ---------- views ---------- */
+function hasFeedback(f){return !!(f&&((f.overall&&f.overall.trim())||Object.values(f.perQ||{}).some(v=>v&&v.trim())))}
+const kidAttempts=()=>S.attempts.filter(a=>a.by!=="sister");
+function viewHome(){
+  const day=Math.floor(Date.now()/864e5);const c=CHEERS[day%CHEERS.length];
+  const mine=kidAttempts();
+  const avg=mine.length?Math.round(mine.reduce((s,a)=>s+(a.total?a.score/a.total*100:0),0)/mine.length):null;
+  const knownN=Object.keys(S.known).length;
+  const fresh=mine.filter(a=>hasFeedback(S.feedback[a.id])&&!a.seenFeedbackAt);
+  const waiting=mine.filter(a=>!hasFeedback(S.feedback[a.id]));
+  return `
+  <div class="cheer"><div><div class="big">${isSisView()?"":"하령아, "}${esc(c[0])}</div><div>${esc(c[1])}</div></div></div>
+  ${isSisView()&&waiting.length?`<div class="card"><div class="row"><span class="sis">언니에게</span><b>코멘트를 기다리는 시험 ${waiting.length}개</b></div><div class="list" style="margin-top:10px">${waiting.slice(0,5).map(attemptRow).join("")}</div></div>`:""}
+  ${!isSisView()&&fresh.length?`<div class="card"><div class="row"><span class="pill new">새 코멘트</span><b>언니가 코멘트를 남겼어!</b></div><div class="list" style="margin-top:10px">${fresh.map(attemptRow).join("")}</div></div>`:""}
+  <section class="stats">
+    <div class="stat"><span class="small muted">푼 시험</span><b>${mine.length}</b></div>
+    <div class="stat"><span class="small muted">평균 점수</span><b>${avg==null?"–":avg+"점"}</b></div>
+    <div class="stat"><span class="small muted">외운 카드</span><b>${knownN}</b></div>
+  </section>
+  <section style="display:grid;gap:12px"><h2>과목</h2>
+    <div class="grid">${SUBJECTS.map(s=>{const tn=S.topics.filter(t=>t.subject===s.key).length,xn=S.exams.filter(x=>x.subject===s.key).length;return`<a class="card subj" href="#s-${s.key}"><span class="k">${s.name}</span><span class="small muted">${esc(s.desc)}</span><span class="row small"><span class="pill">단원 ${tn}</span><span class="pill">시험 ${xn}</span></span></a>`}).join("")}</div>
+  </section>
+  <section style="display:grid;gap:12px"><div class="row"><h2>최근 기록</h2><a class="small" href="#records" style="margin-left:auto">전체 보기</a></div>
+    ${loadingOr(S.attempts.length?`<div class="list">${S.attempts.slice(0,5).map(attemptRow).join("")}</div>`:`<div class="empty">아직 푼 시험이 없어요. 과목에 들어가서 첫 시험을 풀어보자!</div>`)}
+  </section>`;
+}
+function attemptRow(a){
+  const x=S.exams.find(e=>e.id===a.examId);const f=S.feedback[a.id];const p=a.total?Math.round(a.score/a.total*100):0;
+  const tag=a.by==="sister"?`<span class="pill">언니가 풀어봄</span>`:hasFeedback(f)?(a.seenFeedbackAt?`<span class="pill good">코멘트 확인</span>`:`<span class="pill new">새 코멘트</span>`):`<span class="pill">코멘트 대기</span>`;
+  return `<a class="item" href="#a-${esc(a.id)}"><div class="grow"><div>${esc(x?.title||"삭제된 시험")}</div><div class="small muted">${esc(subj(x?.subject).name)} · ${a.fromBook?"책에 처음 푼 기록":fmtDate(a.submittedAt)}</div></div>${tag}<span class="score">${a.score}/${a.total}</span><span class="small muted" style="min-width:3.2em;text-align:right">${p}점</span></a>`;
+}
+function viewSubject(k){
+  const s=subj(k);const ts=S.topics.filter(t=>t.subject===k).sort(byOrder);const xs=S.exams.filter(x=>x.subject===k).sort(byOrder);
+  const areas=[...new Set(ts.map(t=>t.area||"기타"))];const cardN=ts.reduce((n,t)=>n+(t.terms||[]).length,0);
+  return `<div class="crumbs"><a href="#home">홈</a> › ${s.name}</div>
+  <div style="display:grid;gap:4px"><h1>${s.name}</h1><div class="muted">${esc(s.desc)}</div></div>
+  ${cardN?`<div class="row"><a class="btn rose" href="#cards-s-${k}">플래시카드 ${cardN}장</a></div>`:""}
+  <section style="display:grid;gap:14px"><h2>분야별 개념 정리</h2>
+  ${S.contentLoaded?(ts.length?areas.map(ar=>`<div style="display:grid;gap:8px"><div class="eyebrow">${esc(ar)}</div><div class="list">${ts.filter(t=>(t.area||"기타")===ar).map(t=>`<a class="item" href="#t-${esc(t.id)}"><div class="grow"><div>${esc(t.title)}</div>${t.source?`<div class="small muted">${esc(t.source)}</div>`:""}</div><span class="pill">카드 ${(t.terms||[]).length}</span></a>`).join("")}</div></div>`).join(""):`<div class="empty">아직 ${s.name} 자료가 없어요. 언니가 교재 범위와 푼 문제를 올려주면 여기에 분야별로 정리돼요.</div>`):`<div class="empty">불러오는 중…</div>`}
+  </section>
+  <section style="display:grid;gap:12px"><h2>시험</h2>
+  ${S.contentLoaded?(xs.length?`<div class="list">${xs.map(examRow).join("")}</div>`:`<div class="empty">아직 만들어진 시험이 없어요.</div>`):""}
+  </section>`;
+}
+function examRow(x){
+  const tries=kidAttempts().filter(a=>a.examId===x.id);const best=tries.length?Math.max(...tries.map(a=>a.total?Math.round(a.score/a.total*100):0)):null;
+  return `<a class="item" href="#x-${esc(x.id)}"><div class="grow"><div>${esc(x.title)}</div><div class="small muted">${(x.questions||[]).length}문항${x.minutes?` · 권장 ${x.minutes}분`:""}${x.basedOn?` · ${esc(x.basedOn)}`:""}</div></div>${x.kind==="book"?`<span class="pill">책 기출</span>`:`<span class="pill">연습 문제</span>`}<span class="pill ${tries.length?"good":""}">${tries.length}회 풀이</span>${best!=null?`<span class="pill">최고 ${best}점</span>`:""}</a>`;
+}
+function viewTopic(t){
+  if(!t)return S.contentLoaded?`<div class="empty">이 단원을 찾을 수 없어요. <a href="#home">홈으로</a></div>`:`<div class="empty">불러오는 중…</div>`;
+  const s=subj(t.subject);const xs=S.exams.filter(x=>(x.topicIds||[]).includes(t.id));
+  return `<div class="crumbs"><a href="#home">홈</a> › <a href="#s-${s.key}">${s.name}</a> › ${esc(t.area||"")}</div>
+  <div style="display:grid;gap:6px">${t.source?`<div class="row"><span class="pill">${esc(t.source)}</span></div>`:""}<h1>${esc(t.title)}</h1>${t.intro?`<div class="muted" style="max-width:68ch">${fmt(t.intro)}</div>`:""}</div>
+  <section class="notes">${(t.sections||[]).map((sec,i)=>`<div class="card sec"><h3><span class="n">${String(i+1).padStart(2,"0")}</span>${esc(sec.heading)}</h3>${sec.body?`<p>${fmt(sec.body)}</p>`:""}${sec.points?.length?`<ul>${sec.points.map(p=>`<li>${fmt(p)}</li>`).join("")}</ul>`:""}${sec.example?`<div class="ex-box"><div class="lab">${esc(sec.example.label||"예문")}</div><div>${fmt(sec.example.text)}</div></div>`:""}${sec.tip?`<div class="tip">${fmt(sec.tip)}</div>`:""}</div>`).join("")}</section>
+  ${(t.terms||[]).length?`<section style="display:grid;gap:10px"><div class="row"><h2>용어 · 단어</h2><a class="btn rose" style="margin-left:auto" href="#cards-t-${esc(t.id)}">이 단원 카드로 외우기</a></div><div class="terms">${t.terms.map(c=>`<div class="t">${fmt(c.front)}</div><div>${fmt(c.back)}</div>`).join("")}</div></section>`:""}
+  ${xs.length?`<section style="display:grid;gap:10px"><h2>이 단원 시험</h2><div class="list">${xs.map(examRow).join("")}</div></section>`:""}`;
+}
+
+/* ---------- flashcards ---------- */
+const cardState={key:"",order:[],i:0,flip:false,onlyUnknown:false};
+function deckFor(mode,id){
+  const ts=mode==="s"?S.topics.filter(t=>t.subject===id).sort(byOrder):S.topics.filter(t=>t.id===id);
+  return ts.flatMap(t=>(t.terms||[]).map(c=>({k:t.id+"~"+c.front,front:c.front,back:c.back,topic:t.title})));
+}
+function viewCards(mode,id){
+  const deckAll=deckFor(mode,id);
+  const label=mode==="s"?subj(id).name:(S.topics.find(t=>t.id===id)?.title||"");
+  const back=mode==="s"?`#s-${id}`:`#t-${id}`;
+  const deck=cardState.onlyUnknown?deckAll.filter(c=>!S.known[c.k]):deckAll;
+  const key=mode+id+cardState.onlyUnknown+deck.length;
+  if(cardState.key!==key){cardState.key=key;cardState.order=deck.map((_,i)=>i);cardState.i=Math.min(cardState.i,Math.max(0,deck.length-1));cardState.flip=false}
+  const knownN=deckAll.filter(c=>S.known[c.k]).length;
+  const head=`<div class="crumbs"><a href="#home">홈</a> › <a href="${back}">${esc(label)}</a> › 플래시카드</div>
+  <div class="row"><h1>플래시카드</h1><span class="muted" style="margin-left:auto">${knownN} / ${deckAll.length}장 외움</span></div>
+  <div class="bar"><i style="width:${deckAll.length?knownN/deckAll.length*100:0}%"></i></div>
+  <div class="row"><label class="row small"><input type="checkbox" id="onlyUnknown" ${cardState.onlyUnknown?"checked":""}> 아직 못 외운 카드만</label><button class="btn small" data-act="shuffle" style="margin-left:auto">섞기</button></div>`;
+  if(!deckAll.length)return head+`<div class="empty">아직 카드가 없어요.</div>`;
+  if(!deck.length)return head+`<div class="result"><div class="sc">전부 외웠어!</div><div>${esc(label)} 카드 ${deckAll.length}장 완료. 정한이도 박수 치는 중 👏</div></div>`;
+  const c=deck[cardState.order[cardState.i]];
+  return head+`
+  <div class="flash ${cardState.flip?"flip":""}" id="flash"><div class="inner" data-act="flip" tabindex="0" role="button" aria-label="카드 뒤집기">
+    <div class="face"><div style="display:grid;gap:10px"><span class="small muted">${esc(c.topic)}</span><div class="q">${fmt(c.front)}</div><span class="small muted">눌러서 뒤집기</span></div></div>
+    <div class="face back"><div class="a">${fmt(c.back)}</div></div>
+  </div></div>
+  <div class="row" style="justify-content:center"><span class="muted small" style="font-variant-numeric:tabular-nums">${cardState.i+1} / ${deck.length}</span></div>
+  <div class="row" style="justify-content:center"><button class="btn" data-act="prev">이전</button><button class="btn" data-act="again">다시 볼래</button><button class="btn pri" data-act="know">${S.known[c.k]?"외웠어 ✓":"외웠어"}</button><button class="btn" data-act="next">다음</button></div>
+  ${S.db?"":`<div class="small muted" style="text-align:center">저장소가 연결되면 외운 카드가 저장돼요.</div>`}`;
+}
+function cardAct(act){
+  const m=location.hash.match(/^#cards-(s|t)-(.+)$/);if(!m)return;
+  const deckAll=deckFor(m[1],m[2]);const deck=cardState.onlyUnknown?deckAll.filter(c=>!S.known[c.k]):deckAll;if(!deck.length)return;
+  const c=deck[cardState.order[cardState.i]];
+  if(act==="flip"){cardState.flip=!cardState.flip;$("#flash")?.classList.toggle("flip",cardState.flip);return}
+  if(act==="next"||act==="prev"){cardState.i=(cardState.i+(act==="next"?1:-1)+deck.length)%deck.length;cardState.flip=false}
+  if(act==="shuffle"){for(let i=cardState.order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[cardState.order[i],cardState.order[j]]=[cardState.order[j],cardState.order[i]]}cardState.i=0;cardState.flip=false}
+  if(act==="know"||act==="again"){
+    const known={...S.known};if(act==="know")known[c.k]=1;else delete known[c.k];
+    const changed=!!S.known[c.k]!==(act==="know");S.known=known;
+    if(changed&&S.db&&!isSisView()){queueWrite(()=>S.db.doc("progress/hareong").set({known,updatedAt:new Date().toISOString()}))}
+    if(act==="know")toast(["좋아! 하나 더 외웠다","기억력 최고","이 페이스 그대로!"][Math.floor(Math.random()*3)]);
+    if(!cardState.onlyUnknown)cardState.i=(cardState.i+1)%deck.length;
+    cardState.flip=false;
+  }
+  render();
+}
+
+/* ---------- exam ---------- */
+function viewExam(x){
+  if(!x)return S.contentLoaded?`<div class="empty">이 시험을 찾을 수 없어요. <a href="#home">홈으로</a></div>`:`<div class="empty">불러오는 중…</div>`;
+  if(examState.id!==x.id){const d=ls("draft:"+x.id);examState.id=x.id;examState.answers=d?.answers||{};examState.start=d?.start||Date.now()}
+  examState.mounted=true;
+  clearInterval(examState.tick);examState.tick=setInterval(()=>{const el=$("#timer");if(!el||!location.hash.startsWith("#x-")){clearInterval(examState.tick);return}el.textContent=mins((Date.now()-examState.start)/1000)},1000);
+  const s=subj(x.subject);const qs=x.questions||[];
+  return `<div class="crumbs"><a href="#home">홈</a> › <a href="#s-${s.key}">${s.name}</a> › 시험</div>
+  <div style="display:grid;gap:6px">${x.basedOn?`<div class="row"><span class="pill">${esc(x.basedOn)}</span></div>`:""}<h1>${esc(x.title)}</h1><div class="muted">${qs.length}문항${x.minutes?` · 권장 시간 ${x.minutes}분`:""}. 다 풀고 맨 아래에서 제출해줘.</div></div>
+  ${x.kind==="book"?`<div class="tip">책을 펴고 문제 번호를 보면서 답만 골라줘. 한 번 이상 푼 문제는 옆의 <b>해설 보기</b>를 누를 수 있어.</div>`:""}
+  ${qs.map((q,i)=>{const n=solveCount(x.id,i);const head=x.kind==="book"?`<b>${esc(q.no)}</b> <span class="small muted">${esc(q.source||"")}${q.page?` · p.${q.page}`:""}</span>${q.prompt?`<div>${fmt(q.prompt)}</div>`:""}`:fmt(q.prompt);
+    return `<div class="card q-card"><div class="q-head"><span class="q-num">${i+1}</span><div class="grow" style="min-width:0">${head}</div><span class="pill ${n?"good":""}">${n}회 풀이</span><button class="btn small" data-act="ex" data-q="${i}" ${n?"":"disabled"}>해설 보기</button></div>
+    ${q.passage?`<div class="passage">${fmt(q.passage)}</div>`:""}
+    ${q.type==="short"?`<input class="short" data-q="${i}" placeholder="답을 입력해줘" value="${esc(examState.answers[i]??"")}" autocomplete="off" autocapitalize="off">`:
+    q.choices?`<div class="choices">${q.choices.map((c,j)=>`<button class="choice ${examState.answers[i]===j?"sel":""}" data-act="pick" data-q="${i}" data-c="${j}"><span class="no">${NUM[j]}</span><span>${fmt(c)}</span></button>`).join("")}</div>`:
+    `<div class="choices omr">${Array.from({length:q.nChoices||5},(_,j)=>`<button class="choice ${examState.answers[i]===j?"sel":""}" data-act="pick" data-q="${i}" data-c="${j}"><span class="no">${NUM[j]}</span></button>`).join("")}</div>`}
+    <div class="explain small" id="ex${i}" hidden>${fmt(q.explain||"해설이 아직 없어요.")}</div>
+  </div>`}).join("")}
+  <div class="submitbar"><span class="muted">⏱ <span id="timer">${mins((Date.now()-examState.start)/1000)}</span></span><span class="muted small" id="answered">${answeredN(qs)} / ${qs.length} 답함</span><button class="btn pri" data-act="submit" style="margin-left:auto">제출하기</button></div>`;
+}
+function solveCount(examId,i){return S.attempts.filter(a=>a.examId===examId&&a.by!=="sister"&&a.answers&&a.answers[i]!==null&&a.answers[i]!==undefined&&a.answers[i]!=="").length}
+function answeredN(qs){return qs.filter((q,i)=>examState.answers[i]!==undefined&&examState.answers[i]!=="").length}
+function saveDraft(){ls("draft:"+examState.id,{answers:examState.answers,start:examState.start});const x=S.exams.find(e=>e.id===examState.id);const el=$("#answered");if(el&&x)el.textContent=`${answeredN(x.questions||[])} / ${(x.questions||[]).length} 답함`}
+const norm=s=>String(s??"").toLowerCase().replace(/[\s.,'"!?·]/g,"");
+function isRight(q,a){if(a===undefined||a==="")return false;if(q.type==="short")return (q.accept||[q.answer]).some(v=>norm(v)===norm(a));return a===q.answer}
+let submitting=false;
+async function submitExam(){
+  const x=S.exams.find(e=>e.id===examState.id);if(!x||submitting)return;
+  const qs=x.questions||[];const left=qs.length-answeredN(qs);
+  const btn=document.querySelector('[data-act="submit"]');
+  if(left&&btn&&!btn.dataset.sure){btn.dataset.sure="1";btn.textContent=`${left}문제 비었어. 그래도 제출`;return}
+  if(!S.db){toast("저장소가 아직 연결되지 않아 제출할 수 없어요");return}
+  submitting=true;btn&&(btn.disabled=true);
+  const answers=qs.map((q,i)=>examState.answers[i]??null);
+  const correct=qs.map((q,i)=>isRight(q,examState.answers[i]));
+  const id="a"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+  const doc={examId:x.id,by:S.isSister?"sister":"hareong",answers,correct,score:correct.filter(Boolean).length,total:qs.length,seconds:Math.round((Date.now()-examState.start)/1000),submittedAt:new Date().toISOString()};
+  try{await S.db.doc("attempts/"+id).set(doc);ls("draft:"+x.id,null);examState.id=null;examState.mounted=false;location.hash="a-"+id}
+  catch(e){console.warn(e);toast("제출하지 못했어요. 인터넷을 확인하고 다시 눌러줘");btn&&(btn.disabled=false)}
+  submitting=false;
+}
+
+/* ---------- attempt + comments ---------- */
+function viewAttempt(a,x){
+  if(!a)return loadingOr(`<div class="empty">이 기록을 찾을 수 없어요. <a href="#records">기록으로</a></div>`);
+  const qs=x?.questions||[];const f=S.feedback[a.id]||{};const p=a.total?Math.round(a.score/a.total*100):0;
+  const who=a.by==="sister"?"언니(연습)":"하령";const edit=isSisView();
+  return `<div class="crumbs"><a href="#home">홈</a> › <a href="#records">기록</a> › ${esc(x?.title||"")}</div>
+  <div class="result"><div class="small muted">${who} · ${a.fromBook?"책에 처음 푼 기록":fmtDate(a.submittedAt)+" · "+mins(a.seconds)}</div><div class="sc">${a.score} / ${a.total}</div><div style="font-family:var(--f-display);font-size:1.15rem">${p}점. ${scoreMsg(p)}</div></div>
+  <section style="display:grid;gap:10px"><h2>언니의 한마디</h2>
+    ${edit?`<textarea class="memo-in" id="fb-overall" data-fb="overall" placeholder="하령이에게 전체 코멘트를 남겨줘">${esc(f.overall||"")}</textarea>`:(f.overall?`<div class="memo"><span class="who">언니가</span>${esc(f.overall)}</div>`:`<div class="empty">언니가 아직 코멘트를 쓰지 않았어요. 곧 올 거야!</div>`)}
+    ${!edit&&!S.isSister&&hasFeedback(f)&&!a.seenFeedbackAt?`<div class="row"><button class="btn rose" data-act="seen">코멘트 확인했어요</button></div>`:""}
+    ${edit?`<div class="row small muted"><span id="fb-status">${f.updatedAt?`마지막 저장 ${fmtDate(f.updatedAt)}`:"입력하고 잠시 멈추면 자동 저장돼요"}</span>${a.seenFeedbackAt?`<span class="pill good">하령이 확인함 · ${fmtDate(a.seenFeedbackAt)}</span>`:""}</div>`:""}
+  </section>
+  ${!x?`<div class="empty">시험 원본이 없어 문항을 보여줄 수 없어요.</div>`:qs.map((q,i)=>{const ans=a.answers?.[i];const ok=a.correct?.[i];const pq=(f.perQ||{})[i];return`
+  <div class="card q-card"><div class="q-head"><span class="q-num">${i+1}</span><div class="grow" style="min-width:0">${fmt(q.prompt)}</div><span class="verdict ${ok?"ok":"no"}">${ok?"정답":"오답"}</span></div>
+    ${q.passage?`<details><summary class="small muted">지문 보기</summary><div class="passage" style="margin-top:8px">${fmt(q.passage)}</div></details>`:""}
+    ${q.type==="short"?`<div class="small">내 답: <b>${esc(ans??"(빈칸)")}</b> · 정답: <b>${esc((q.accept||[q.answer])[0])}</b></div>`:
+    q.choices?`<div class="choices">${q.choices.map((c,j)=>`<div class="choice ${j===q.answer?"right":(j===ans?"wrong":"")}"><span class="no">${NUM[j]}</span><span>${fmt(c)}${j===ans?` <span class="small muted">(내 답)</span>`:""}</span></div>`).join("")}</div>`:
+    `<div class="small">내 답: <b>${ans==null?"(빈칸)":NUM[ans]}</b> · 정답: <b>${NUM[q.answer]}</b></div>`}
+    ${a.marks&&a.marks[i]?`<div><span class="pill new">${esc(a.marks[i])} 표시 (헷갈린 문제)</span></div>`:""}
+    ${q.explain?`<div class="explain small">${fmt(q.explain)}</div>`:""}
+    ${edit?`<textarea class="memo-in" data-fb="${i}" placeholder="이 문제에 코멘트 (선택)">${esc(pq||"")}</textarea>`:(pq?`<div class="memo"><span class="who">언니가</span>${esc(pq)}</div>`:"")}
+  </div>`}).join("")}`;
+}
+const fbTimers={};
+function onFeedbackInput(el){const id=location.hash.slice(3);const key=el.dataset.fb;clearTimeout(fbTimers[key]);const st=$("#fb-status");st&&(st.textContent="입력 중…");fbTimers[key]=setTimeout(()=>saveFeedback(id),900)}
+function saveFeedback(id){
+  if(!S.db)return;
+  const overall=$("#fb-overall")?.value||"";const perQ={};
+  document.querySelectorAll('textarea[data-fb]').forEach(t=>{if(t.dataset.fb!=="overall"&&t.value.trim())perQ[t.dataset.fb]=t.value});
+  const body={overall,perQ,updatedAt:new Date().toISOString()};
+  queueWrite(async()=>{await S.db.doc("feedback/"+id).set(body);const st=$("#fb-status");st&&(st.textContent="저장됨 · "+fmtDate(body.updatedAt))});
+}
+function viewRecords(){
+  return `<div style="display:grid;gap:4px"><h1>기록</h1><div class="muted">푼 시험과 언니 코멘트를 한곳에서 볼 수 있어요.</div></div>
+  ${loadingOr(S.attempts.length?`<div class="list">${S.attempts.map(attemptRow).join("")}</div>`:`<div class="empty">아직 푼 시험이 없어요.</div>`)}`;
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-act]");if(!b)return;const act=b.dataset.act;
+  if(act==="pick"){const q=+b.dataset.q,c=+b.dataset.c;examState.answers[q]=examState.answers[q]===c?undefined:c;b.parentElement.querySelectorAll(".choice").forEach((el,j)=>el.classList.toggle("sel",examState.answers[q]===j));saveDraft();return}
+  if(act==="submit"){submitExam();return}
+  if(act==="ex"){const el=document.getElementById("ex"+b.dataset.q);if(el){el.hidden=!el.hidden;b.textContent=el.hidden?"해설 보기":"해설 닫기"}return}
+  if(act==="seen"){const id=location.hash.slice(3);if(S.db)queueWrite(()=>S.db.doc("attempts/"+id).update({seenFeedbackAt:new Date().toISOString()})).then(()=>toast("언니한테 확인했다고 전했어!"));return}
+  if(act==="mode-sis"||act==="mode-kid"){if(!S.isSister)return;S.mode=act==="mode-sis"?"sis":"kid";ls("mode",S.mode);render();toast(S.mode==="sis"?"언니 모드: 코멘트를 쓸 수 있어요":"동생 모드: 하령이가 보는 화면이에요");return}
+  if(act==="logout"){await S.auth.signOut();ls("mode",null);location.hash="home";toast("로그아웃했어요");return}
+  cardAct(act);
+});
+document.addEventListener("input",e=>{
+  if(e.target.matches("input.short")){examState.answers[+e.target.dataset.q]=e.target.value;saveDraft()}
+  if(e.target.matches("textarea.memo-in"))onFeedbackInput(e.target);
+});
+document.addEventListener("change",e=>{if(e.target.id==="onlyUnknown"){cardState.onlyUnknown=e.target.checked;cardState.i=0;render()}});
+document.addEventListener("keydown",e=>{
+  if(!location.hash.startsWith("#cards-")||e.target.matches("input,textarea"))return;
+  if(e.key===" "||e.key==="Enter"){e.preventDefault();cardAct("flip")}else if(e.key==="ArrowRight")cardAct("next");else if(e.key==="ArrowLeft")cardAct("prev");
+});
+document.addEventListener("focusout",e=>{if(e.target.matches("textarea.memo-in"))setTimeout(()=>{if(!document.activeElement?.classList.contains("memo-in"))render()},50)});
+boot();
+</script>
+</body>
+</html>

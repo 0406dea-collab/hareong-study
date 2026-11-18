@@ -1,0 +1,2719 @@
+{
+ "updated": "2026-11-18",
+ "topics": [
+  {
+   "subject": "eng",
+   "area": "독해 유형",
+   "order": 1,
+   "title": "A. 목적 찾기 (18번)",
+   "source": "자이스토리 영어 독해 기본 A단원 p.13–21",
+   "intro": "편지·이메일·안내문을 **왜 썼는지** 고르는 유형이야. 하령이는 A02–A19를 거의 다 맞혔어! 이 유형은 이미 강점이니까, 속도만 50초 안으로 유지하면 돼.",
+   "sections": [
+    {
+     "heading": "글의 목적이란?",
+     "body": "편지는 대부분 **인사·배경 → 본론(부탁/요청/안내) → 마무리** 순서야. 앞부분은 왜 이 편지를 쓰게 됐는지 배경을 깔아주는 부분이고, 정답은 거의 항상 **중후반의 본론 문장**에 있어.",
+     "example": {
+      "label": "A07 흐름",
+      "text": "도서관이 5시에 닫아서 불편하다(배경) → ==Therefore, I'd like to ask you to extend the library's operating hours to 7 p.m.==(본론) → 도움이 될 거다(마무리)"
+     }
+    },
+    {
+     "heading": "정답 문장을 알려주는 신호",
+     "points": [
+      "**I am writing to / with regard to** ~ : ~하려고 편지를 씁니다",
+      "**I would like to ask you to** ~ / **I'd like to** ~ : 부탁·요청",
+      "**Would you please** ~? / **I would appreciate it if you could** ~",
+      "**We kindly ask** ~ / **I am urging you to** ~ (강한 요청)",
+      "**Therefore, So, However** 뒤 문장 ← 방향이 바뀌거나 결론이 나옴",
+      "**I am pleased to invite you** ~ / **Join today!** : 초대·권유"
+     ],
+     "tip": "신호 문장을 찾으면 그 문장만 한국어로 바꿔서 선택지와 맞춰봐. 선택지 동사(요청하려고, 안내하려고, 홍보하려고)까지 맞아야 정답이야."
+    },
+    {
+     "heading": "함정 선택지 피하기",
+     "points": [
+      "**글에 나온 단어를 그대로 쓴 오답**: A16에서 '분실물'이 나오니까 '분실물 센터 확장'도 그럴듯해 보이지만 실제 목적은 '찾으면 연락해 달라'",
+      "**앞부분 배경만 보고 고른 오답**: A19는 글쓰기 동아리 얘기로 시작하지만 목적은 '오래된 신문 사용 허락 요청'",
+      "**동사가 틀린 오답**: 내용은 맞는데 '감사하려고 / 항의하려고'처럼 의도가 다르면 오답"
+     ]
+    },
+    {
+     "heading": "구문 포인트: request (that) + 동사원형",
+     "body": "A08: we request you notify us of the review result.\n**request** 뒤에 that이 생략된 명사절이 왔어. 그래서 이 문장은 **3형식**이고, 뜻은 ==우리는 당신이 검토 결과를 우리에게 통보해 줄 것을 요청합니다==.",
+     "points": [
+      "5형식으로 쓰려면 request + 목적어 + **to부정사** (request you **to notify** ~)",
+      "요구·주장·제안 동사(request, suggest, insist) + that절에는 **(should) 동사원형**"
+     ]
+    },
+    {
+     "heading": "하령이 기록",
+     "points": [
+      "A02–A19 정답률 매우 높음 (거의 전부 동그라미)",
+      "A08(공문, 별 2개)에 표시가 있어. 공문처럼 딱딱한 글은 Therefore 문장을 꼭 확인!",
+      "단어 복습에서 틀린 것: **entrance**(입학), **proposal**(제안), **construction**(공사)"
+     ]
+    }
+   ],
+   "terms": [
+    {
+     "front": "I am writing to ~",
+     "back": "~하려고 이 글을 씁니다 (목적 신호)"
+    },
+    {
+     "front": "I would appreciate it if you could ~",
+     "back": "~해 주시면 감사하겠습니다 (요청 신호)"
+    },
+    {
+     "front": "contact",
+     "back": "연락하다"
+    },
+    {
+     "front": "operate",
+     "back": "운영하다"
+    },
+    {
+     "front": "handmade",
+     "back": "수공예의"
+    },
+    {
+     "front": "requirement",
+     "back": "요구 사항"
+    },
+    {
+     "front": "chemistry",
+     "back": "화학"
+    },
+    {
+     "front": "local",
+     "back": "지역의"
+    },
+    {
+     "front": "include",
+     "back": "포함하다"
+    },
+    {
+     "front": "grab",
+     "back": "(움켜)쥐다"
+    },
+    {
+     "front": "loyalty",
+     "back": "충성(심)"
+    },
+    {
+     "front": "funding",
+     "back": "재정 지원, 자금"
+    },
+    {
+     "front": "look forward to",
+     "back": "~을 고대하다"
+    },
+    {
+     "front": "participate in",
+     "back": "~에 참여하다"
+    },
+    {
+     "front": "notify A of B",
+     "back": "A에게 B를 알리다"
+    },
+    {
+     "front": "in advance",
+     "back": "미리"
+    },
+    {
+     "front": "leave behind",
+     "back": "~을 놓고 오다"
+    },
+    {
+     "front": "sincere",
+     "back": "진심 어린"
+    },
+    {
+     "front": "reasonable",
+     "back": "합리적인 (reasonable price)"
+    },
+    {
+     "front": "entrance",
+     "back": "입학, 입구 (college entrance exams)"
+    },
+    {
+     "front": "valued",
+     "back": "소중한 (most valued clients)"
+    },
+    {
+     "front": "subscription",
+     "back": "구독"
+    },
+    {
+     "front": "contribution",
+     "back": "기여, 공헌"
+    },
+    {
+     "front": "meditation",
+     "back": "명상"
+    },
+    {
+     "front": "patience",
+     "back": "인내 (Thank you for your patience)"
+    },
+    {
+     "front": "immediate",
+     "back": "즉각적인"
+    },
+    {
+     "front": "condition",
+     "back": "상태"
+    },
+    {
+     "front": "humble",
+     "back": "겸손한 (my humble request)"
+    },
+    {
+     "front": "proposal",
+     "back": "제안 (consider this proposal)"
+    },
+    {
+     "front": "construction",
+     "back": "공사, 건설 (help with the construction)"
+    },
+    {
+     "front": "goal",
+     "back": "목표"
+    },
+    {
+     "front": "appreciate",
+     "back": "감사하다, 진가를 알다"
+    }
+   ],
+   "id": "eng-a-purpose"
+  },
+  {
+   "subject": "eng",
+   "area": "독해 유형",
+   "order": 2,
+   "title": "B. 심경 변화 (19번)",
+   "source": "자이스토리 영어 독해 기본 B단원 p.25–31",
+   "intro": "등장인물의 감정이 **A → B로 어떻게 바뀌는지** 고르는 유형이야. 하령이는 B02–B19 중 **B18 하나만 틀렸어**. 그 B18이 바로 이 유형의 대표 함정이라 꼭 봐두자.",
+   "sections": [
+    {
+     "heading": "글을 반으로 나눠 읽기",
+     "body": "심경 변화 글에는 거의 항상 **전환점**이 있어. But, Then, Suddenly, Finally, Just then 같은 말이 나오는 곳이 감정이 바뀌는 지점이야.",
+     "points": [
+      "**앞 감정**은 전환점 **앞**의 단서로만 고르기",
+      "**뒤 감정**은 전환점 **뒤**의 단서로만 고르기",
+      "선택지는 앞→뒤 두 단어가 **둘 다** 맞아야 정답"
+     ]
+    },
+    {
+     "heading": "감정을 알려주는 몸의 단서",
+     "points": [
+      "heart raced / heart was beating fast / palms sweaty / voice shaking → **nervous, anxious, scared**",
+      "froze / body froze with fright → **scared, fearful**",
+      "let out a breath / sigh of relief / tension eased / felt at ease → **relieved**",
+      "tears streamed / heart sank / heart was broken → **sad, disappointed, heartbroken**",
+      "jumped with joy / shouted with joy / big smile → **excited, delighted, thrilled**"
+     ]
+    },
+    {
+     "heading": "자주 나온 감정 단어 묶음",
+     "points": [
+      "긴장·불안: nervous, anxious, worried, uneasy, scared, frightened, terrified",
+      "안도·평온: relieved, calm, relaxed, at ease",
+      "기쁨: excited, delighted, thrilled, joyful, pleased, satisfied",
+      "실망·좌절: disappointed, frustrated, heartbroken, upset",
+      "기타: indifferent(무관심한), envious/jealous(부러운), embarrassed(난처한), regretful(후회하는), grateful(감사하는)"
+     ]
+    },
+    {
+     "heading": "B18 오답 분석 (꼭 보기!)",
+     "body": "하령이는 **⑤ relaxed → proud**를 골랐는데 정답은 **③ nervous → delighted**야.",
+     "points": [
+      "앞부분: Zoe wiped a **sweaty** hand, the others looked as **pale and uneasy** as herself → 편안(relaxed)이 아니라 **긴장(nervous)**",
+      "뒷부분: felt as if she were **in heaven**, walked into the thunder of applause with a **big smile** → 자랑스러움보다 **기쁨(delighted)**",
+      "교훈: 뒤 감정이 맞아 보여도 **앞 감정부터 확인**해서 선택지를 지우자"
+     ],
+     "tip": "선택지 지우는 순서: ① 앞 감정이 틀린 것 먼저 지우기 → ② 남은 것 중 뒤 감정 확인. 이렇게 하면 B18 같은 실수가 줄어."
+    },
+    {
+     "heading": "하령이 기록",
+     "points": [
+      "B02–B19 중 B18만 오답",
+      "단어 복습에서 틀린 것: **damp**(축축한), **fright**(공포), **hops**(깡충 뛰다), **figured**(생각했다)",
+      "hops와 figured를 서로 바꿔 쓴 실수 → 문장 속에서 품사(동사의 뜻)를 보고 고르기"
+     ]
+    }
+   ],
+   "terms": [
+    {
+     "front": "nervous",
+     "back": "긴장한"
+    },
+    {
+     "front": "anxious",
+     "back": "불안한, 걱정하는"
+    },
+    {
+     "front": "uneasy",
+     "back": "불안한"
+    },
+    {
+     "front": "frightened",
+     "back": "겁먹은"
+    },
+    {
+     "front": "terrified",
+     "back": "겁에 질린"
+    },
+    {
+     "front": "relieved",
+     "back": "안도한"
+    },
+    {
+     "front": "delighted",
+     "back": "아주 기쁜"
+    },
+    {
+     "front": "thrilled",
+     "back": "몹시 신이 난"
+    },
+    {
+     "front": "frustrated",
+     "back": "좌절한"
+    },
+    {
+     "front": "heartbroken",
+     "back": "상심한"
+    },
+    {
+     "front": "indifferent",
+     "back": "무관심한"
+    },
+    {
+     "front": "envious",
+     "back": "부러워하는"
+    },
+    {
+     "front": "regretful",
+     "back": "후회하는"
+    },
+    {
+     "front": "embarrassed",
+     "back": "난처한, 당황한"
+    },
+    {
+     "front": "cliff",
+     "back": "절벽"
+    },
+    {
+     "front": "damp",
+     "back": "축축한, 습기 찬"
+    },
+    {
+     "front": "fright",
+     "back": "공포"
+    },
+    {
+     "front": "carnival",
+     "back": "축제"
+    },
+    {
+     "front": "approach",
+     "back": "다가가다"
+    },
+    {
+     "front": "suddenly",
+     "back": "갑자기"
+    },
+    {
+     "front": "disconnect",
+     "back": "단절하다, 끊다"
+    },
+    {
+     "front": "board",
+     "back": "탑승하다"
+    },
+    {
+     "front": "day off",
+     "back": "쉬는 날"
+    },
+    {
+     "front": "a piece of cake",
+     "back": "식은 죽 먹기"
+    },
+    {
+     "front": "after all",
+     "back": "결국"
+    },
+    {
+     "front": "sleep a wink",
+     "back": "한숨 자다 (부정문: 한숨도 못 자다)"
+    },
+    {
+     "front": "gather",
+     "back": "모이다"
+    },
+    {
+     "front": "submission",
+     "back": "제출 (submission deadline)"
+    },
+    {
+     "front": "surgery",
+     "back": "수술"
+    },
+    {
+     "front": "motivation",
+     "back": "동기"
+    },
+    {
+     "front": "hop",
+     "back": "깡충 뛰다 (The rabbit hops away.)"
+    },
+    {
+     "front": "figure",
+     "back": "생각하다, 판단하다 (I figured ~)"
+    },
+    {
+     "front": "exhaustion",
+     "back": "기진맥진, 탈진"
+    },
+    {
+     "front": "midnight",
+     "back": "자정"
+    },
+    {
+     "front": "applause",
+     "back": "박수갈채"
+    },
+    {
+     "front": "swing",
+     "back": "그네"
+    },
+    {
+     "front": "habitat",
+     "back": "서식지"
+    },
+    {
+     "front": "strike",
+     "back": "치다, 두드리다"
+    }
+   ],
+   "id": "eng-b-mood"
+  },
+  {
+   "subject": "eng",
+   "area": "독해 유형",
+   "order": 3,
+   "title": "C. 주장 찾기 (20번)",
+   "source": "자이스토리 영어 독해 기본 C단원 p.36–44",
+   "intro": "필자가 **독자에게 하고 싶은 말(~해야 한다)**을 고르는 유형이야. 하령이는 대부분 맞혔고 **C11, C16에 세모** 표시가 있어. 둘 다 '그럴듯한 오답'에 흔들린 문제야.",
+   "sections": [
+    {
+     "heading": "주장 문장의 신호",
+     "points": [
+      "**should, must, need to, have to** ~",
+      "**It is important / crucial / necessary to** ~",
+      "**명령문**: Focus on ~, Resist ~, Try to ~, clean up ~",
+      "결론 연결어: **So, Therefore, In summary(요컨대), In short**",
+      "반전 연결어: **But, However, Instead** 뒤에 진짜 주장"
+     ],
+     "example": {
+      "label": "C07",
+      "text": "==In summary, you should establish an opening routine to develop your class with an effective start.== → ② 수업을 효과적으로 전개하기 위해 시작 루틴을 마련하라."
+     }
+    },
+    {
+     "heading": "일반적인 생각 vs 필자의 생각",
+     "body": "주장 글은 **'사람들은 보통 ~라고 생각한다'**로 시작해서 **'하지만 ~'**으로 뒤집는 경우가 많아. 앞의 일반론을 그대로 옮긴 선택지가 대표적인 오답이야.",
+     "example": {
+      "label": "C16 (세모 문제)",
+      "text": "전문가들은 '단어를 최대한 줄여라'라고 말한다(일반론) → ==Well, this doesn't work for speaking.==(반전) → 말할 때는 글보다 더 많은 단어를 써야 한다(주장). 그래서 ② '간결한 문장을 사용해야 한다'는 함정, 정답은 ④."
+     }
+    },
+    {
+     "heading": "C11 다시 보기 (세모 문제)",
+     "body": "영재 자녀를 둔 부모에게 하는 글이야. 키워드는 **limit your bragging behavior**(자랑하는 행동을 제한하라).",
+     "points": [
+      "정답 ② 부모는 자녀의 영재성을 지나치게 자랑하지 말아야 한다",
+      "① '다른 아이와 비교하지 말라'는 글에 없는 내용 → 상식적으로 맞는 말이라 끌리지만 오답",
+      "**글에 근거가 있는 선택지만** 고르기"
+     ]
+    },
+    {
+     "heading": "주장 찾기 3단계",
+     "points": [
+      "① 첫 2문장으로 **소재** 파악 (무엇에 대한 글인가)",
+      "② 신호 표현(should, So, 명령문)이 있는 문장 찾기",
+      "③ 그 문장을 한국어로 바꿔서 선택지와 비교. 소재는 맞는데 방향이 다른 선택지 주의"
+     ],
+     "tip": "상식적으로 좋은 말(비교하지 마라, 운동해라)은 글에 근거가 없으면 오답이야."
+    },
+    {
+     "heading": "하령이 기록",
+     "points": [
+      "C02–C18 중 C11, C16 세모",
+      "단어 복습에서 틀린 것: **witness**(목격하다), **inspect**(검사하다) → 둘의 뜻을 바꿔 씀",
+      "파란 펜으로 찾아본 단어가 많아. '하령이가 찾아본 단어' 카드로 따로 모아뒀어"
+     ]
+    }
+   ],
+   "terms": [
+    {
+     "front": "witness",
+     "back": "목격하다"
+    },
+    {
+     "front": "inspect",
+     "back": "검사하다, 점검하다"
+    },
+    {
+     "front": "distracted",
+     "back": "산만한, 주의가 흐트러진"
+    },
+    {
+     "front": "complete",
+     "back": "완수하다"
+    },
+    {
+     "front": "benefit",
+     "back": "이익"
+    },
+    {
+     "front": "seize",
+     "back": "잡다"
+    },
+    {
+     "front": "stir",
+     "back": "동요시키다, 휘젓다"
+    },
+    {
+     "front": "achieve",
+     "back": "달성하다"
+    },
+    {
+     "front": "elaborate",
+     "back": "부연 설명하다, 자세히 말하다"
+    },
+    {
+     "front": "compassion",
+     "back": "연민"
+    },
+    {
+     "front": "come across",
+     "back": "~을 우연히 발견하다"
+    },
+    {
+     "front": "manage to",
+     "back": "(간신히) ~해내다"
+    },
+    {
+     "front": "go a long way",
+     "back": "큰 도움이 되다"
+    },
+    {
+     "front": "cope with",
+     "back": "~을 처리하다, 대처하다"
+    },
+    {
+     "front": "peaks and valleys",
+     "back": "정점과 저점, 기복"
+    },
+    {
+     "front": "separate",
+     "back": "별개의"
+    },
+    {
+     "front": "obligation",
+     "back": "의무"
+    },
+    {
+     "front": "incredible",
+     "back": "엄청난, 믿기 힘든"
+    },
+    {
+     "front": "atmosphere",
+     "back": "분위기"
+    },
+    {
+     "front": "tempting",
+     "back": "유혹적인"
+    },
+    {
+     "front": "neatly",
+     "back": "깔끔하게"
+    },
+    {
+     "front": "overshadow",
+     "back": "가리다, 무색하게 하다"
+    },
+    {
+     "front": "dedicated",
+     "back": "전념하는, 전용의"
+    },
+    {
+     "front": "uphold",
+     "back": "지지하다, 유지하다"
+    },
+    {
+     "front": "remarkable",
+     "back": "놀라운, 주목할 만한"
+    },
+    {
+     "front": "biographical",
+     "back": "전기의, 개인 이력의"
+    },
+    {
+     "front": "otherwise",
+     "back": "그렇지 않으면"
+    },
+    {
+     "front": "perfection",
+     "back": "완벽"
+    },
+    {
+     "front": "constant",
+     "back": "끊임없는, 일정한"
+    },
+    {
+     "front": "powerful",
+     "back": "강력한"
+    }
+   ],
+   "id": "eng-c-claim"
+  },
+  {
+   "subject": "eng",
+   "area": "어휘",
+   "order": 10,
+   "title": "하령이가 찾아본 단어 (C단원 지문)",
+   "source": "자이스토리 영어 독해 기본 C02–C18 파란 펜 메모",
+   "intro": "C단원을 풀면서 하령이가 지문에 직접 뜻을 적어둔 단어들이야. 한 번 찾아본 단어는 다시 나올 확률이 높으니까 카드로 외워두자.",
+   "sections": [
+    {
+     "heading": "주장 글에 자주 나오는 단어 특징",
+     "points": [
+      "**의무·필요**: obligation, obligatory, commitment, responsibility",
+      "**유지·강화**: sustain, maintain, uphold, reinforce, consistent, constant",
+      "**전념**: commit to, devote, dedicated, invested",
+      "**정도·중요도**: significant, crucial, remarkable, sheer, extent"
+     ],
+     "tip": "비슷한 뜻끼리 묶어서 외우면 빈칸·주장 문제에서 바꿔 말하기(paraphrase)를 빨리 알아볼 수 있어."
+    }
+   ],
+   "terms": [
+    {
+     "front": "anecdote",
+     "back": "일화"
+    },
+    {
+     "front": "bond with",
+     "back": "~와 유대감을 형성하다"
+    },
+    {
+     "front": "revealing",
+     "back": "(속마음을) 드러내는"
+    },
+    {
+     "front": "aspect",
+     "back": "측면, 양상"
+    },
+    {
+     "front": "sustain",
+     "back": "지속하다, 유지하다"
+    },
+    {
+     "front": "conscious",
+     "back": "의식하는, 의식적인"
+    },
+    {
+     "front": "constantly",
+     "back": "끊임없이"
+    },
+    {
+     "front": "maintain",
+     "back": "유지하다"
+    },
+    {
+     "front": "consistent",
+     "back": "일관된, 꾸준한"
+    },
+    {
+     "front": "reinforce",
+     "back": "강화하다"
+    },
+    {
+     "front": "invested",
+     "back": "투자된, 전념한 (invest 투자하다)"
+    },
+    {
+     "front": "sheer",
+     "back": "순전한"
+    },
+    {
+     "front": "extent",
+     "back": "정도, 범위"
+    },
+    {
+     "front": "procrastinate",
+     "back": "미루다"
+    },
+    {
+     "front": "distant",
+     "back": "먼, 떨어져 있는"
+    },
+    {
+     "front": "inefficient",
+     "back": "비효율적인"
+    },
+    {
+     "front": "transition",
+     "back": "이행, 전환"
+    },
+    {
+     "front": "in summary",
+     "back": "요컨대, 요약하면"
+    },
+    {
+     "front": "commitment",
+     "back": "약속, 헌신"
+    },
+    {
+     "front": "integrate",
+     "back": "통합하다"
+    },
+    {
+     "front": "chore",
+     "back": "(집안)일, 허드렛일"
+    },
+    {
+     "front": "inevitable",
+     "back": "피할 수 없는"
+    },
+    {
+     "front": "purely",
+     "back": "순전히"
+    },
+    {
+     "front": "obligatory",
+     "back": "의무적인"
+    },
+    {
+     "front": "engage in",
+     "back": "~에 참여하다"
+    },
+    {
+     "front": "kettle",
+     "back": "주전자"
+    },
+    {
+     "front": "incorporate",
+     "back": "포함시키다, 결합시키다"
+    },
+    {
+     "front": "statement",
+     "back": "진술, 말"
+    },
+    {
+     "front": "shift",
+     "back": "변화, 바뀌다"
+    },
+    {
+     "front": "disorderly",
+     "back": "무질서한"
+    },
+    {
+     "front": "indicate",
+     "back": "나타내다"
+    },
+    {
+     "front": "disorganized",
+     "back": "체계적이지 못한"
+    },
+    {
+     "front": "perspective",
+     "back": "관점, 균형감"
+    },
+    {
+     "front": "efficiently",
+     "back": "효율적으로"
+    },
+    {
+     "front": "aware",
+     "back": "알고 있는"
+    },
+    {
+     "front": "extremely",
+     "back": "극도로, 매우"
+    },
+    {
+     "front": "bragging",
+     "back": "자랑하는"
+    },
+    {
+     "front": "define",
+     "back": "정의하다, 규정하다"
+    },
+    {
+     "front": "perfectionist",
+     "back": "완벽주의자"
+    },
+    {
+     "front": "drop-out",
+     "back": "중퇴자"
+    },
+    {
+     "front": "priority",
+     "back": "우선순위"
+    },
+    {
+     "front": "principle",
+     "back": "원칙"
+    },
+    {
+     "front": "self-discipline",
+     "back": "자기 훈련, 자제력"
+    },
+    {
+     "front": "characterise",
+     "back": "특징짓다"
+    },
+    {
+     "front": "alertness",
+     "back": "기민함"
+    },
+    {
+     "front": "demanding",
+     "back": "힘든, 요구가 많은"
+    },
+    {
+     "front": "observe",
+     "back": "관찰하다"
+    },
+    {
+     "front": "note",
+     "back": "주목하다, 메모하다"
+    },
+    {
+     "front": "distraction",
+     "back": "주의를 흩뜨리는 것"
+    },
+    {
+     "front": "adequately",
+     "back": "적절하게"
+    },
+    {
+     "front": "reread",
+     "back": "다시 읽다"
+    },
+    {
+     "front": "equipped with",
+     "back": "~을 갖춘"
+    },
+    {
+     "front": "crucial",
+     "back": "결정적인, 중요한"
+    },
+    {
+     "front": "catch up",
+     "back": "따라잡다"
+    },
+    {
+     "front": "responsibility",
+     "back": "책임"
+    },
+    {
+     "front": "laid out",
+     "back": "펼쳐진, 계획된 (lay out)"
+    },
+    {
+     "front": "describe",
+     "back": "묘사하다, 설명하다"
+    },
+    {
+     "front": "voluntary",
+     "back": "자발적인"
+    },
+    {
+     "front": "commit to",
+     "back": "~에 전념하다"
+    },
+    {
+     "front": "devote",
+     "back": "(시간·노력을) 바치다"
+    },
+    {
+     "front": "ridiculous",
+     "back": "우스꽝스러운"
+    },
+    {
+     "front": "estimate",
+     "back": "추정하다"
+    },
+    {
+     "front": "nonverbal",
+     "back": "비언어적인"
+    },
+    {
+     "front": "significant",
+     "back": "상당한, 중요한"
+    },
+    {
+     "front": "initial",
+     "back": "처음의"
+    },
+    {
+     "front": "empowering",
+     "back": "힘을 북돋아 주는"
+    },
+    {
+     "front": "climate",
+     "back": "분위기, 기후"
+    }
+   ],
+   "id": "eng-glossed-words"
+  },
+  {
+   "subject": "eng",
+   "area": "어휘",
+   "order": 11,
+   "title": "틀린 단어 모음 (A·B·C 단어 복습)",
+   "source": "자이스토리 영어 독해 기본 p.21, 31, 44 단어 Review에서 틀린 것",
+   "intro": "단어 Review에서 **X 표시된 것만** 모았어. 여기 카드를 '다 외웠어'로 바꾸는 게 이번 주 목표!",
+   "sections": [
+    {
+     "heading": "헷갈린 짝",
+     "points": [
+      "**witness**(목격하다) ↔ **inspect**(검사하다): witness는 '눈으로 보게 되다', inspect는 '꼼꼼히 들여다보다'",
+      "**hops**(깡충 뛰다) ↔ **figured**(생각했다): 토끼가 하는 동작이면 hops, 사람이 머릿속으로 하는 거면 figured",
+      "**proposal**(제안) ↔ **construction**(공사): consider this ___ (고려할 것 = 제안), help with the ___ (돕는 일 = 공사)"
+     ],
+     "tip": "빈칸 단어 문제는 앞뒤 단어와의 짝(콜로케이션)으로 외우면 잘 안 헷갈려: consider a proposal, help with construction, college entrance exams."
+    },
+    {
+     "heading": "문장째 외우기",
+     "points": [
+      "I hope you will consider this **proposal**.",
+      "You can help with the **construction**.",
+      "preparing for college **entrance** exams",
+      "The rabbit pauses for a moment, then **hops** away.",
+      "I **figured** the coach was going to tell me something important.",
+      "The shed is cold and **damp**.",
+      "My body froze with **fright**."
+     ]
+    }
+   ],
+   "terms": [
+    {
+     "front": "witness",
+     "back": "목격하다"
+    },
+    {
+     "front": "inspect",
+     "back": "검사하다"
+    },
+    {
+     "front": "proposal",
+     "back": "제안 (consider this proposal)"
+    },
+    {
+     "front": "construction",
+     "back": "공사 (help with the construction)"
+    },
+    {
+     "front": "entrance",
+     "back": "입학 (college entrance exams)"
+    },
+    {
+     "front": "hop",
+     "back": "깡충 뛰다 (hops away)"
+    },
+    {
+     "front": "figure",
+     "back": "생각하다 (I figured ~)"
+    },
+    {
+     "front": "damp",
+     "back": "축축한, 습기 찬"
+    },
+    {
+     "front": "fright",
+     "back": "공포 (froze with fright)"
+    }
+   ],
+   "id": "eng-wrong-words"
+  }
+ ],
+ "exams": [
+  {
+   "subject": "eng",
+   "kind": "book",
+   "title": "A. 목적 찾기 기출 (A02–A19)",
+   "order": 1,
+   "basedOn": "자이스토리 영어 독해 기본 p.13–20",
+   "topicIds": [
+    "eng-a-purpose"
+   ],
+   "questions": [
+    {
+     "no": "A02",
+     "source": "고1 2026(9월) 18번",
+     "page": 13,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "However 뒤에서 추위 때문에 장소를 바꾼다고 하고, 놀이공원 대신 과학관에 간다고 해. → 장소 변경 안내"
+    },
+    {
+     "no": "A03",
+     "source": "고1 2026(6월) 18번",
+     "page": 13,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "커뮤니티 센터 소장이 헌 책 기부 행사에 초대하고 참여해 주면 감사하겠다고 마무리해. → 도서 기부 참여 독려"
+    },
+    {
+     "no": "A04",
+     "source": "고1 2025(10월) 18번",
+     "page": 14,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "광고에 고객 경험을 넣으려 하니, 지난여름 여행 경험을 몇 마디 나눠 달라고 부탁해. → 이용 경험 공유 요청"
+    },
+    {
+     "no": "A05",
+     "source": "고1 2025(6월) 18번",
+     "page": 14,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "새로 연 반려견 공원의 시설(잔디밭, 분리 공간, 벤치)을 소개하며 즐기라고 해. → 새 공원 개장 홍보"
+    },
+    {
+     "no": "A06",
+     "source": "고1 2025(3월) 18번",
+     "page": 15,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "전시 계획의 일부로 작품이 7번 지정 테이블에 전시된다고 알려 줘. → 지정 테이블 안내"
+    },
+    {
+     "no": "A07",
+     "source": "고1 2025(9월) 18번",
+     "page": 15,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "Therefore 뒤: 도서관 운영 시간을 저녁 7시까지 늘려 달라는 요청. → 운영 시간 연장 요청"
+    },
+    {
+     "no": "A08",
+     "source": "고1 2024(10월) 18번",
+     "page": 16,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "Therefore 뒤 we request ~: 제출한 서류의 검토 결과를 알려 달라는 요구. 앞의 예산·공사 이야기는 배경일 뿐이야."
+    },
+    {
+     "no": "A09",
+     "source": "고1 2024(3월) 18번",
+     "page": 16,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "책을 쓴 작가에게 학교에 와서 특별 강연을 해 달라고 부탁해. → 특강 방문 요청"
+    },
+    {
+     "no": "A10",
+     "source": "고1 2024(9월) 18번",
+     "page": 17,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "Therefore, I am urging you ~: 직원이 있는 매표소를 다시 열어 달라는 요구. → 유인 매표소 재운영 요구"
+    },
+    {
+     "no": "A11",
+     "source": "고1 2024(6월) 18번",
+     "page": 17,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "종이 구독을 온라인 멤버십으로 바꾸면 50% 할인이라며 Join today!로 끝나. → 온라인 구독 권유"
+    },
+    {
+     "no": "A12",
+     "source": "고1 2023(11월) 18번",
+     "page": 18,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "광고를 보고 쓴 편지로, 경력을 소개한 뒤 판매직에 지원하고 싶다고 해. → 판매직 지원"
+    },
+    {
+     "no": "A13",
+     "source": "고1 2023(9월) 18번",
+     "page": 18,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "박람회 실험을 도울 대학생이 필요해서 교수에게 학생 추천을 부탁해. → 대학생 추천 요청"
+    },
+    {
+     "no": "A14",
+     "source": "고1 2023(3월) 18번",
+     "page": 19,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "놀이터 기구의 상태를 설명하고 Would you please have them repaired?로 수리를 요청해."
+    },
+    {
+     "no": "A15",
+     "source": "고1 2023(6월) 18번",
+     "page": 19,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "호수 여행, 마사지, 요가가 포함된 여행 상품을 합리적인 가격에 제공한다고 소개해. → 패키지여행 상품 홍보"
+    },
+    {
+     "no": "A16",
+     "source": "고1 2022(6월) 18번",
+     "page": 19,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "보트에 두고 온 휴대폰 케이스를 찾으면 알려 달라고 부탁해. → 분실물 발견 시 연락 부탁"
+    },
+    {
+     "no": "A17",
+     "source": "고1 2021(9월) 18번",
+     "page": 20,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "매년 열리는 가을 만찬에 초대하고 와 주면 감사하겠다고 해. → 연례행사 초대"
+    },
+    {
+     "no": "A18",
+     "source": "고1 2021(3월) 18번",
+     "page": 20,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "도서관 리모델링을 돕는 봉사 팀에 함께하라고 해. → 공사에 참여할 자원봉사자 모집"
+    },
+    {
+     "no": "A19",
+     "source": "고1 2021(11월) 18번",
+     "page": 20,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "It is, therefore, my humble request ~: 도서관에 보관된 오래된 신문을 쓰게 허락해 달라는 요청."
+    }
+   ],
+   "id": "book-a"
+  },
+  {
+   "subject": "eng",
+   "kind": "book",
+   "title": "B. 심경 변화 기출 (B02–B19)",
+   "order": 2,
+   "basedOn": "자이스토리 영어 독해 기본 p.25–30",
+   "topicIds": [
+    "eng-b-mood"
+   ],
+   "questions": [
+    {
+     "no": "B02",
+     "source": "고1 2026(9월) 19번",
+     "page": 25,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "앞: 목소리가 떨리고 심장이 뜀(nervous). 뒤: 친구가 함께 불러 주자 숨을 내쉬고 긴장이 풀림(relieved)."
+    },
+    {
+     "no": "B03",
+     "source": "고1 2026(3월) 19번",
+     "page": 25,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "앞: 축제에 와서 기뻐 뜀(excited). 뒤: 거대한 풍선이 괴물 같아 얼어붙고 엄마 뒤에 숨음(scared)."
+    },
+    {
+     "no": "B04",
+     "source": "고1 2025(10월) 19번",
+     "page": 26,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "앞: 차가 없어서 어리둥절(confused). 뒤: 남편 차를 타고 온 걸 알고 안도의 한숨(relieved)."
+    },
+    {
+     "no": "B05",
+     "source": "고1 2025(3월) 19번",
+     "page": 26,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "앞: 어두운 헛간에서 목소리가 떨림(frightened). 뒤: 토끼였다는 걸 알고 마음이 편해짐(relieved)."
+    },
+    {
+     "no": "B06",
+     "source": "고1 2025(6월) 19번",
+     "page": 26,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "앞: 1년을 기다린 여행에 들뜸(excited). 뒤: 여권을 두고 와서 계획이 망가짐(frustrated)."
+    },
+    {
+     "no": "B07",
+     "source": "고1 2025(9월) 19번",
+     "page": 27,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "앞: 오디션 결과를 기다리며 손톱을 깨물고 떨림(nervous). 뒤: 합격 소식에 신이 남(pleased)."
+    },
+    {
+     "no": "B08",
+     "source": "고1 2024(10월) 19번",
+     "page": 27,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "앞: 주장이 될 거라 기대하며 설렘(hopeful). 뒤: 집에 보내진다는 말에 무너짐(frustrated)."
+    },
+    {
+     "no": "B09",
+     "source": "고1 2024(3월) 19번",
+     "page": 27,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "앞: 모래성이 무너져 울음(sad). 뒤: 엄마 말을 듣고 신나서 다시 지으려 함(excited)."
+    },
+    {
+     "no": "B10",
+     "source": "고1 2024(6월) 19번",
+     "page": 28,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "앞: 며칠간 잠도 못 잘 만큼 불안(anxious). 뒤: 합격 문구를 보고 환호(delighted)."
+    },
+    {
+     "no": "B11",
+     "source": "고1 2024(9월) 19번",
+     "page": 28,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "앞: 심장이 멈춘 동료에게 간절히 CPR(desperate). 뒤: 숨소리가 돌아와 안도(relieved)."
+    },
+    {
+     "no": "B12",
+     "source": "고1 2023(3월) 19번",
+     "page": 28,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "앞: 곰을 보며 기쁨(delighted). 뒤: 곰이 자기 냄새를 맡는 걸 알고 얼어붙음(scared)."
+    },
+    {
+     "no": "B13",
+     "source": "고1 2023(9월) 19번",
+     "page": 28,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "앞: '식은 죽 먹기'라며 자신만만(confident). 뒤: 손잡을 곳이 없어 공포로 몸이 얼어붙음(fearful)."
+    },
+    {
+     "no": "B14",
+     "source": "고1 2023(11월) 19번",
+     "page": 29,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "앞: 신혼여행을 기대하며 들뜸(excited). 뒤: 반지가 모래에 가라앉아 못 찾을 것 같음(frustrated)."
+    },
+    {
+     "no": "B15",
+     "source": "고1 2023(6월) 19번",
+     "page": 29,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "앞: 가족이 안 보여 걱정(anxious). 뒤: 마술쇼를 보던 가족을 찾고 걱정이 사라짐(relieved)."
+    },
+    {
+     "no": "B16",
+     "source": "고1 2022(9월) 19번",
+     "page": 29,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "앞: 마감 전 타자기가 안 돼서 좌절(frustrated). 뒤: 클립을 빼고 다시 작동해 안도(relieved)."
+    },
+    {
+     "no": "B17",
+     "source": "고1 2022(6월) 19번",
+     "page": 30,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "앞: 공원에 간다는 말에 활짝 웃음(excited). 뒤: 그네도 미끄럼틀도 못 타고 떠나야 해서 실망(disappointed)."
+    },
+    {
+     "no": "B18",
+     "source": "고1 2022(3월) 19번",
+     "page": 30,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "앞: 손에 땀이 나고 다른 후보처럼 창백하고 불안(nervous). 뒤: 상을 받고 천국에 있는 듯함(delighted). relaxed는 앞 감정과 반대라 오답!"
+    },
+    {
+     "no": "B19",
+     "source": "고1 2022(11월) 19번",
+     "page": 30,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "앞: 쉬는 날 네일숍에서 편안함(relaxed). 뒤: 아버지가 다쳤다는 전화에 걱정(worried)."
+    }
+   ],
+   "id": "book-b"
+  },
+  {
+   "subject": "eng",
+   "kind": "book",
+   "title": "C. 주장 찾기 기출 (C02–C18)",
+   "order": 3,
+   "basedOn": "자이스토리 영어 독해 기본 p.36–42",
+   "topicIds": [
+    "eng-c-claim"
+   ],
+   "questions": [
+    {
+     "no": "C02",
+     "source": "고1 2026(9월) 20번",
+     "page": 36,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "학습 게임은 재미(entertainment)보다 참여와 상호작용(engagement)에 초점을 둬야 한다는 주장."
+    },
+    {
+     "no": "C03",
+     "source": "고1 2026(6월) 20번",
+     "page": 36,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "부모가 코치처럼 직접 이끌어 자녀가 좋은 가치를 배우게 해야 한다. So, step up ~ 문장이 핵심."
+    },
+    {
+     "no": "C04",
+     "source": "고1 2026(3월) 20번",
+     "page": 37,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "개인적인 이야기(일화)를 나누면 청중과 유대감이 생겨 설득할 수 있다는 주장."
+    },
+    {
+     "no": "C05",
+     "source": "고1 2025(10월) 20번",
+     "page": 37,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "관계를 오래 유지하려면 꾸준히 연락을 이어 가는 의식적인 노력이 필요하다는 주장."
+    },
+    {
+     "no": "C06",
+     "source": "고1 2025(6월) 20번",
+     "page": 38,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "습관은 편리함에 크게 좌우되니, 습관으로 만들고 싶은 행동의 편리성에 신경 써야 한다는 주장."
+    },
+    {
+     "no": "C07",
+     "source": "고1 2025(9월) 20번",
+     "page": 38,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "In summary 문장: 수업을 효과적으로 시작하려면 시작 루틴을 만들어야 한다."
+    },
+    {
+     "no": "C08",
+     "source": "고1 2024(10월) 20번",
+     "page": 39,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "집안일을 의무로만 보지 말고 간단한 운동 기회로 활용하라는 주장."
+    },
+    {
+     "no": "C09",
+     "source": "고1 2024(3월) 20번",
+     "page": 39,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "어려움을 긍정적인 진술로 바꿔 쓰면 자신감이 생긴다는 주장."
+    },
+    {
+     "no": "C10",
+     "source": "고1 2024(6월) 20번",
+     "page": 39,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "방부터 정돈하면 긍정적인 변화와 마음의 평화가 따라온다. So, clean up ~ 문장이 핵심."
+    },
+    {
+     "no": "C11",
+     "source": "고1 2024(9월) 20번",
+     "page": 40,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "영재 자녀를 지나치게 자랑하지 말라(limit your bragging behavior). '다른 아이와 비교하지 말라'는 글에 없는 내용이라 함정."
+    },
+    {
+     "no": "C12",
+     "source": "고1 2023(3월) 20번",
+     "page": 40,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "에너지가 가장 높은 시간을 관찰해서 그때 어려운 일을 하라는 주장."
+    },
+    {
+     "no": "C13",
+     "source": "고1 2023(9월) 20번",
+     "page": 40,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "아이들은 보고 배우니, 행동으로 좋은 본보기를 보여 주라는 주장."
+    },
+    {
+     "no": "C14",
+     "source": "고1 2023(6월) 20번",
+     "page": 41,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "일과 개인 일정을 한곳에 정리하라는 주장. 달력을 둘로 나누면 산만해진다는 근거."
+    },
+    {
+     "no": "C15",
+     "source": "고1 2023(11월) 20번",
+     "page": 41,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "학교를 마친 뒤 성장은 자발적이니 스스로 배움에 전념해야 한다는 주장."
+    },
+    {
+     "no": "C16",
+     "source": "고1 2022(9월) 20번",
+     "page": 41,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "'단어를 줄여라'는 글쓰기 조언이 말하기에는 안 맞는다(반전). 말할 때는 글보다 더 많은 단어를 써야 한다. 간결하게 쓰라는 ②는 일반론 함정."
+    },
+    {
+     "no": "C17",
+     "source": "고1 2022(3월) 20번",
+     "page": 42,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "작은 일을 제대로 못 하면 큰일도 제대로 못 한다. 침대 정리 같은 작은 일부터 하라는 주장."
+    },
+    {
+     "no": "C18",
+     "source": "고1 2021(11월) 20번",
+     "page": 42,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "학생들은 교사의 몸짓에 민감하니 비언어적 표현(미소, 인사)에 신경 써야 한다는 주장."
+    }
+   ],
+   "id": "book-c"
+  },
+  {
+   "subject": "eng",
+   "kind": "book",
+   "title": "A 어휘 Review",
+   "order": 5,
+   "basedOn": "자이스토리 영어 독해 기본 p.21",
+   "topicIds": [
+    "eng-a-purpose"
+   ],
+   "questions": [
+    {
+     "no": "01",
+     "type": "short",
+     "prompt": "contact (뜻)",
+     "accept": [
+      "연락하다"
+     ],
+     "explain": "정답: 연락하다"
+    },
+    {
+     "no": "02",
+     "type": "short",
+     "prompt": "operate (뜻)",
+     "accept": [
+      "운영하다"
+     ],
+     "explain": "정답: 운영하다"
+    },
+    {
+     "no": "03",
+     "type": "short",
+     "prompt": "handmade (뜻)",
+     "accept": [
+      "수공예의"
+     ],
+     "explain": "정답: 수공예의"
+    },
+    {
+     "no": "04",
+     "type": "short",
+     "prompt": "requirement (뜻)",
+     "accept": [
+      "요구 사항",
+      "요구사항"
+     ],
+     "explain": "정답: 요구 사항 / 요구사항"
+    },
+    {
+     "no": "05",
+     "type": "short",
+     "prompt": "chemistry (뜻)",
+     "accept": [
+      "화학"
+     ],
+     "explain": "정답: 화학"
+    },
+    {
+     "no": "06",
+     "type": "short",
+     "prompt": "지역의 (영어)",
+     "accept": [
+      "local"
+     ],
+     "explain": "정답: local"
+    },
+    {
+     "no": "07",
+     "type": "short",
+     "prompt": "포함하다 (영어)",
+     "accept": [
+      "include"
+     ],
+     "explain": "정답: include"
+    },
+    {
+     "no": "08",
+     "type": "short",
+     "prompt": "쥐다 (영어)",
+     "accept": [
+      "grab"
+     ],
+     "explain": "정답: grab"
+    },
+    {
+     "no": "09",
+     "type": "short",
+     "prompt": "충성(심) (영어)",
+     "accept": [
+      "loyalty"
+     ],
+     "explain": "정답: loyalty"
+    },
+    {
+     "no": "10",
+     "type": "short",
+     "prompt": "재정 지원 (영어)",
+     "accept": [
+      "funding"
+     ],
+     "explain": "정답: funding"
+    },
+    {
+     "no": "11",
+     "type": "short",
+     "prompt": "~을 고대하다",
+     "accept": [
+      "look forward to"
+     ],
+     "explain": "정답: look forward to"
+    },
+    {
+     "no": "12",
+     "type": "short",
+     "prompt": "~에 참여하다",
+     "accept": [
+      "participate in"
+     ],
+     "explain": "정답: participate in"
+    },
+    {
+     "no": "13",
+     "type": "short",
+     "prompt": "A에게 B를 알리다",
+     "accept": [
+      "notify A of B"
+     ],
+     "explain": "정답: notify A of B"
+    },
+    {
+     "no": "14",
+     "type": "short",
+     "prompt": "미리",
+     "accept": [
+      "in advance"
+     ],
+     "explain": "정답: in advance"
+    },
+    {
+     "no": "15",
+     "type": "short",
+     "prompt": "~을 놓고 오다",
+     "accept": [
+      "leave behind"
+     ],
+     "explain": "정답: leave behind"
+    },
+    {
+     "no": "16",
+     "type": "short",
+     "prompt": "진심 어린 감사 → (severe / sincere) appreciation",
+     "accept": [
+      "sincere"
+     ],
+     "explain": "정답: sincere"
+    },
+    {
+     "no": "17",
+     "type": "short",
+     "prompt": "합리적인 가격 → at a(n) (irrational / reasonable) price",
+     "accept": [
+      "reasonable"
+     ],
+     "explain": "정답: reasonable"
+    },
+    {
+     "no": "18",
+     "type": "short",
+     "prompt": "대학 입학 시험을 준비하는 것 → preparing for college (entrance / endurance) exams",
+     "accept": [
+      "entrance"
+     ],
+     "explain": "정답: entrance"
+    },
+    {
+     "no": "19",
+     "type": "short",
+     "prompt": "가장 소중한 고객들 → most (valued / invalid) clients",
+     "accept": [
+      "valued"
+     ],
+     "explain": "정답: valued"
+    },
+    {
+     "no": "20",
+     "type": "short",
+     "prompt": "당신의 현재 인쇄본 구독료 → your current print (prescription / subscription)",
+     "accept": [
+      "subscription"
+     ],
+     "explain": "정답: subscription"
+    },
+    {
+     "no": "21",
+     "type": "short",
+     "prompt": "당신의 기여에 미리 감사드립니다. Thank you in advance for your ____.",
+     "accept": [
+      "contributions"
+     ],
+     "explain": "정답: contributions"
+    },
+    {
+     "no": "22",
+     "type": "short",
+     "prompt": "이 패키지여행 상품은 당신이 쉬도록 돕는 명상을 포함합니다. This travel package includes ____ to help you relax.",
+     "accept": [
+      "meditation"
+     ],
+     "explain": "정답: meditation"
+    },
+    {
+     "no": "23",
+     "type": "short",
+     "prompt": "여러분의 인내와 이해에 감사드립니다. Thank you for your ____ and understanding.",
+     "accept": [
+      "patience"
+     ],
+     "explain": "정답: patience"
+    },
+    {
+     "no": "24",
+     "type": "short",
+     "prompt": "즉각적인 관심을 두시면 감사하겠습니다. I would appreciate your ____ attention to solve this matter.",
+     "accept": [
+      "immediate"
+     ],
+     "explain": "정답: immediate"
+    },
+    {
+     "no": "25",
+     "type": "short",
+     "prompt": "시설이 이렇게 형편없는 상태였습니다. The facilities have been in this terrible ____ since we moved here.",
+     "accept": [
+      "condition"
+     ],
+     "explain": "정답: condition"
+    },
+    {
+     "no": "26",
+     "type": "short",
+     "prompt": "저의 겸손한 요청입니다. It is my ____ request to you to allow us to use old newspapers.",
+     "accept": [
+      "humble"
+     ],
+     "explain": "정답: humble"
+    },
+    {
+     "no": "27",
+     "type": "short",
+     "prompt": "저는 이 제안을 당신이 고려해 주시기를 바랍니다. I hope you will consider this ____.",
+     "accept": [
+      "proposal"
+     ],
+     "explain": "정답: proposal"
+    },
+    {
+     "no": "28",
+     "type": "short",
+     "prompt": "이 박람회의 목적은 ~ The ____ of the fair is to encourage them to be interested in science.",
+     "accept": [
+      "goal"
+     ],
+     "explain": "정답: goal"
+    },
+    {
+     "no": "29",
+     "type": "short",
+     "prompt": "여러분은 공사를 도울 수 있습니다. You can help with the ____.",
+     "accept": [
+      "construction"
+     ],
+     "explain": "정답: construction"
+    },
+    {
+     "no": "30",
+     "type": "short",
+     "prompt": "케이스를 발견한다면 알려주시면 감사하겠습니다. If you find the case, I would ____ it if you would let me know.",
+     "accept": [
+      "appreciate"
+     ],
+     "explain": "정답: appreciate"
+    }
+   ],
+   "id": "book-va"
+  },
+  {
+   "subject": "eng",
+   "kind": "book",
+   "title": "B 어휘 Review",
+   "order": 5,
+   "basedOn": "자이스토리 영어 독해 기본 p.31",
+   "topicIds": [
+    "eng-b-mood"
+   ],
+   "questions": [
+    {
+     "no": "01",
+     "type": "short",
+     "prompt": "cliff (뜻)",
+     "accept": [
+      "절벽"
+     ],
+     "explain": "정답: 절벽"
+    },
+    {
+     "no": "02",
+     "type": "short",
+     "prompt": "regretful (뜻)",
+     "accept": [
+      "후회하는"
+     ],
+     "explain": "정답: 후회하는"
+    },
+    {
+     "no": "03",
+     "type": "short",
+     "prompt": "damp (뜻)",
+     "accept": [
+      "습기 찬",
+      "축축한"
+     ],
+     "explain": "정답: 습기 찬 / 축축한"
+    },
+    {
+     "no": "04",
+     "type": "short",
+     "prompt": "fright (뜻)",
+     "accept": [
+      "공포"
+     ],
+     "explain": "정답: 공포"
+    },
+    {
+     "no": "05",
+     "type": "short",
+     "prompt": "embarrassed (뜻)",
+     "accept": [
+      "난처한"
+     ],
+     "explain": "정답: 난처한"
+    },
+    {
+     "no": "06",
+     "type": "short",
+     "prompt": "축제 (영어)",
+     "accept": [
+      "carnival"
+     ],
+     "explain": "정답: carnival"
+    },
+    {
+     "no": "07",
+     "type": "short",
+     "prompt": "다가가다 (영어)",
+     "accept": [
+      "approach"
+     ],
+     "explain": "정답: approach"
+    },
+    {
+     "no": "08",
+     "type": "short",
+     "prompt": "갑자기 (영어)",
+     "accept": [
+      "suddenly"
+     ],
+     "explain": "정답: suddenly"
+    },
+    {
+     "no": "09",
+     "type": "short",
+     "prompt": "단절하다 (영어)",
+     "accept": [
+      "disconnect"
+     ],
+     "explain": "정답: disconnect"
+    },
+    {
+     "no": "10",
+     "type": "short",
+     "prompt": "탑승하다 (영어)",
+     "accept": [
+      "board"
+     ],
+     "explain": "정답: board"
+    },
+    {
+     "no": "11",
+     "type": "short",
+     "prompt": "쉬는 날",
+     "accept": [
+      "day off"
+     ],
+     "explain": "정답: day off"
+    },
+    {
+     "no": "12",
+     "type": "short",
+     "prompt": "내쉬다",
+     "accept": [
+      "let out"
+     ],
+     "explain": "정답: let out"
+    },
+    {
+     "no": "13",
+     "type": "short",
+     "prompt": "식은 죽 먹기",
+     "accept": [
+      "a piece of cake"
+     ],
+     "explain": "정답: a piece of cake"
+    },
+    {
+     "no": "14",
+     "type": "short",
+     "prompt": "결국",
+     "accept": [
+      "after all"
+     ],
+     "explain": "정답: after all"
+    },
+    {
+     "no": "15",
+     "type": "short",
+     "prompt": "한숨 자다",
+     "accept": [
+      "sleep a wink"
+     ],
+     "explain": "정답: sleep a wink"
+    },
+    {
+     "no": "16",
+     "type": "short",
+     "prompt": "열두 명의 최종 입상 후보자가 모여 있다 → twelve finalists had (scattered / gathered)",
+     "accept": [
+      "gathered"
+     ],
+     "explain": "정답: gathered"
+    },
+    {
+     "no": "17",
+     "type": "short",
+     "prompt": "제출 마감 시간 → the (submission / substance) deadline",
+     "accept": [
+      "submission"
+     ],
+     "explain": "정답: submission"
+    },
+    {
+     "no": "18",
+     "type": "short",
+     "prompt": "그의 무릎 수술 → his knee (nursery / surgery)",
+     "accept": [
+      "surgery"
+     ],
+     "explain": "정답: surgery"
+    },
+    {
+     "no": "19",
+     "type": "short",
+     "prompt": "그 곰의 동기 → the bear's (motivation / donation)",
+     "accept": [
+      "motivation"
+     ],
+     "explain": "정답: motivation"
+    },
+    {
+     "no": "20",
+     "type": "short",
+     "prompt": "나는 완전히 들떴다 → I was absolutely (thrilled / disappointed)",
+     "accept": [
+      "thrilled"
+     ],
+     "explain": "정답: thrilled"
+    },
+    {
+     "no": "21",
+     "type": "short",
+     "prompt": "토끼는 잠시 멈칫하더니, 이내 깡충 뛰어 사라진다. The rabbit pauses for a moment, then ____ away.",
+     "accept": [
+      "hops"
+     ],
+     "explain": "정답: hops"
+    },
+    {
+     "no": "22",
+     "type": "short",
+     "prompt": "내 팔은 기진맥진하여 떨렸다. My arms trembled from ____.",
+     "accept": [
+      "exhaustion"
+     ],
+     "explain": "정답: exhaustion"
+    },
+    {
+     "no": "23",
+     "type": "short",
+     "prompt": "그들은 모두 그녀만큼 창백하고 불안해 보였다. They all looked as pale and ____ as herself.",
+     "accept": [
+      "uneasy"
+     ],
+     "explain": "정답: uneasy"
+    },
+    {
+     "no": "24",
+     "type": "short",
+     "prompt": "그녀는 상심했다. She was ____, knowing she could not board the flight.",
+     "accept": [
+      "heartbroken"
+     ],
+     "explain": "정답: heartbroken"
+    },
+    {
+     "no": "25",
+     "type": "short",
+     "prompt": "나는 코치님이 중요한 것을 말해 줄 거라고 생각했다. I ____ the coach was going to tell me something important.",
+     "accept": [
+      "figured"
+     ],
+     "explain": "정답: figured"
+    },
+    {
+     "no": "26",
+     "type": "short",
+     "prompt": "거의 자정이었다. When I woke up in our hotel room, it was almost ____.",
+     "accept": [
+      "midnight"
+     ],
+     "explain": "정답: midnight"
+    },
+    {
+     "no": "27",
+     "type": "short",
+     "prompt": "우레와 같은 박수갈채 She walked into the thunder of ____ with a big smile.",
+     "accept": [
+      "applause"
+     ],
+     "explain": "정답: applause"
+    },
+    {
+     "no": "28",
+     "type": "short",
+     "prompt": "Matthew ran all the way over to the ____ set.",
+     "accept": [
+      "swing"
+     ],
+     "explain": "정답: swing"
+    },
+    {
+     "no": "29",
+     "type": "short",
+     "prompt": "I saw a grizzly bear in its native ____.",
+     "accept": [
+      "habitat"
+     ],
+     "explain": "정답: habitat"
+    },
+    {
+     "no": "30",
+     "type": "short",
+     "prompt": "The levers wouldn't move to ____ the paper.",
+     "accept": [
+      "strike"
+     ],
+     "explain": "정답: strike"
+    }
+   ],
+   "id": "book-vb"
+  },
+  {
+   "subject": "eng",
+   "kind": "book",
+   "title": "C 어휘 Review",
+   "order": 5,
+   "basedOn": "자이스토리 영어 독해 기본 p.44",
+   "topicIds": [
+    "eng-c-claim"
+   ],
+   "questions": [
+    {
+     "no": "01",
+     "type": "short",
+     "prompt": "witness (뜻)",
+     "accept": [
+      "목격하다"
+     ],
+     "explain": "정답: 목격하다"
+    },
+    {
+     "no": "02",
+     "type": "short",
+     "prompt": "inspect (뜻)",
+     "accept": [
+      "검사하다"
+     ],
+     "explain": "정답: 검사하다"
+    },
+    {
+     "no": "03",
+     "type": "short",
+     "prompt": "distracted (뜻)",
+     "accept": [
+      "산만한"
+     ],
+     "explain": "정답: 산만한"
+    },
+    {
+     "no": "04",
+     "type": "short",
+     "prompt": "complete (뜻)",
+     "accept": [
+      "완수하다"
+     ],
+     "explain": "정답: 완수하다"
+    },
+    {
+     "no": "05",
+     "type": "short",
+     "prompt": "benefit (뜻)",
+     "accept": [
+      "이익"
+     ],
+     "explain": "정답: 이익"
+    },
+    {
+     "no": "06",
+     "type": "short",
+     "prompt": "잡다 (영어)",
+     "accept": [
+      "seize"
+     ],
+     "explain": "정답: seize"
+    },
+    {
+     "no": "07",
+     "type": "short",
+     "prompt": "동요시키다 (영어)",
+     "accept": [
+      "stir"
+     ],
+     "explain": "정답: stir"
+    },
+    {
+     "no": "08",
+     "type": "short",
+     "prompt": "달성하다 (영어)",
+     "accept": [
+      "achieve"
+     ],
+     "explain": "정답: achieve"
+    },
+    {
+     "no": "09",
+     "type": "short",
+     "prompt": "부연 설명하다 (영어)",
+     "accept": [
+      "elaborate"
+     ],
+     "explain": "정답: elaborate"
+    },
+    {
+     "no": "10",
+     "type": "short",
+     "prompt": "연민 (영어)",
+     "accept": [
+      "compassion"
+     ],
+     "explain": "정답: compassion"
+    },
+    {
+     "no": "11",
+     "type": "short",
+     "prompt": "~을 우연히 발견하다",
+     "accept": [
+      "come across"
+     ],
+     "explain": "정답: come across"
+    },
+    {
+     "no": "12",
+     "type": "short",
+     "prompt": "(간신히) 해내다",
+     "accept": [
+      "manage to"
+     ],
+     "explain": "정답: manage to"
+    },
+    {
+     "no": "13",
+     "type": "short",
+     "prompt": "도움이 되다",
+     "accept": [
+      "go a long way"
+     ],
+     "explain": "정답: go a long way"
+    },
+    {
+     "no": "14",
+     "type": "short",
+     "prompt": "~을 처리하다",
+     "accept": [
+      "cope with"
+     ],
+     "explain": "정답: cope with"
+    },
+    {
+     "no": "15",
+     "type": "short",
+     "prompt": "정점과 저점",
+     "accept": [
+      "peaks and valleys"
+     ],
+     "explain": "정답: peaks and valleys"
+    },
+    {
+     "no": "16",
+     "type": "short",
+     "prompt": "두 개의 별도의 달력을 갖는 것 → having two (moderate / separate) calendars",
+     "accept": [
+      "separate"
+     ],
+     "explain": "정답: separate"
+    },
+    {
+     "no": "17",
+     "type": "short",
+     "prompt": "가족 의무 → family (objections / obligations)",
+     "accept": [
+      "obligations"
+     ],
+     "explain": "정답: obligations"
+    },
+    {
+     "no": "18",
+     "type": "short",
+     "prompt": "그들의 엄청난 업적 → their (edible / incredible) achievements",
+     "accept": [
+      "incredible"
+     ],
+     "explain": "정답: incredible"
+    },
+    {
+     "no": "19",
+     "type": "short",
+     "prompt": "긍정적이고 좋은 분위기 → positive and good (atmosphere / hemisphere)",
+     "accept": [
+      "atmosphere"
+     ],
+     "explain": "정답: atmosphere"
+    },
+    {
+     "no": "20",
+     "type": "short",
+     "prompt": "다른 길이 유혹적으로 보일 때 → when other roads look (tempting / unappealing)",
+     "accept": [
+      "tempting"
+     ],
+     "explain": "정답: tempting"
+    },
+    {
+     "no": "21",
+     "type": "short",
+     "prompt": "You can do more things efficiently and ____.",
+     "accept": [
+      "neatly"
+     ],
+     "explain": "정답: neatly"
+    },
+    {
+     "no": "22",
+     "type": "short",
+     "prompt": "Your gestures should highlight your words, not ____ them.",
+     "accept": [
+      "overshadow"
+     ],
+     "explain": "정답: overshadow"
+    },
+    {
+     "no": "23",
+     "type": "short",
+     "prompt": "There's no room in our schedules for a(n) ____ workout.",
+     "accept": [
+      "dedicated"
+     ],
+     "explain": "정답: dedicated"
+    },
+    {
+     "no": "24",
+     "type": "short",
+     "prompt": "They learn by seeing the people around them act on and ____ those values.",
+     "accept": [
+      "uphold"
+     ],
+     "explain": "정답: uphold"
+    },
+    {
+     "no": "25",
+     "type": "short",
+     "prompt": "Beliefs and behaviors are related in a more ____ way.",
+     "accept": [
+      "remarkable"
+     ],
+     "explain": "정답: remarkable"
+    },
+    {
+     "no": "26",
+     "type": "short",
+     "prompt": "You can share a key ____ detail.",
+     "accept": [
+      "biographical"
+     ],
+     "explain": "정답: biographical"
+    },
+    {
+     "no": "27",
+     "type": "short",
+     "prompt": "____, it simply won't happen.",
+     "accept": [
+      "otherwise"
+     ],
+     "explain": "정답: otherwise"
+    },
+    {
+     "no": "28",
+     "type": "short",
+     "prompt": "Suddenly you feel more ____ and positive.",
+     "accept": [
+      "powerful"
+     ],
+     "explain": "정답: powerful"
+    },
+    {
+     "no": "29",
+     "type": "short",
+     "prompt": "We were required to make our bed to ____.",
+     "accept": [
+      "perfection"
+     ],
+     "explain": "정답: perfection"
+    },
+    {
+     "no": "30",
+     "type": "short",
+     "prompt": "It is difficult for any of us to maintain a(n) ____ level of attention.",
+     "accept": [
+      "constant"
+     ],
+     "explain": "정답: constant"
+    }
+   ],
+   "id": "book-vc"
+  },
+  {
+   "subject": "eng",
+   "title": "주장 찾기 실전 1회",
+   "order": 3,
+   "minutes": 5,
+   "basedOn": "C단원 20번 유형 · C11·C16 함정 포함",
+   "topicIds": [
+    "eng-c-claim"
+   ],
+   "questions": [
+    {
+     "type": "mc",
+     "prompt": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+     "passage": "Many students believe that the longer they sit at their desks, the more they learn. They study for four or five hours without stopping and feel proud of their effort. However, research shows that our attention drops sharply after about 40 to 50 minutes of focused work. After that point, we read the same sentence several times without understanding it. Short breaks give the brain time to process and store what it has just learned. A ten-minute walk, a glass of water, or simply stretching can refresh your mind. So, if you want to make the most of your study time, plan regular short breaks instead of studying for hours without rest.",
+     "choices": [
+      "공부 시간을 늘려 학습량을 확보해야 한다.",
+      "집중력을 높이기 위해 조용한 장소에서 공부해야 한다.",
+      "학습 효과를 위해 운동을 꾸준히 해야 한다.",
+      "효율적인 학습을 위해 규칙적으로 짧은 휴식을 취해야 한다.",
+      "공부한 내용을 자주 반복해서 읽어야 한다."
+     ],
+     "answer": 3,
+     "explain": "**So** 뒤 명령문: ==plan regular short breaks==. ①은 글 앞의 '많은 학생들의 생각'(일반론)이라 오답."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+     "passage": "People often say, \"Practice makes perfect.\" If you repeat something enough times, you will eventually master it. This is true for many simple skills, such as typing or tying your shoes. But when it comes to learning a language, simply repeating the same exercises is not enough. If you memorize the same word lists every day without ever using the words, you may recognize them on a test but freeze in a real conversation. Language is a tool for communication, and tools improve only when they are used. So, instead of only reviewing your notes, find chances to actually use the language: talk with friends, write a short diary, or chat with an AI partner.",
+     "choices": [
+      "외국어 실력을 기르려면 실제로 사용할 기회를 찾아야 한다.",
+      "단순한 기술은 반복 연습을 통해 익혀야 한다.",
+      "단어를 외울 때는 매일 같은 목록을 복습해야 한다.",
+      "시험을 잘 보려면 노트 정리를 꼼꼼히 해야 한다.",
+      "대화 능력을 키우려면 원어민 친구를 사귀어야 한다."
+     ],
+     "answer": 0,
+     "explain": "**C16과 같은 반전 구조!** 'Practice makes perfect'(일반론) → **But** 언어는 반복만으로 부족하다 → ==find chances to actually use the language==. ②는 일반론이라 함정."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+     "passage": "When children make mistakes, many parents rush in to fix the problem. They finish the science project that is due tomorrow or call the teacher to explain a forgotten assignment. These parents mean well; they want to protect their children from disappointment. However, children who are always rescued never learn how to handle problems on their own. A forgotten assignment and a low grade can teach a child far more about planning than any lecture from a parent. Of course, you should step in when your child is in real danger. But for everyday mistakes, let your child face the results and think about how to do better next time.",
+     "choices": [
+      "자녀의 성적에 지나치게 집착하지 말아야 한다.",
+      "자녀의 과제를 함께 계획하는 습관을 길러야 한다.",
+      "자녀가 위험에 처했을 때 즉시 도와주어야 한다.",
+      "자녀의 실수를 교사와 함께 해결해야 한다.",
+      "자녀가 일상적인 실수의 결과를 스스로 겪도록 해야 한다."
+     ],
+     "answer": 4,
+     "explain": "마지막 **But** 문장이 주장: ==let your child face the results==. ③은 'Of course'로 잠깐 인정한 부분(양보)이라 주장이 아니야. ①은 C11처럼 상식적이지만 근거 없는 함정."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+     "passage": "Do you check your phone right before you go to sleep? Most of us do. We tell ourselves we will watch just one more video, and an hour later we are still scrolling. The bright light from the screen tells the brain that it is still daytime, which delays the release of the hormone that makes us sleepy. On top of that, exciting content keeps our minds active when they should be slowing down. The result is shorter, lighter sleep and a tired morning. If you want to wake up refreshed, put your phone away at least 30 minutes before bed and replace it with something calm, such as reading a paper book or listening to quiet music.",
+     "choices": [
+      "숙면을 위해 매일 같은 시간에 일어나야 한다.",
+      "잠들기 전에는 휴대폰 사용을 멈춰야 한다.",
+      "아침에 일어나면 바로 햇빛을 쬐어야 한다.",
+      "독서 습관을 기르기 위해 종이책을 읽어야 한다.",
+      "영상 시청 시간을 기록하여 관리해야 한다."
+     ],
+     "answer": 1,
+     "explain": "마지막 문장 명령문: ==put your phone away at least 30 minutes before bed==. ④ 종이책은 대안의 예시일 뿐 주장 자체가 아니야."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+     "passage": "Some students hesitate to ask questions in class because they are afraid of looking foolish. They think everyone else already understands, so they stay silent and hope to figure it out later. But in most cases, if one student is confused, several others are confused too. A good question helps not only you but also your classmates, and it shows the teacher which parts need more explanation. Teachers generally welcome questions because they reveal how students are actually thinking. So the next time you don't understand something, don't keep it to yourself. Raise your hand and ask.",
+     "choices": [
+      "수업 전에 미리 예습하는 습관을 들여야 한다.",
+      "교사는 학생의 질문에 친절하게 답해야 한다.",
+      "이해가 안 되는 것이 있으면 수업 중에 질문해야 한다.",
+      "친구들과 함께 공부하며 서로 가르쳐 주어야 한다.",
+      "수업 내용을 정리해 교사에게 확인받아야 한다."
+     ],
+     "answer": 2,
+     "explain": "**So** 뒤: ==Raise your hand and ask==. 주장의 대상은 학생이야. ②는 대상을 교사로 바꾼 오답."
+    }
+   ],
+   "id": "eng-x-claim-1"
+  },
+  {
+   "subject": "eng",
+   "title": "심경 변화 실전 1회",
+   "order": 2,
+   "minutes": 5,
+   "basedOn": "B단원 19번 유형 · B18 함정 포함",
+   "topicIds": [
+    "eng-b-mood"
+   ],
+   "questions": [
+    {
+     "type": "mc",
+     "prompt": "다음 글에 드러난 Minji의 심경 변화로 가장 적절한 것은?",
+     "passage": "Minji stared at the screen, her fingers frozen above the keyboard. The results of the speech contest would be posted at exactly 6 p.m. Her stomach was in knots, and she kept refreshing the page. What if she hadn't even made the top ten? At 6:00, the list finally appeared. She scrolled down slowly, afraid to look. Then she saw it: \"First Place – Kim Minji.\" She jumped out of her chair and screamed so loudly that her brother ran into the room. She couldn't stop smiling as she called her mom to share the news.",
+     "choices": [
+      "bored → annoyed",
+      "calm → frightened",
+      "anxious → thrilled",
+      "hopeful → disappointed",
+      "curious → indifferent"
+     ],
+     "answer": 2,
+     "explain": "앞: fingers frozen, stomach in knots, afraid to look → **anxious**. 뒤: jumped out of her chair, couldn't stop smiling → **thrilled**."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글에 드러난 Yuna의 심경 변화로 가장 적절한 것은?",
+     "passage": "Yuna had been counting down the days to the concert. She had bought the ticket three months ago, and she had practiced every fan chant until she knew them by heart. On the morning of the show, she put on her favorite outfit and checked her bag one last time. Then her phone buzzed. It was a message from the ticket company: \"Due to heavy rain and strong winds, today's outdoor concert has been canceled.\" Yuna read it again and again, hoping she had misunderstood. Slowly, she sat down on her bed and stared at the light stick in her hands.",
+     "choices": [
+      "jealous → grateful",
+      "nervous → relieved",
+      "indifferent → curious",
+      "embarrassed → proud",
+      "excited → disappointed"
+     ],
+     "answer": 4,
+     "explain": "전환점은 **Then her phone buzzed**. 앞: counting down the days, 응원법 연습 → **excited**. 뒤: 공연 취소, 멍하니 응원봉을 봄 → **disappointed**."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글에 드러난 Hana의 심경 변화로 가장 적절한 것은?",
+     "passage": "The gym was silent as the coach began to read the names of the players chosen for the national youth team. Hana sat at the end of the bench, her palms sweaty and her heart pounding. Only three spots were left, and the other players around her looked just as tense as she was. \"Park Jisoo... Lee Dahye...\" Hana closed her eyes. One name left. \"And finally, Choi Hana.\" For a second she couldn't move. Then her teammates grabbed her and cheered, and she burst into laughter, tears of joy running down her face.",
+     "choices": [
+      "relaxed → proud",
+      "nervous → delighted",
+      "hopeful → frustrated",
+      "bored → surprised",
+      "angry → calm"
+     ],
+     "answer": 1,
+     "explain": "**B18과 같은 함정!** 뒤만 보면 proud도 그럴듯하지만 앞이 palms sweaty, heart pounding, tense → relaxed가 아니라 **nervous**. 앞 감정부터 지우면 ②만 남아."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+     "passage": "It was a quiet Sunday afternoon. I was lying on the sofa with a cup of warm tea, listening to soft music while the rain tapped gently on the window. For the first time in weeks, I had nothing to do. Then I remembered that my younger brother had gone hiking alone that morning. He had promised to call me by 3 p.m. I looked at the clock. It was already 5:30. I called him, but there was no answer. I called again and again. Outside, the rain was getting heavier, and I started to imagine all the things that could have gone wrong.",
+     "choices": [
+      "peaceful → worried",
+      "lonely → excited",
+      "annoyed → grateful",
+      "scared → relieved",
+      "proud → ashamed"
+     ],
+     "answer": 0,
+     "explain": "B19와 같은 구조야. 앞: 따뜻한 차, 잔잔한 음악 → **peaceful**. 뒤: 연락이 안 됨, 나쁜 상상 → **worried**."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글에 드러난 Jake의 심경 변화로 가장 적절한 것은?",
+     "passage": "Jake had been working on the model airplane for three hours, but the left wing kept falling off. He had tried glue, tape, and even a tiny screw, and nothing worked. He threw the instruction sheet on the floor and let out a loud groan. \"This is impossible,\" he muttered. Then he noticed a small piece of plastic under the table. It was the support part he had forgotten to attach. He carefully fit it into place, and this time the wing held firmly. Jake held up the finished airplane and admired it from every angle, a proud grin spreading across his face.",
+     "choices": [
+      "excited → bored",
+      "frustrated → satisfied",
+      "confident → nervous",
+      "curious → scared",
+      "calm → irritated"
+     ],
+     "answer": 1,
+     "explain": "B16(타자기 고장 → 해결)과 같은 패턴. 앞: nothing worked, groan, impossible → **frustrated**. 뒤: 완성된 비행기를 감상, proud grin → **satisfied**."
+    }
+   ],
+   "id": "eng-x-mood-1"
+  },
+  {
+   "subject": "eng",
+   "title": "목적 찾기 실전 1회",
+   "order": 1,
+   "minutes": 5,
+   "basedOn": "A단원 18번 유형",
+   "topicIds": [
+    "eng-a-purpose"
+   ],
+   "questions": [
+    {
+     "type": "mc",
+     "prompt": "다음 글의 목적으로 가장 적절한 것은?",
+     "passage": "Dear Members,\nWe would like to thank you for using Greenfield Community Pool. As you know, the pool has been closed since early June for the replacement of its heating system. We originally planned to reopen on July 1. However, some of the parts we ordered have not arrived yet, and the work will take longer than expected. As a result, the pool will now reopen on July 15. All memberships will be extended by two weeks at no extra cost. We are sorry for any inconvenience this may cause and thank you for your patience.\nSincerely,\nLaura Kim, Pool Manager",
+     "choices": [
+      "수영장 회원권 가격 인상을 알리려고",
+      "난방 시설 교체 공사 업체를 모집하려고",
+      "수영장 재개장 날짜가 늦춰졌음을 안내하려고",
+      "수영장 이용 규칙 변경을 공지하려고",
+      "여름 수영 강습 프로그램을 홍보하려고"
+     ],
+     "answer": 2,
+     "explain": "**However** 뒤가 핵심: 부품이 안 와서 ==the pool will now reopen on July 15==. 원래 7월 1일 → 7월 15일로 늦춰졌다는 안내야."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글의 목적으로 가장 적절한 것은?",
+     "passage": "To the City Council,\nI am a resident of Maple Street, and I walk my dog along the river path every evening. The path is beautiful during the day, but after sunset it becomes completely dark because there are no streetlights. Last week, an elderly neighbor tripped over a rock and hurt her wrist. Many residents, including children coming home from academies, use this path at night. I believe it is only a matter of time before a more serious accident happens. I strongly urge you to install streetlights along the river path as soon as possible. Thank you for your attention to this matter.\nSincerely,\nDaniel Cho",
+     "choices": [
+      "강변 산책로 청소를 건의하려고",
+      "반려견 산책 규정을 문의하려고",
+      "이웃의 사고 소식을 전하려고",
+      "야간 학원 운행 시간을 바꾸려고",
+      "강변 산책로에 가로등 설치를 요청하려고"
+     ],
+     "answer": 4,
+     "explain": "신호 표현 **I strongly urge you to** ~ → ==install streetlights along the river path==. 이웃의 사고(③)는 요청의 근거일 뿐 목적이 아니야."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글의 목적으로 가장 적절한 것은?",
+     "passage": "Dear Parents,\nThank you for supporting our Spring Book Fair last month. Thanks to you, we raised over $2,000 for new library books. Now we have another exciting plan. Starting in September, our school will run a Saturday reading program for first-grade students. We need adult volunteers who can read stories aloud and help children choose books. No special experience is required, and you can choose the Saturdays that work for you. If you are interested, please fill out the attached form and return it by August 20. Your time can make a big difference in a child's life.\nBest regards,\nMegan Lee, School Librarian",
+     "choices": [
+      "토요 독서 프로그램 자원봉사자를 모집하려고",
+      "도서 박람회 수익금 사용 내역을 보고하려고",
+      "신입생 대상 도서관 이용 교육을 안내하려고",
+      "학부모 독서 동아리 가입을 권유하려고",
+      "도서 기증 행사 일정 변경을 알리려고"
+     ],
+     "answer": 0,
+     "explain": "앞부분 도서 박람회 감사 인사는 **배경**이야(A19 함정과 같은 구조). 본론은 ==We need adult volunteers== → 자원봉사자 모집."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글의 목적으로 가장 적절한 것은?",
+     "passage": "Dear Customer Service,\nOn May 3, I ordered a pair of running shoes (size 240) from your online store. The package arrived yesterday, and I was excited to open it. However, the shoes inside were size 250, and they are too big for me to wear. I have kept the original box and receipt, and the shoes have not been worn. I would appreciate it if you could send me the correct size and let me know how to return the wrong pair. I hope this can be resolved quickly because I need them for a race next month.\nSincerely,\nJiwoo Park",
+     "choices": [
+      "배송 지연에 대해 항의하려고",
+      "잘못 배송된 신발의 교환을 요청하려고",
+      "운동화 사이즈 선택 방법을 문의하려고",
+      "달리기 대회 참가 신청을 하려고",
+      "환불 처리가 늦어진 이유를 물으려고"
+     ],
+     "answer": 1,
+     "explain": "**I would appreciate it if you could** ~ → ==send me the correct size==. 사이즈가 잘못 와서 맞는 걸로 바꿔 달라는 교환 요청이야."
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 글의 목적으로 가장 적절한 것은?",
+     "passage": "Dear Mr. Harris,\nI am the coordinator of the Youth Science Camp at Lakeside Community Center. Every summer, our camp offers hands-on experiments to over 100 middle school students. This year, we are planning a special session on renewable energy, and we know that you have worked as an engineer at a solar power company for many years. Our students would greatly benefit from hearing about your real-world experience. Therefore, we would like to ask you to give a one-hour talk at our camp on July 22. We will gladly cover your travel expenses. We look forward to your reply.\nWarm regards,\nSophie Turner",
+     "choices": [
+      "과학 캠프 참가 학생을 모집하려고",
+      "태양광 발전소 견학을 신청하려고",
+      "재생 에너지 실험 도구를 주문하려고",
+      "캠프 특강 강연을 부탁하려고",
+      "캠프 일정 변경을 안내하려고"
+     ],
+     "answer": 3,
+     "explain": "**Therefore, we would like to ask you to** ~ → ==give a one-hour talk==. A09(작가에게 특강 요청)와 같은 패턴이야."
+    }
+   ],
+   "id": "eng-x-purpose-1"
+  },
+  {
+   "subject": "eng",
+   "title": "틀린 단어 다시 풀기",
+   "order": 4,
+   "minutes": 6,
+   "basedOn": "A·B·C 단어 Review 오답 + 찾아본 단어",
+   "topicIds": [
+    "eng-wrong-words",
+    "eng-glossed-words"
+   ],
+   "questions": [
+    {
+     "type": "mc",
+     "prompt": "**witness**의 뜻으로 알맞은 것은?",
+     "choices": [
+      "검사하다",
+      "목격하다",
+      "동요시키다",
+      "자랑하다",
+      "완수하다"
+     ],
+     "answer": 1,
+     "explain": "witness = 목격하다. 검사하다는 inspect야. 지난번에 둘을 바꿔 썼어!"
+    },
+    {
+     "type": "mc",
+     "prompt": "**inspect**의 뜻으로 알맞은 것은?",
+     "choices": [
+      "자랑하는",
+      "산만한",
+      "검사하다",
+      "목격하다",
+      "이익"
+     ],
+     "answer": 2,
+     "explain": "inspect = 검사하다, 점검하다. (C17: the first thing they would inspect was our bed)"
+    },
+    {
+     "type": "short",
+     "prompt": "빈칸에 알맞은 단어를 쓰시오.\n저는 이 제안을 당신이 고려해 주시기를 바랍니다.\nI hope you will consider this ________.",
+     "accept": [
+      "proposal"
+     ],
+     "explain": "consider this **proposal** (A07). instructor(강사)를 썼던 문제야."
+    },
+    {
+     "type": "short",
+     "prompt": "빈칸에 알맞은 단어를 쓰시오.\n여러분은 공사를 도울 수 있습니다.\nYou can help with the ________.",
+     "accept": [
+      "construction"
+     ],
+     "explain": "help with the **construction** (A18). proposal과 자리를 바꿔 썼던 문제야."
+    },
+    {
+     "type": "mc",
+     "prompt": "빈칸에 알맞은 것은?\n토끼는 잠시 멈칫하더니, 이내 깡충 뛰어 사라진다.\nThe rabbit pauses for a moment, then ______ away.",
+     "choices": [
+      "figured",
+      "hops",
+      "swing",
+      "strikes",
+      "approaches"
+     ],
+     "answer": 1,
+     "explain": "hop = 깡충 뛰다 → **hops** away."
+    },
+    {
+     "type": "mc",
+     "prompt": "빈칸에 알맞은 것은?\n나는 코치님이 나에게 무언가 중요한 것을 말해 줄 거라고 생각했다.\nI ______ the coach was going to tell me something important.",
+     "choices": [
+      "hops",
+      "uneasy",
+      "figured",
+      "habitat",
+      "applause"
+     ],
+     "answer": 2,
+     "explain": "figure = 생각하다, 판단하다 → I **figured** ~"
+    },
+    {
+     "type": "mc",
+     "prompt": "**damp**의 뜻으로 알맞은 것은?",
+     "choices": [
+      "절벽",
+      "공포",
+      "축축한, 습기 찬",
+      "난처한",
+      "후회하는"
+     ],
+     "answer": 2,
+     "explain": "B05: The shed is cold and **damp**. (헛간은 춥고 축축하다)"
+    },
+    {
+     "type": "mc",
+     "prompt": "**fright**의 뜻으로 알맞은 것은?",
+     "choices": [
+      "공포",
+      "축제",
+      "단절",
+      "탑승",
+      "자정"
+     ],
+     "answer": 0,
+     "explain": "B13: My body froze with **fright**. (나의 몸은 공포로 얼어붙었다)"
+    },
+    {
+     "type": "mc",
+     "prompt": "우리말에 맞는 단어를 고르시오.\n대학 입학 시험을 준비하는 것 → preparing for college (______) exams",
+     "choices": [
+      "entrance",
+      "endurance"
+     ],
+     "answer": 0,
+     "explain": "entrance = 입학, 입구. endurance는 '인내, 지구력'."
+    },
+    {
+     "type": "mc",
+     "prompt": "**procrastinate**의 뜻으로 알맞은 것은?",
+     "choices": [
+      "미루다",
+      "통합하다",
+      "유지하다",
+      "강화하다",
+      "투자하다"
+     ],
+     "answer": 0,
+     "explain": "C06: I stopped **procrastinating** with this chore. (이 일을 미루지 않게 됐다)"
+    },
+    {
+     "type": "mc",
+     "prompt": "**inevitable**의 뜻으로 알맞은 것은?",
+     "choices": [
+      "의무적인",
+      "피할 수 없는",
+      "일관된",
+      "상당한",
+      "처음의"
+     ],
+     "answer": 1,
+     "explain": "C08: chores are **inevitable** (집안일은 피할 수 없다)"
+    },
+    {
+     "type": "mc",
+     "prompt": "다음 문장의 해석으로 알맞은 것은?\nWe request you notify us of the review result.",
+     "choices": [
+      "우리는 당신에게서 검토 결과를 통보받았다.",
+      "우리는 당신이 검토 결과를 우리에게 통보해 줄 것을 요청한다.",
+      "우리는 검토 결과를 당신에게 통보할 것을 요청받았다.",
+      "당신은 우리에게 검토 결과를 요청해야 한다.",
+      "우리는 검토 결과를 통보하기 위해 당신을 요청한다."
+     ],
+     "answer": 1,
+     "explain": "request 뒤에 that이 생략된 명사절(you notify us ~)이 목적어. 3형식이고 'that 이하를 요청한다'로 해석해 (A08 구문 서술형)."
+    }
+   ],
+   "id": "eng-x-vocab-1"
+  }
+ ]
+}
