@@ -6108,6 +6108,640 @@
    "id": "book-read-2"
   },
   {
+   "subject": "soc",
+   "kind": "book",
+   "title": "통합사회 기출 Spring holic ① 통합적 관점과 행복 · 안 푼 문제",
+   "order": 20,
+   "basedOn": "통합사회 기출 Spring holic 기출 봄봄 (하령이가 푼 그대로 · 정답표 없이 Claude가 풀어서 채점, 틀린 문항만 해설)",
+   "topicIds": [],
+   "questions": [
+    {
+     "no": "01",
+     "source": "2025.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "02",
+     "source": "2024.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "03",
+     "source": "2020.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "04",
+     "source": "2022.11",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "05",
+     "source": "2025.10",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    }
+   ],
+   "id": "book-soc-sh-1-blank"
+  },
+  {
+   "subject": "soc",
+   "kind": "book",
+   "title": "통합사회 기출 Spring holic ① 통합적 관점과 행복",
+   "order": 21,
+   "basedOn": "통합사회 기출 Spring holic 기출 봄봄 (하령이가 푼 그대로 · 정답표 없이 Claude가 풀어서 채점, 틀린 문항만 해설)",
+   "topicIds": [],
+   "questions": [
+    {
+     "no": "01",
+     "source": "2025.10",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "02",
+     "source": "2025.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "03",
+     "source": "2025.3 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "04",
+     "source": "2025.6 [2.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "06",
+     "source": "2025.9 [1.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "07",
+     "source": "2023.9 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "08",
+     "source": "2024.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    }
+   ],
+   "id": "book-soc-sh-1"
+  },
+  {
+   "subject": "soc",
+   "kind": "book",
+   "title": "통합사회 기출 Spring holic ② 자연환경과 인간",
+   "order": 22,
+   "basedOn": "통합사회 기출 Spring holic 기출 봄봄 (하령이가 푼 그대로 · 정답표 없이 Claude가 풀어서 채점, 틀린 문항만 해설)",
+   "topicIds": [],
+   "questions": [
+    {
+     "no": "01",
+     "source": "2024.10",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "02",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "03",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "04",
+     "source": "2025.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "05",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "06",
+     "source": "2025.10",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "07",
+     "source": "2025.3",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "08",
+     "source": "2025.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "**피오르는 빙하 침식** 지형이야. ㄱ(카르스트 = 석회암 용식)은 틀린 설명이라 빼야 해. 맞는 건 ㄴ, ㄷ → ③."
+    },
+    {
+     "no": "09",
+     "source": "2024.6 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "10",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "11",
+     "source": "2024.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "12",
+     "source": "2023.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "13",
+     "source": "2024.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "14",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "15",
+     "source": "2024.6 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "16",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "17",
+     "source": "2025.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "18",
+     "source": "2024.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "19",
+     "source": "2024.6 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "20",
+     "source": "2023.6 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "21",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "22",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "23",
+     "source": "2025.4",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    }
+   ],
+   "id": "book-soc-sh-2"
+  },
+  {
+   "subject": "soc",
+   "kind": "book",
+   "title": "통합사회 기출 Spring holic ③ 문화와 다양성",
+   "order": 23,
+   "basedOn": "통합사회 기출 Spring holic 기출 봄봄 (하령이가 푼 그대로 · 정답표 없이 Claude가 풀어서 채점, 틀린 문항만 해설)",
+   "topicIds": [],
+   "questions": [
+    {
+     "no": "01",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "02",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "03",
+     "source": "2025.3",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "쿠스코는 적도 근처지만 안데스 **고산 지대**라 1년 내내 봄처럼 서늘한 **고산 기후**야. 저지대가 아니야. 그래서 ①."
+    },
+    {
+     "no": "04",
+     "source": "2025.10",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "05",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "06",
+     "source": "2025.9 [2.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "07",
+     "source": "2025.6 [2.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "08",
+     "source": "2025.9 [2.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "09",
+     "source": "2025.9 [1.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "10",
+     "source": "2023.11 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "11",
+     "source": "2025.6",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "12",
+     "source": "2025.10 [1.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "13",
+     "source": "2025.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "샐러드 볼은 **획일성 낮음(X↓), 고유문화 존중 높음(Y↑), 관용 높음(Z↑)** → ㉡. 용광로랑 헷갈리면 안 돼: 용광로는 섞어서 하나로 만드는 거라 획일성이 높아."
+    },
+    {
+     "no": "14",
+     "source": "2024.3",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "15",
+     "source": "2025.10 [1.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "16",
+     "source": "2025.4 [2.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    }
+   ],
+   "id": "book-soc-sh-3"
+  },
+  {
+   "subject": "soc",
+   "kind": "book",
+   "title": "통합사회 기출 Spring holic ④ 생활 공간과 사회",
+   "order": 24,
+   "basedOn": "통합사회 기출 Spring holic 기출 봄봄 (하령이가 푼 그대로 · 정답표 없이 Claude가 풀어서 채점, 틀린 문항만 해설)",
+   "topicIds": [],
+   "questions": [
+    {
+     "no": "01",
+     "source": "2023.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "학생 답변 중 맞는 걸 고르는 거야. 산업화·도시화로 **개인주의 확산은 맞으니 '예'**가 정답인데 학생은 '아니요'(㉠ X). **토지 이용 집약도도 높아지는 게 맞아**서 '예'인데 학생은 '아니요'(㉣ X). 맞게 답한 건 ㉡, ㉢ → ③."
+    },
+    {
+     "no": "02",
+     "source": "2025.9 [2.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "03",
+     "source": "2024.6 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "04",
+     "source": "2025.10 [2.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "05",
+     "source": "2023.11",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "06",
+     "source": "2025.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "07",
+     "source": "2024.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "08",
+     "source": "2024.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "09",
+     "source": "2025.10 [2.5점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "10",
+     "source": "2023.9",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "11",
+     "source": "2025.9 [2점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "12",
+     "source": "2025.10 [2점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    }
+   ],
+   "id": "book-soc-sh-4"
+  },
+  {
+   "subject": "soc",
+   "kind": "book",
+   "title": "통합사회 기출 Spring holic ⑤ 인권 보장과 헌법",
+   "order": 25,
+   "basedOn": "통합사회 기출 Spring holic 기출 봄봄 (하령이가 푼 그대로 · 정답표 없이 Claude가 풀어서 채점, 틀린 문항만 해설)",
+   "topicIds": [],
+   "questions": [
+    {
+     "no": "01",
+     "source": "2023.6 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "ㄹ이 거꾸로야. 사회 계약설을 근거로 한 건 **(나) 인권 선언**이고, (가) 권리 장전은 의회와 왕권의 관계를 다룬 문서야. ㄱ도 X(사회권 최초는 바이마르 헌법). 맞는 건 ㄴ, ㄷ → ③."
+    },
+    {
+     "no": "02",
+     "source": "2025.9 [2점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "03",
+     "source": "2023.6 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "04",
+     "source": "2025.9 [2점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "05",
+     "source": "2023.9 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "질문2(다른 기본권의 전제 조건)에서 혼자 떨어진 C = **평등권**. 질문1(국가 존재가 전제)에서 혼자인 A = **참정권**(국가가 있어야 참여하지), 같이 묶인 B = **자유권**. 그래서 B는 정치 참여 권리가 아니야. A 참정권은 국가에로의 자유 = **적극적** 권리 → ④."
+    },
+    {
+     "no": "06",
+     "source": "2023.3",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "07",
+     "source": "2023.9 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "08",
+     "source": "2025.4 예시 [2점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    }
+   ],
+   "id": "book-soc-sh-5"
+  },
+  {
    "subject": "eng",
    "kind": "book",
    "mock": true,
