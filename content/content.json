@@ -3556,6 +3556,606 @@
   {
    "subject": "kor",
    "kind": "book",
+   "title": "소설 1~5강 개념 Quiz·Jump",
+   "order": 52,
+   "basedOn": "나비효과 입문편 소설 p.6–35",
+   "topicIds": [
+    "kor-novel-1",
+    "kor-novel-2"
+   ],
+   "questions": [
+    {
+     "no": "1강 Quiz Q2-①",
+     "source": "「메밀꽃 필 무렵」 O/X",
+     "page": 6,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "다양한 감각적 표현을 써서 시적인 느낌을 자아낸다.",
+     "explain": "O"
+    },
+    {
+     "no": "1강 Quiz Q2-②",
+     "source": "「메밀꽃 필 무렵」 O/X",
+     "page": 6,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "등장인물이 과거를 회상하기에 적합한 분위기를 만든다.",
+     "explain": "O"
+    },
+    {
+     "no": "1강 Quiz Q2-③",
+     "source": "「메밀꽃 필 무렵」 O/X",
+     "page": 6,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "메밀꽃 핀 달밤이라는 배경이 낭만적 분위기를 고조시킨다.",
+     "explain": "O"
+    },
+    {
+     "no": "1강 Quiz Q2-④",
+     "source": "「메밀꽃 필 무렵」 O/X",
+     "page": 6,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "달의 숨소리가 들릴 듯한 무서운 분위기가 이야기에 집중하게 한다.",
+     "explain": "무서운 게 아니라 고요하고 아름다운 분위기야. X"
+    },
+    {
+     "no": "1강 Quiz Q2-⑤",
+     "source": "「메밀꽃 필 무렵」 O/X",
+     "page": 6,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "서정적인 배경과 인물들의 기이한 인연이 조화되었다.",
+     "explain": "O"
+    },
+    {
+     "no": "1강 Quiz Q4",
+     "source": "「구운몽」 ㉠의 심리가 가장 잘 형상화된 시",
+     "page": 7,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "㉠은 불도를 닦아야 하는데 세속에 마음이 끌리는 **내적 갈등**이야. ④「바라춤」이 '깨끗하게 살고 싶은데 세속 그리움이 솟아오른다'는 같은 갈등이야."
+    },
+    {
+     "no": "1강 Jump 01",
+     "source": "달평 씨의 두 번째 죽음 (가장 적절한 것)",
+     "page": 8,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "1강 Jump 02",
+     "source": "<보기> (적절하지 않은 것)",
+     "page": 9,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "2강 Quiz Q1-①",
+     "source": "「난쟁이가 쏘아 올린 작은 공」 감상 관점 (O=외부 관점, X=절대론)",
+     "page": 13,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "소외 계층에 관심을 보였던 작가의 세계관이 반영되어 있다.",
+     "explain": "작가 중심 → **표현론**(O)"
+    },
+    {
+     "no": "2강 Quiz Q1-②",
+     "source": "「난쟁이가 쏘아 올린 작은 공」 감상 관점 (O=외부 관점, X=절대론)",
+     "page": 13,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "상징적 소재와 간결한 문장을 구사했다.",
+     "explain": "작품 자체 → **절대론**(X)"
+    },
+    {
+     "no": "2강 Quiz Q1-③",
+     "source": "「난쟁이가 쏘아 올린 작은 공」 감상 관점 (O=외부 관점, X=절대론)",
+     "page": 13,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "소외 계층의 삶을 보며 우리 사회의 문제점을 생각하게 한다.",
+     "explain": "독자에게 주는 영향 → **효용론**(O). 하령이는 반영론도 같이 썼어."
+    },
+    {
+     "no": "2강 Quiz Q1-④",
+     "source": "「난쟁이가 쏘아 올린 작은 공」 감상 관점 (O=외부 관점, X=절대론)",
+     "page": 13,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "연작 중 네 번째 작품으로 새로운 기법과 서정적 아름다움을 보인다.",
+     "explain": "작품 자체 → **절대론**(X)"
+    },
+    {
+     "no": "2강 Quiz Q1-⑤",
+     "source": "「난쟁이가 쏘아 올린 작은 공」 감상 관점 (O=외부 관점, X=절대론)",
+     "page": 13,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "산업화 시대의 구조적 모순을 반영했다.",
+     "explain": "현실 반영 → **반영론**(O)"
+    },
+    {
+     "no": "2강 Jump 01",
+     "source": "농부 정도룡 ㉠~㉤ (적절하지 않은 것)",
+     "page": 15,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "2강 Jump 02",
+     "source": "<보기> (적절하지 않은 것)",
+     "page": 15,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "하령이 정답! (④는 김 주사 집 땅을 부치는 사람들이 이해관계 때문에 불의를 외면한 장면이라 '불의를 참지 못한' 게 아니야)"
+    },
+    {
+     "no": "3강 Quiz Q2-①",
+     "source": "「꺼삐딴 리」 인물 O/X",
+     "page": 18,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "박사답지 않은 인물에게 '박사' 등의 호칭을 붙여 반어적으로 본색을 부각한다.",
+     "explain": "O"
+    },
+    {
+     "no": "3강 Quiz Q2-②",
+     "source": "「꺼삐딴 리」 인물 O/X",
+     "page": 18,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "주인공은 영달만 추구하는 기회주의적 지식인의 전형이다.",
+     "explain": "O"
+    },
+    {
+     "no": "3강 Quiz Q3-①",
+     "source": "「유자소전」 <보기> O/X",
+     "page": 19,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "유자가 소외된 사람들을 돕는 인정미 넘치는 모습을 보여 준다.",
+     "explain": "O"
+    },
+    {
+     "no": "3강 Quiz Q3-②",
+     "source": "「유자소전」 <보기> O/X",
+     "page": 19,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "처지가 바뀌고 나서야 인간성을 회복하는 유자는 평면적 인물이다.",
+     "explain": "유자는 처음부터 인정 많은 사람이야. 처지가 바뀌고서 '회복'한 게 아니야. X"
+    },
+    {
+     "no": "3강 Jump 01",
+     "source": "꿈꾸는 자의 나성 (가장 적절한 것)",
+     "page": 21,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "3강 Jump 02",
+     "source": "㉠~㉣ (적절하지 않은 것)",
+     "page": 21,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "3강 Jump 03",
+     "source": "'그 고향' (가장 적절한 것)",
+     "page": 21,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "4강 Quiz Q2-①",
+     "source": "「몽기미 풍경」 ㉠~㉤ O/X",
+     "page": 25,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "㉠: 고향과 비교해 자랑하고 싶은 남분이의 심정",
+     "explain": "O"
+    },
+    {
+     "no": "4강 Quiz Q2-②",
+     "source": "「몽기미 풍경」 ㉠~㉤ O/X",
+     "page": 25,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉡: 순자의 마음이 상할까 조심스러워하는 남분이",
+     "explain": "남분이는 자랑하느라 신났어. 조심스러워하지 않아. X"
+    },
+    {
+     "no": "4강 Quiz Q2-③",
+     "source": "「몽기미 풍경」 ㉠~㉤ O/X",
+     "page": 25,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "㉢: 남분이 말을 제대로 이해 못 해 어리둥절한 순자",
+     "explain": "O"
+    },
+    {
+     "no": "4강 Quiz Q2-④",
+     "source": "「몽기미 풍경」 ㉠~㉤ O/X",
+     "page": 25,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "㉣: 남분이가 하는 일을 어렴풋이 짐작하는 순자",
+     "explain": "O"
+    },
+    {
+     "no": "4강 Quiz Q2-⑤",
+     "source": "「몽기미 풍경」 ㉠~㉤ O/X",
+     "page": 25,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "㉤: 자기 직업을 떳떳하게 여기는 남분이",
+     "explain": "O"
+    },
+    {
+     "no": "4강 Jump 01",
+     "source": "고기잡이는 갈대를 꺾지 않는다 ㉠~㉤ (적절하지 않은 것)",
+     "page": 27,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "4강 Jump 02",
+     "source": "<보기> '그날 밤' 전후 (적절하지 않은 것)",
+     "page": 27,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "'나'의 호기심은 사라지지 않고 방향만 바뀌었어. 하령이 정답!"
+    },
+    {
+     "no": "5강 Quiz Q1-①",
+     "source": "「토지」 <보기> 인물 관계 O/X",
+     "page": 31,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "윤보는 삼수와의 협력 관계를 거부한다.",
+     "explain": "O"
+    },
+    {
+     "no": "5강 Quiz Q1-②",
+     "source": "「토지」 <보기> 인물 관계 O/X",
+     "page": 31,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "장정들은 조준구로 대표되는 친일 세력과 대립한다.",
+     "explain": "O"
+    },
+    {
+     "no": "5강 Quiz Q1-③",
+     "source": "「토지」 <보기> 인물 관계 O/X",
+     "page": 31,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "봉순이와 서희의 협력 관계가 약화되고 있다.",
+     "explain": "봉순이는 서희를 감싸. 오히려 더 가까워져. X"
+    },
+    {
+     "no": "5강 Quiz Q1-④",
+     "source": "「토지」 <보기> 인물 관계 O/X",
+     "page": 31,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "홍 씨와 서희는 대립 관계를 이어 간다.",
+     "explain": "O"
+    },
+    {
+     "no": "5강 Quiz Q1-⑤",
+     "source": "「토지」 <보기> 인물 관계 O/X",
+     "page": 31,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "조준구와 삼수의 관계는 상황에 따라 변한다.",
+     "explain": "O"
+    },
+    {
+     "no": "5강 Jump 01",
+     "source": "늙으신 어머니의 향기 ㉠~㉤ (적절하지 않은 것)",
+     "page": 35,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "5강 Jump 02",
+     "source": "<보기> (적절하지 않은 것)",
+     "page": 35,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "하령이 정답!"
+    }
+   ],
+   "id": "book-novel-2"
+  },
+  {
+   "subject": "kor",
+   "kind": "book",
+   "title": "소설 6~9강 개념 Quiz·Jump",
+   "order": 53,
+   "basedOn": "나비효과 입문편 소설 p.39–61",
+   "topicIds": [
+    "kor-novel-1",
+    "kor-novel-2"
+   ],
+   "questions": [
+    {
+     "no": "6강 Quiz Q2-①",
+     "source": "「운영전」 액자 구조 O/X",
+     "page": 39,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "몽유자가 깨어난 후 발견한 책은 내부·외부 이야기를 잇는 소재이다.",
+     "explain": "O"
+    },
+    {
+     "no": "6강 Quiz Q2-②",
+     "source": "「운영전」 액자 구조 O/X",
+     "page": 39,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "몽유자가 꿈에서 남녀 주인공을 만난 공간을 천상계로 설정했다.",
+     "explain": "꿈속 공간은 수성궁 터, 즉 지상이야. X"
+    },
+    {
+     "no": "6강 Quiz Q2-③",
+     "source": "「운영전」 액자 구조 O/X",
+     "page": 39,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "내부 이야기에 남자 주인공이 직접 말하는 부분이 있다.",
+     "explain": "O"
+    },
+    {
+     "no": "6강 Quiz Q2-④",
+     "source": "「운영전」 액자 구조 O/X",
+     "page": 39,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "남녀 주인공의 죽음과 몽유자의 침식 폐함으로 비극성을 알 수 있다.",
+     "explain": "O"
+    },
+    {
+     "no": "6강 Jump 01",
+     "source": "손풍금 <보기> [A] (적절하지 않은 것)",
+     "page": 41,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "6강 Jump 02",
+     "source": "(나) 시간 순서 (적절하지 않은 것)",
+     "page": 41,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "ⓓ(빨치산 시작)는 ⓐ(1950.12)보다 **뒤**야. 앞선다고 한 ④가 틀려. 하령이 정답!"
+    },
+    {
+     "no": "7강 Jump 01",
+     "source": "메아리 ㉠~㉤ (적절하지 않은 것)",
+     "page": 47,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "7강 Jump 02",
+     "source": "<보기> 산속 (적절하지 않은 것)",
+     "page": 47,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "오지그릇 조각에 설레는 건 정신적 위안이야. '물질적 안정'까지는 아니라서 ②. 하령이 정답!"
+    },
+    {
+     "no": "8강 Quiz Q2",
+     "source": "「운수 좋은 날」 설렁탕과 가장 비슷한 기능의 소재",
+     "page": 51,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "설렁탕도 귤껍질도 **비극성을 더 크게** 만드는 소재야. 하령이 정답!"
+    },
+    {
+     "no": "8강 Jump 01",
+     "source": "산 너머 남촌 '만 원' (가장 적절한 것)",
+     "page": 57,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "8강 Jump 02",
+     "source": "<보기> (적절하지 않은 것)",
+     "page": 57,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "영두는 밭떼기 장수를 필요악으로 '인정'하는 것뿐이야. 남의 어려움을 이용해 이익을 챙기는 사람이 아니라서 ③이 틀려. (하령이가 파란펜으로 고친 문제)"
+    },
+    {
+     "no": "9강 Quiz Q3",
+     "source": "「소설가 구보 씨의 일일」 시점 바꾸기 (가장 적절한 것)",
+     "page": 61,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "전지적 시점이면 사내의 속마음까지 단정해서 말할 수 있어. 하령이 정답!"
+    }
+   ],
+   "id": "book-novel-3"
+  },
+  {
+   "subject": "kor",
+   "kind": "book",
    "title": "시 1강 개념 Jump (산길에서·복숭아나무·잔디)",
    "order": 21,
    "basedOn": "나비효과 입문편 시 p.8–9",
@@ -4105,6 +4705,787 @@
     }
    ],
    "id": "book-poem-3"
+  },
+  {
+   "subject": "kor",
+   "kind": "book",
+   "title": "시 7~11강 개념 Quiz·Jump (상징·운율·구성·보기·표현 1)",
+   "order": 44,
+   "basedOn": "나비효과 입문편 시 p.50–86",
+   "topicIds": [
+    "kor-poem-2",
+    "kor-poem-3"
+   ],
+   "questions": [
+    {
+     "no": "7강 Jump 03",
+     "source": "고공답주인가 ㉠~㉤ (적절하지 않은 것)",
+     "page": 50,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "㉣은 주인이 아니라 종들의 모습이야. 하령이 정답!"
+    },
+    {
+     "no": "7강 Jump 04",
+     "source": "<보기> '나라=집' 비유 (적절하지 않은 것)",
+     "page": 51,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "하령이는 ⑤만 X를 쳐 두고 답을 고르지 않았어. ①은 <보기>의 비유 관계를 거꾸로 연결해서 틀려."
+    },
+    {
+     "no": "7강 Quiz Q1-①",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉠은 순수한 자연의 아름다움을 상징한다.",
+     "explain": "㉠은 아름다움 자체보다 화자가 어린 시절 바라본 바다일 뿐이야. X"
+    },
+    {
+     "no": "7강 Quiz Q1-②",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉠은 생명에 대한 희망을 환기한다.",
+     "explain": "희망을 환기하는 건 ㉡ 쪽이야. X"
+    },
+    {
+     "no": "7강 Quiz Q1-③",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉠은 시련을 극복한 사람의 환희를 상징한다.",
+     "explain": "극복의 환희는 시에 없어. X"
+    },
+    {
+     "no": "7강 Quiz Q1-④",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "㉠은 삶과 관련한 깨달음을 주지 못한다.",
+     "explain": "화자에게 깨달음을 준 건 ㉠이 아니라 ㉡이야. O"
+    },
+    {
+     "no": "7강 Quiz Q1-⑤",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉠은 화자가 상상한 미래의 모습이다.",
+     "explain": "미래 상상이 아니야. X"
+    },
+    {
+     "no": "7강 Quiz Q1-⑥",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉡은 공포의 대상이다.",
+     "explain": "뻘밭은 두려운 곳이 아니라 삶의 현장이야. X"
+    },
+    {
+     "no": "7강 Quiz Q1-⑦",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉡은 허무와 어둠을 상징한다.",
+     "explain": "검은색이어도 부정적 의미가 아니야. X"
+    },
+    {
+     "no": "7강 Quiz Q1-⑧",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉡은 탄식을 상징한다.",
+     "explain": "탄식이 아니라 생명력. X"
+    },
+    {
+     "no": "7강 Quiz Q1-⑨",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "㉡은 치열한 생명들을 통해 깨달음을 준다.",
+     "explain": "뻘밭에서 꿈틀대는 생명들을 보며 삶을 깨달아. O"
+    },
+    {
+     "no": "7강 Quiz Q1-⑩",
+     "source": "「율포의 기억」 ㉠ 푸른 물 / ㉡ 검은 뻘밭 O/X",
+     "page": 52,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "㉡은 현실 극복 의지를 상징한다.",
+     "explain": "극복 의지까지는 아니야. X"
+    },
+    {
+     "no": "7강 Jump 01",
+     "source": "나룻배와 행인 외 (옳은 것)",
+     "page": 54,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "7강 Jump 02",
+     "source": "원형적 심상 (적절하지 않은 것)",
+     "page": 55,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "③의 '죽은 나무뿌리를 적시는 물'은 소멸이 아니라 **재생·생명**의 원형적 상징이야. ④는 맞는 설명. 물의 원형 상징(생명·정화·재생)을 다시 보자."
+    },
+    {
+     "no": "8강 Jump 01",
+     "source": "한거십팔곡 (가) (적절하지 않은 것)",
+     "page": 60,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "8강 Jump 02",
+     "source": "추억에서 (나) (적절하지 않은 것)",
+     "page": 60,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "'손 시리게 떨던가'는 가난한 삶의 고통이지 행복감이 아니야. 하령이 정답!"
+    },
+    {
+     "no": "8강 Jump 03",
+     "source": "<다> 리듬 글 (가장 적절한 것)",
+     "page": 61,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "울림소리(ㄴ·ㄹ·ㅁ·ㅇ) 반복이 부드러운 리듬을 만들어. 하령이 정답!"
+    },
+    {
+     "no": "9강 Quiz Q1-①",
+     "source": "「결빙의 아버지」 시간 구성 O/X",
+     "page": 64,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "어머님께 유년 시절을 들려주며 과거와 현재를 잇는다.",
+     "explain": "어머님께 말을 건네며 과거를 꺼내. O"
+    },
+    {
+     "no": "9강 Quiz Q1-②",
+     "source": "「결빙의 아버지」 시간 구성 O/X",
+     "page": 64,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "'목조 적산 가옥 이층 다다미방'이라는 현재 위치에서 과거를 이야기한다.",
+     "explain": "그곳은 과거의 공간이야. X"
+    },
+    {
+     "no": "9강 Quiz Q1-③",
+     "source": "「결빙의 아버지」 시간 구성 O/X",
+     "page": 64,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "'옛날처럼 나는'에서 과거와 현재가 공존한다.",
+     "explain": "O"
+    },
+    {
+     "no": "9강 Quiz Q1-④",
+     "source": "「결빙의 아버지」 시간 구성 O/X",
+     "page": 64,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "예닐곱 살 겨울밤을 영하의 한강교를 지나며 떠올린다.",
+     "explain": "현재 장면에서 과거를 떠올려. O"
+    },
+    {
+     "no": "9강 Quiz Q1-⑤",
+     "source": "「결빙의 아버지」 시간 구성 O/X",
+     "page": 64,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "아버지가 이승의 물로 화신한 듯 표현해 시간을 모호하게 한다.",
+     "explain": "O"
+    },
+    {
+     "no": "9강 Quiz Q3-①",
+     "source": "「보리타작」 구성 O/X",
+     "page": 65,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "사실을 제시한 뒤 주관적 생각을 드러낸다.",
+     "explain": "O"
+    },
+    {
+     "no": "9강 Quiz Q3-②",
+     "source": "「보리타작」 구성 O/X",
+     "page": 65,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "대상을 보며 자신을 성찰한다.",
+     "explain": "O"
+    },
+    {
+     "no": "9강 Quiz Q3-③",
+     "source": "「보리타작」 구성 O/X",
+     "page": 65,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "선경후정 구성이다.",
+     "explain": "O"
+    },
+    {
+     "no": "9강 Quiz Q3-④",
+     "source": "「보리타작」 구성 O/X",
+     "page": 65,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "과거와 현재를 비교하며 과거로 돌아가려는 소망을 드러낸다.",
+     "explain": "과거로 돌아가려는 소망은 없어. X"
+    },
+    {
+     "no": "9강 Jump 01",
+     "source": "사개 틀린 고풍의 툇마루에 외 <보기> (적절하지 않은 것)",
+     "page": 66,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "하령이 정답! (③④에 별표 쳐 둔 것도 기록해 둘게)"
+    },
+    {
+     "no": "9강 Jump 02",
+     "source": "씨앗을 받으며 (적절하지 않은 것)",
+     "page": 68,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "9강 Jump 03",
+     "source": "대조 (적절한 것)",
+     "page": 69,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "10강 Jump 01",
+     "source": "서시 외 (적절하지 않은 것)",
+     "page": 74,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "'별을 노래하는 마음'은 이상을 향한 의지야. 갈등이 아니라서 ④가 틀려. 하령이 정답!"
+    },
+    {
+     "no": "10강 Jump 02",
+     "source": "길재 시조 (적절하지 않은 것)",
+     "page": 75,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "'태평연월이 꿈이런가'는 무상감이야. 의지가 아니라서 ⑤. 하령이 정답!"
+    },
+    {
+     "no": "10강 Jump 03",
+     "source": "꽃덤불·사랑 <보기> (적절하지 않은 것)",
+     "page": 77,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "'몸 팔아버린 벗, 맘 팔아버린 벗'은 변절한 사람들이야. 노력한 사람이 아니라서 ②. 하령이 정답!"
+    },
+    {
+     "no": "11강 Quiz Q3-①",
+     "source": "반어냐 역설이냐 (O=반어, X=역설)",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "내 그대를 생각함은 항상 그대가 앉아 있는 배경에서 해가 지고 바람이 부는 일처럼 사소한 일일 것이나",
+     "explain": "사실 아주 큰 일인데 '사소하다'고 반대로 말해 → 반어(O)"
+    },
+    {
+     "no": "11강 Quiz Q3-②",
+     "source": "반어냐 역설이냐 (O=반어, X=역설)",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "님은 갔지마는 나는 님을 보내지 아니하였습니다",
+     "explain": "갔는데 안 보냈다 → 모순 속 진실 = 역설(X)"
+    },
+    {
+     "no": "11강 Quiz Q3-③",
+     "source": "반어냐 역설이냐 (O=반어, X=역설)",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "보이지 않는 움직임을 바라보노라",
+     "explain": "안 보이는 걸 본다 → 역설(X)"
+    },
+    {
+     "no": "11강 Quiz Q3-④",
+     "source": "반어냐 역설이냐 (O=반어, X=역설)",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "소리 없는 아우성",
+     "explain": "소리 없는데 아우성 → 역설(X)"
+    },
+    {
+     "no": "11강 Quiz Q3-⑤",
+     "source": "반어냐 역설이냐 (O=반어, X=역설)",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "잊었노라",
+     "explain": "사실 못 잊었는데 잊었다고 말함 → 반어(O)"
+    },
+    {
+     "no": "11강 Quiz Q3-⑥",
+     "source": "반어냐 역설이냐 (O=반어, X=역설)",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "고와서 서러워라",
+     "explain": "고운데 서럽다 → 역설(X)"
+    },
+    {
+     "no": "11강 Jump 01",
+     "source": "상행 (적절하지 않은 것)",
+     "page": 84,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "11강 Jump 02",
+     "source": "반어 (적절하지 않은 것)",
+     "page": 85,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "11강 Jump 03",
+     "source": "황진이·안민영 공통점 (적절한 것)",
+     "page": 86,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "11강 Jump 04",
+     "source": "(적절하지 않은 것)",
+     "page": 86,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "'눈물 젖은 얼굴'은 임의 얼굴이야. 감정 이입이 아니라서 ⑤. 하령이 정답!"
+    }
+   ],
+   "id": "book-poem-4"
+  },
+  {
+   "subject": "kor",
+   "kind": "book",
+   "title": "시 12~15강 개념 Quiz·Jump (표현 2·3·고전 시가)",
+   "order": 45,
+   "basedOn": "나비효과 입문편 시 p.92–113",
+   "topicIds": [
+    "kor-poem-2",
+    "kor-poem-3"
+   ],
+   "questions": [
+    {
+     "no": "12강 Jump 01",
+     "source": "다시 봄이 왔다·벽 공통점",
+     "page": 92,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "둘 다 단정적 진술을 써. 하령이 정답!"
+    },
+    {
+     "no": "12강 Jump 02",
+     "source": "[A]~[C] (적절하지 않은 것)",
+     "page": 93,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "[C]에 과거 삶을 반성하는 모습은 없어. 하령이 정답!"
+    },
+    {
+     "no": "12강 Jump 03",
+     "source": "「벽」 ㉠~㉤ (적절하지 않은 것)",
+     "page": 93,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "㉣에서 더 세게 조이는 건 승객들이야. 할머니가 벗어나려는 모습이 아니야. 하령이 정답!"
+    },
+    {
+     "no": "12강 Jump 04",
+     "source": "「바위」 감상 (적절하지 않은 것)",
+     "page": 94,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "'생명도 망각하고'는 바위가 되려는 강한 의지야. 좌절·굴복이 아니라서 ④. 하령이 정답!"
+    },
+    {
+     "no": "13강 Quiz Q1-①",
+     "source": "사설시조 '귀뚜리'의 시적 기능 O/X",
+     "page": 96,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "화자의 정서 변화에 촉매 역할을 한다.",
+     "explain": "O"
+    },
+    {
+     "no": "13강 Quiz Q1-②",
+     "source": "사설시조 '귀뚜리'의 시적 기능 O/X",
+     "page": 96,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "소리로써 화자의 정서를 불러일으킨다.",
+     "explain": "O"
+    },
+    {
+     "no": "13강 Quiz Q1-③",
+     "source": "사설시조 '귀뚜리'의 시적 기능 O/X",
+     "page": 96,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "화자가 자신의 처지를 확인하게 해 준다.",
+     "explain": "O"
+    },
+    {
+     "no": "13강 Quiz Q1-④",
+     "source": "사설시조 '귀뚜리'의 시적 기능 O/X",
+     "page": 96,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "화자의 마음을 청자에게 전달하는 구실을 한다.",
+     "explain": "귀뚜라미는 임에게 마음을 전하지 못해. X"
+    },
+    {
+     "no": "13강 Quiz Q1-⑤",
+     "source": "사설시조 '귀뚜리'의 시적 기능 O/X",
+     "page": 96,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "작품 내의 상황과 분위기를 조성하는 데 개입한다.",
+     "explain": "O"
+    },
+    {
+     "no": "13강 Jump 01",
+     "source": "눈 오는 지도 학습 활동 (적절하지 않은 것)",
+     "page": 100,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "화자는 순이를 만날 거라고 '확신'하지 않아. 하령이 정답!"
+    },
+    {
+     "no": "13강 Jump 02",
+     "source": "만나는 법 [A]~[C] (적절하지 않은 것)",
+     "page": 101,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "[C]도 긍정적 인식이야. 부정적으로 바뀌지 않아. 하령이 정답!"
+    },
+    {
+     "no": "13강 Jump 03",
+     "source": "편지와 전갈 (가장 적절한 것)",
+     "page": 101,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "14강 Quiz Q1",
+     "source": "임 원망·연쇄·열거·해학 → 어떤 작품? (①가 ②나 ③다 ④라)",
+     "page": 105,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "사설시조라서 (다). 하령이 정답!"
+    },
+    {
+     "no": "14강 Quiz Q3",
+     "source": "'견회' 충성·효심 → 어떤 작품? (①가 ②나 ③다 ④라)",
+     "page": 105,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "윤선도의 「견회요」 = (라). 하령이 정답!"
+    },
+    {
+     "no": "14강 Quiz Q5",
+     "source": "연군 가사 → 어떤 작품? (①가 ②나 ③다 ④라)",
+     "page": 105,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "정철의 「속미인곡」 = (나). 하령이 정답!"
+    },
+    {
+     "no": "14강 Quiz Q7",
+     "source": "육적 회귤 → 어떤 작품? (①가 ②나 ③다 ④라)",
+     "page": 105,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "박인로의 「조홍시가」 = (가), 주제는 풍수지탄. 하령이 정답!"
+    },
+    {
+     "no": "14강 Jump 01",
+     "source": "송이·장상사·상사곡 ㉠~㉤ (적절하지 않은 것)",
+     "page": 106,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "'꿈'은 임을 만나고 싶은 소망이야. 하령이 정답!"
+    },
+    {
+     "no": "14강 Jump 02",
+     "source": "<보기> 충신연주지사 (적절하지 않은 것)",
+     "page": 107,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "'님의 탓도 아니로다'는 원망이 아니라 오히려 임을 탓하지 않는 마음이야. 하령이 정답!"
+    },
+    {
+     "no": "14강 Jump 03",
+     "source": "'새'와 '불' (가장 적절한 것)",
+     "page": 107,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "새는 임 곁에 가고 싶은 **간절한 바람**, 불은 애타는 마음(**애타는 정서**)이야. ③의 '내적 갈등 / 외적 화해'는 시에 없어."
+    },
+    {
+     "no": "15강 Quiz Q1",
+     "source": "늙음 탄식 → 어떤 작품? (①가 ②나 ③다 ④라)",
+     "page": 111,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "신계영의 「탄로가」 = (나). 하령이 정답!"
+    },
+    {
+     "no": "15강 Quiz Q3",
+     "source": "유유자적·우국 → 어떤 작품? (①가 ②나 ③다 ④라)",
+     "page": 111,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "이현보의 「어부단가」 = (다). 하령이 정답!"
+    },
+    {
+     "no": "15강 Quiz Q5",
+     "source": "노동 공간 자연 → 어떤 작품? (①가 ②나 ③다 ④라)",
+     "page": 111,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "위백규의 「농가구장」 = (라). 하령이 정답!"
+    },
+    {
+     "no": "15강 Quiz Q7",
+     "source": "지배층 횡포 우회 고발 → 어떤 작품? (①가 ②나 ③다 ④라)",
+     "page": 111,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "정약용의 「고시」 = (가). 하령이 정답!"
+    },
+    {
+     "no": "15강 Jump 01",
+     "source": "백상루별곡 [A]~[E] (적절하지 않은 것)",
+     "page": 113,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "15강 Jump 02",
+     "source": "<보기> 강호구가·백상루별곡 (적절하지 않은 것)",
+     "page": 113,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "④의 '번잡한 마음'은 경치에 감흥이 넘쳐 마음이 바쁜 거야. 해소되는 게 아니라서 ④가 틀려. ③ '초초타를 내 분으로 여김'은 자족하는 모습이라 맞아."
+    }
+   ],
+   "id": "book-poem-5"
   },
   {
    "subject": "eng",
