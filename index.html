@@ -133,6 +133,15 @@ textarea.memo-in{width:100%;min-height:72px;font-family:var(--f-hand);font-size:
 .xsec.book{border-left:4px solid var(--rose)}
 .xsec.ai{border-left:4px solid var(--blue);background:color-mix(in srgb,var(--blue-soft) 35%,transparent)}
 .tgroups{display:grid;gap:10px}
+.cal{display:grid;gap:8px}.cal-head{display:flex;align-items:center;gap:8px}.cal-head h3{margin:0;font-size:1rem;flex:1;text-align:center}
+.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.cal-dow{font-size:11px;text-align:center;color:var(--muted);padding:2px 0}.cal-dow.sun{color:var(--rose)}
+.cal-day{min-height:46px;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:3px;display:flex;flex-direction:column;align-items:center;gap:2px;font:inherit;color:var(--ink);cursor:pointer}
+.cal-day.out{opacity:.35}.cal-day.today{border-color:var(--rose);border-width:2px}.cal-day.sel{background:var(--rose-soft)}
+.cal-day .n{font-size:12px}.cal-day.sun .n{color:var(--rose)}
+.cal-day .cnt{font-size:10px;line-height:1.3;padding:0 5px;border-radius:999px;background:var(--blue-soft);color:var(--blue);font-weight:600}
+.cal-day .cnt.all{background:var(--good-soft);color:var(--good)}.cal-day .cnt.late{background:var(--rose);color:#fff}
+.cal-list{display:grid;gap:6px}
 #tmiText{font:inherit;min-height:90px;line-height:1.6}
 .tmi{display:grid;gap:10px}.tmi-item{padding:10px 12px;border-radius:10px;background:var(--sunk)}.tmi-item.big{background:color-mix(in srgb,var(--rose-soft) 55%,var(--surface));padding:14px 16px}.tmi-item.big .tmi-text{font-size:1.05rem}.tmi-date{font-size:12px;color:var(--muted)}.tmi-text{white-space:pre-wrap;color:var(--ink)}
 .cheer .qlab{font-size:12px;font-weight:700;color:var(--rose)}.cheer .qsrc{font-size:12px;opacity:.7}
@@ -539,7 +548,7 @@ function taskItem(t,canDel){
   </div>${canDel(t)?`<button class="btn small" data-act="tdel" data-id="${esc(t.id)}">${S.confirmDel===t.id?"정말 삭제":"삭제"}</button>`:""}</div>`;
 }
 function taskGroups(ts,sis,canDel){
-  const order=["2027 수능 실전","AI 연습문제","언니가 준 과제","내가 추가한 할 일"];const g={};
+  const order=["2027 수능 실전","12월 첫 주 매일 과제 (11/30~12/6)","AI 연습문제","언니가 준 과제","내가 추가한 할 일"];const g={};
   ts.forEach(t=>{const n=taskGroupName(t);(g[n]=g[n]||[]).push(t)});
   const names=Object.keys(g).sort((a,b)=>((order.indexOf(a)+1)||9)-((order.indexOf(b)+1)||9));
   return `<div class="tgroups">${names.map(n=>{const list=g[n];const done=list.filter(t=>t.done).length;const left=list.filter(t=>!t.done);
@@ -549,11 +558,29 @@ function taskGroups(ts,sis,canDel){
 }
 document.addEventListener("toggle",e=>{const k=e.target?.dataset?.open;if(!k)return;openState[k]=e.target.open;try{localStorage.setItem("taskOpen",JSON.stringify(openState))}catch(_){}},true);
 function sortTasks(a){return [...a].sort((x,y)=>(x.done-y.done)||String(x.due||"9999").localeCompare(String(y.due||"9999"))||String(x.createdAt).localeCompare(String(y.createdAt)))}
+
+function ymd(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+function viewCalendar(canDel){
+  const today=ymd(new Date());
+  if(!S.calMonth){const d=new Date();S.calMonth=[d.getFullYear(),d.getMonth()]}
+  const [Y,M]=S.calMonth;const first=new Date(Y,M,1);const start=new Date(Y,M,1-first.getDay());
+  const by={};S.tasks.forEach(t=>{if(t.due)(by[t.due]=by[t.due]||[]).push(t)});
+  const sel=S.calDay||today;const cells=[];
+  for(let i=0;i<42;i++){const d=new Date(start);d.setDate(start.getDate()+i);if(i>=35&&d.getMonth()!==M)break;const k=ymd(d);const l=by[k]||[];const left=l.filter(t=>!t.done).length;
+    const cls=["cal-day",d.getMonth()!==M?"out":"",k===today?"today":"",k===sel?"sel":"",d.getDay()===0?"sun":""].join(" ");
+    const badge=l.length?`<span class="cnt ${left?(k<today?"late":""):"all"}">${left?left:"✓"}</span>`:"";
+    cells.push(`<button class="${cls}" data-act="calday" data-d="${k}" aria-label="${d.getMonth()+1}월 ${d.getDate()}일${l.length?` 과제 ${l.length}개, 남은 것 ${left}개`:""}"><span class="n">${d.getDate()}</span>${badge}</button>`)}
+  const list=sortTasks(by[sel]||[]);const [,sm,sd]=sel.split("-");
+  return `<div class="cal"><div class="cal-head"><button class="btn small" data-act="calmove" data-n="-1" aria-label="이전 달">‹</button><h3>${Y}년 ${M+1}월</h3><button class="btn small" data-act="calmove" data-n="1" aria-label="다음 달">›</button><button class="btn small" data-act="caltoday">오늘</button></div>
+  <div class="cal-grid">${["일","월","화","수","목","금","토"].map((w,i)=>`<div class="cal-dow ${i?"":"sun"}">${w}</div>`).join("")}${cells.join("")}</div>
+  <div class="cal-list"><div class="small muted"><b>${+sm}/${+sd}</b> 마감 과제 ${list.length?list.length+"개":"없음"}</div>${list.map(t=>taskItem(t,canDel)).join("")}</div></div>`;
+}
 function viewTasks(){
   const ts=sortTasks(S.tasks);const left=ts.filter(t=>!t.done).length;const sis=isSisView();const kid=!sis;
   const canDel=t=>sis||(kid&&t.by==="hareong");
   return `<section class="card tasks" style="display:grid;gap:12px"><div class="row"><h2>${sis?"하령이 과제":"내 과제"}</h2><span class="pill ${left?"new":"good"}" style="margin-left:auto">${left?`남은 과제 ${left}개`:"다 했어! 🎉"}</span></div>
   ${sis||kid?`<form id="taskForm" class="taskform"><input class="field" id="tTitle" placeholder="${sis?"과제 (예: 자이스토리 D단원 D02–D10 풀기)":"내가 할 일 추가 (예: 단어 카드 20장)"}" required maxlength="200"><input class="field" id="tDue" type="date" aria-label="마감일"><button class="btn rose" type="submit">추가</button></form>`:""}
+  ${ts.length?`<details class="tgroup" data-open="cal" ${openState.cal===false?"":"open"}><summary><span class="gname">📅 달력으로 보기</span></summary><div style="padding:10px 12px">${viewCalendar(canDel)}</div></details>`:""}
   ${ts.length?taskGroups(ts,sis,canDel):`<div class="empty">${sis?"위 칸에 과제를 적고 추가를 누르면 하령이 화면 맨 위에 보여요.":"아직 과제가 없어요. 스스로 할 일을 적어봐도 좋아!"}</div>`}
   </section>`;
 }
@@ -567,6 +594,9 @@ document.addEventListener("click",async e=>{
   const b=e.target.closest("[data-act]");if(!b)return;const act=b.dataset.act;
   if(act==="pick"){const q=+b.dataset.q,c=+b.dataset.c;examState.answers[q]=examState.answers[q]===c?undefined:c;b.parentElement.querySelectorAll(".choice").forEach((el,j)=>el.classList.toggle("sel",examState.answers[q]===j));saveDraft();return}
   if(act==="submit"){submitExam();return}
+  if(act==="calday"){S.calDay=b.dataset.d;render();return}
+  if(act==="calmove"){const [y,m]=S.calMonth;const d=new Date(y,m+(+b.dataset.n),1);S.calMonth=[d.getFullYear(),d.getMonth()];render();return}
+  if(act==="caltoday"){S.calMonth=null;S.calDay=null;render();return}
   if(act==="tdone"){const t=S.tasks.find(x=>x.id===b.dataset.id);if(!t||!S.db)return;if(S.isSister){toast("완료 체크는 하령이만 할 수 있어요");return}const done=!t.done;queueWrite(()=>S.db.doc("tasks/"+t.id).update({done,doneAt:done?new Date().toISOString():null}));if(done&&!isSisView())toast(["과제 하나 끝! 최고야","언니가 보면 좋아하겠다","이 기세로 다음 것도!"][Math.floor(Math.random()*3)]);return}
   if(act==="tdel"){const id=b.dataset.id;const tt=S.tasks.find(x=>x.id===id);if(!tt||!(isSisView()||tt.by==="hareong"))return;if(S.confirmDel!==id){S.confirmDel=id;render();return}S.confirmDel=null;queueWrite(()=>S.db.doc("tasks/"+id).delete());return}
   if(act==="ex"){const el=document.getElementById("ex"+b.dataset.q);if(el){el.hidden=!el.hidden;b.textContent=el.hidden?"해설 보기":"해설 닫기"}return}
