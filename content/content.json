@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "topics": [
   {
    "subject": "eng",
@@ -2714,6 +2714,752 @@
     }
    ],
    "id": "eng-x-vocab-1"
+  },
+  {
+   "subject": "eng",
+   "kind": "book",
+   "mock": true,
+   "title": "2026 고1 6월 학평 영어",
+   "order": 21,
+   "basedOn": "2026학년도 6월 고1 전국연합학력평가 영어 (시험지를 펴놓고 풀기)",
+   "topicIds": [],
+   "minutes": 70,
+   "questions": [
+    {
+     "no": "1번",
+     "source": "고1 2026(6월) 1번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "2번",
+     "source": "고1 2026(6월) 2번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "3번",
+     "source": "고1 2026(6월) 3번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "4번",
+     "source": "고1 2026(6월) 4번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "5번",
+     "source": "고1 2026(6월) 5번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "6번",
+     "source": "고1 2026(6월) 6번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "7번",
+     "source": "고1 2026(6월) 7번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "8번",
+     "source": "고1 2026(6월) 8번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "9번",
+     "source": "고1 2026(6월) 9번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "10번",
+     "source": "고1 2026(6월) 10번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "11번",
+     "source": "고1 2026(6월) 11번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "12번",
+     "source": "고1 2026(6월) 12번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "13번",
+     "source": "고1 2026(6월) 13번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "14번",
+     "source": "고1 2026(6월) 14번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "15번",
+     "source": "고1 2026(6월) 15번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "16번",
+     "source": "고1 2026(6월) 16번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "17번",
+     "source": "고1 2026(6월) 17번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "18번",
+     "source": "고1 2026(6월) 18번 · 목적",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "커뮤니티 센터 소장이 헌 책 기부 행사에 와 달라고 함 → ④ 도서 기부 행사 참여 독려."
+    },
+    {
+     "no": "19번",
+     "source": "고1 2026(6월) 19번 · 심경",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "버스 고장으로 기차 놓칠까 **불안** → 기차가 지연돼서 자리에 앉아 **안도**. ⑤ anxious → relieved."
+    },
+    {
+     "no": "20번",
+     "source": "고1 2026(6월) 20번 · 주장",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "아이를 코치하지 않으면 미디어·또래에게서 가치를 배운다 → 부모가 직접 **올바른 가치**를 지도해야."
+    },
+    {
+     "no": "21번",
+     "source": "고1 2026(6월) 21번 · 함축 의미",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "‘shop for words’ = 이미 믿는 걸 정당화해 줄 말을 고른다 → **⑤ 우리 믿음을 뒷받침할 말을 모은다**."
+    },
+    {
+     "no": "22번",
+     "source": "고1 2026(6월) 22번 · 요지",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "창의성은 좁은 관심이 아니라 **폭넓은 경험**에서 나온다 → ①."
+    },
+    {
+     "no": "23번",
+     "source": "고1 2026(6월) 23번 · 주제",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "죄책감(guilt)은 행동을 바꾸게 하는 긍정적 동기, 수치심(shame)은 파괴적 → **③ 수치심과 비교한 죄책감의 건설적 효과**."
+    },
+    {
+     "no": "24번",
+     "source": "고1 2026(6월) 24번 · 제목",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "도파민이 급하게 오르면 그만큼 아래로 떨어져 기분이 더 나빠짐 → ① 도파민 시소."
+    },
+    {
+     "no": "25번",
+     "source": "고1 2026(6월) 25번 · 도표",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "인도의 ‘전혀 안 믿음’은 14%로 중국(10%)보다 높아 → 가장 낮지 않음. ⑤가 틀림."
+    },
+    {
+     "no": "26번",
+     "source": "고1 2026(6월) 26번 · 내용 일치",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "Yale **졸업 후** 탐사에 참여 → ② ‘졸업 전’이 틀림."
+    },
+    {
+     "no": "27번",
+     "source": "고1 2026(6월) 27번 · 안내문",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "점심 제공(lunch provided) → ④ ‘제공되지 않는다’가 틀림."
+    },
+    {
+     "no": "28번",
+     "source": "고1 2026(6월) 28번 · 안내문",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "쿠키 만들기 수업 있음 → ④ 일치."
+    },
+    {
+     "no": "29번",
+     "source": "고1 2026(6월) 29번 · 어법",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "‘authors **having** the unique ability’ 문장에 동사가 없어 → ④ **have**로 고쳐야. 정답 ④."
+    },
+    {
+     "no": "30번",
+     "source": "고1 2026(6월) 30번 · 어휘",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "뷰파인더는 아이들이 어디를 보는지 놓치지 않게 **도와준다** → ③ confuse가 틀림(help)."
+    },
+    {
+     "no": "31번",
+     "source": "고1 2026(6월) 31번 · 빈칸",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "우리는 변하지 않는 세상의 ‘단순한 **구경꾼(passive observers)**’이 아니다 → ②."
+    },
+    {
+     "no": "32번",
+     "source": "고1 2026(6월) 32번 · 빈칸",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "여러 장소에서 공부하면 **① 내용을 더 잘 기억한다(recall the material)**. 바로 뒤 실험에서 단어를 더 많이 기억했다는 게 근거야. 정답 ①."
+    },
+    {
+     "no": "33번",
+     "source": "고1 2026(6월) 33번 · 빈칸",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "냄새를 부르는 단어가 없고 이름도 잘 못 대지만, 맥주와 소변은 구분해서 반응한다 → 반응은 정확하지만 **② 그걸 말로 할 준비가 안 돼 있다(not well-equipped to talk about them)**."
+    },
+    {
+     "no": "34번",
+     "source": "고1 2026(6월) 34번 · 빈칸",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "칭찬받은 행동은 계속하고, 불편을 주는 행동은 멈춘다 → **① 결과에 따라 행동을 바꾼다**."
+    },
+    {
+     "no": "35번",
+     "source": "고1 2026(6월) 35번 · 무관한 문장",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "디지털 미니멀리즘의 효과 얘기 중에 ③ ‘SNS로 쇼핑 정보를 얻었다’는 딴 얘기."
+    },
+    {
+     "no": "36번",
+     "source": "고1 2026(6월) 36번 · 순서",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "주어진 글(빙하기는 춥고 건조) → **(B)** 추우면 증발이 적어 건조 → 식물이 자라기 어려움 → **(A)** 이런 기후에선 농사 불가, 기온이 오르며 생명 폭발 → **(C)** 더 따뜻·습해져 농사 시작. 정답 ② (B)-(A)-(C)."
+    },
+    {
+     "no": "37번",
+     "source": "고1 2026(6월) 37번 · 순서",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "(C) 장기 기억을 작업 기억으로 → (B) However 작업 기억으로 하나씩 꺼냄 → (A) But 한 번에 7개 정도가 한계. ⑤."
+    },
+    {
+     "no": "38번",
+     "source": "고1 2026(6월) 38번 · 문장 삽입",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "주어진 문장은 **첫 실험의 결과**(제스처한 사람이 더 오래 기억). ③ 앞에서 실험 내용을 말하고, ③ 뒤는 ‘같은 효과가 나는지 보려고’ 두 번째 실험. 정답 ③."
+    },
+    {
+     "no": "39번",
+     "source": "고1 2026(6월) 39번 · 문장 삽입",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "‘이 과정(나무가 CO₂를 줄이는 것)이 제대로 안 된다’ → ③ 뒤 ‘숲의 절반이 사라져서…’와 연결."
+    },
+    {
+     "no": "40번",
+     "source": "고1 2026(6월) 40번 · 요약문",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "위험 판단은 생각보다 먼저 **자동으로(automatic)** 일어나고, 이유는 나중에 만들어서 그 결정을 **뒷받침(support)**한다. 정답 ①."
+    },
+    {
+     "no": "41번",
+     "source": "고1 2026(6월) 41번 · 장문 제목",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "예측 불가능성은 스포츠의 매력이자 마케팅의 고민 → ③."
+    },
+    {
+     "no": "42번",
+     "source": "고1 2026(6월) 42번 · 장문 어휘",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "예측 가능성이 **없을 때(absence)** 경기 품질이 크게 달라진다 → (c) presence가 틀림. 정답 ③."
+    },
+    {
+     "no": "43번",
+     "source": "고1 2026(6월) 43번 · 장문 순서",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "(A) 대회 준비 → (C) 대회 날, 1등 → (B) 리사가 축하 → (D) 엠마 반성, 함께 노래. ②."
+    },
+    {
+     "no": "44번",
+     "source": "고1 2026(6월) 44번 · 지칭",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "(b) She만 리사, 나머지는 엠마."
+    },
+    {
+     "no": "45번",
+     "source": "고1 2026(6월) 45번 · 장문 내용 일치",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "엠마가 **1등**함 → ④ 2등이 틀림."
+    }
+   ],
+   "id": "mock-eng-2606"
+  },
+  {
+   "subject": "eng",
+   "kind": "book",
+   "mock": true,
+   "title": "2026 고1 9월 학평 영어",
+   "order": 20,
+   "basedOn": "2026학년도 9월 고1 전국연합학력평가 영어 (시험지를 펴놓고 풀기)",
+   "topicIds": [],
+   "minutes": 70,
+   "questions": [
+    {
+     "no": "1번",
+     "source": "고1 2026(9월) 1번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "2번",
+     "source": "고1 2026(9월) 2번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "3번",
+     "source": "고1 2026(9월) 3번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "4번",
+     "source": "고1 2026(9월) 4번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "5번",
+     "source": "고1 2026(9월) 5번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "6번",
+     "source": "고1 2026(9월) 6번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "7번",
+     "source": "고1 2026(9월) 7번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "8번",
+     "source": "고1 2026(9월) 8번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "9번",
+     "source": "고1 2026(9월) 9번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "10번",
+     "source": "고1 2026(9월) 10번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "11번",
+     "source": "고1 2026(9월) 11번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "12번",
+     "source": "고1 2026(9월) 12번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "13번",
+     "source": "고1 2026(9월) 13번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "14번",
+     "source": "고1 2026(9월) 14번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "15번",
+     "source": "고1 2026(9월) 15번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "16번",
+     "source": "고1 2026(9월) 16번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "17번",
+     "source": "고1 2026(9월) 17번 · 듣기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "듣기 문항이라 대본이 없어. 하령이가 고른 답을 정답으로 넣었어."
+    },
+    {
+     "no": "18번",
+     "source": "고1 2026(9월) 18번 · 목적",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "However 뒤가 핵심. 추운 날씨 때문에 놀이공원 대신 과학관으로 간다 → **현장체험학습 장소 변경 안내**."
+    },
+    {
+     "no": "19번",
+     "source": "고1 2026(9월) 19번 · 심경",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "목소리가 떨리고 심장이 뛰다가(nervous), 옆에서 같이 불러주자 긴장이 풀림(relieved)."
+    },
+    {
+     "no": "20번",
+     "source": "고1 2026(9월) 20번 · 주장",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "‘you are creating a learning game in which success will be measured by the achievement of learning outcomes’ → 재미보다 참여·상호작용을 통한 **학습**에 초점."
+    },
+    {
+     "no": "21번",
+     "source": "고1 2026(9월) 21번 · 함축 의미",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "우리는 움직이도록 설계됐는데 앉아만 있다 → ‘설계에서 멀어진다’ = **몸을 움직이며 사는 삶을 못 산다**."
+    },
+    {
+     "no": "22번",
+     "source": "고1 2026(9월) 22번 · 요지",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "‘But the most powerful attractor is our belief system’ → 원하는 걸 이루려면 그에 맞는 **신념 체계**가 필요."
+    },
+    {
+     "no": "23번",
+     "source": "고1 2026(9월) 23번 · 주제",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "다윈: 종의 생존엔 다양성이 필수 → 사람의 **마음(생각)의 다양성**이 중요."
+    },
+    {
+     "no": "24번",
+     "source": "고1 2026(9월) 24번 · 제목",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "계획은 쓸모없지만 계획하는 건 중요하다(Eisenhower), 연필로 쓰자 → 일이 계획대로 안 돼도 괜찮다. 정답 **④ It's Okay If Your Plans Don't Come True**. ③은 ‘통제’ 얘기라 글과 반대 방향."
+    },
+    {
+     "no": "25번",
+     "source": "고1 2026(9월) 25번 · 도표",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "교육 서비스 2019년 9%, 2022년 18% → 세 배가 아니라 **두 배**. 그래서 ③이 틀린 문장(정답). 하령이 맞혔는데 별표 쳐둔 문제야."
+    },
+    {
+     "no": "26번",
+     "source": "고1 2026(9월) 26번 · 내용 일치",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "‘after his death, he was also honored…’ → 상은 **사후**에 받음. ⑤ ‘생전에’가 틀림."
+    },
+    {
+     "no": "27번",
+     "source": "고1 2026(9월) 27번 · 안내문",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "배지는 ‘Selected participants’만 받음 → ④ ‘모든 참가자’가 틀림."
+    },
+    {
+     "no": "28번",
+     "source": "고1 2026(9월) 28번 · 안내문",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "‘Video calls with real astronauts’ → ③ 일치."
+    },
+    {
+     "no": "29번",
+     "source": "고1 2026(9월) 29번 · 어법",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "주어가 **the first few minutes**(복수)라서 ④ is → **are**. ③ creating은 ‘~하면서 젖산을 만든다’는 분사구문이라 맞아."
+    },
+    {
+     "no": "30번",
+     "source": "고1 2026(9월) 30번 · 어휘",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "짧은 문단이 너무 많으면 오히려 독자의 일을 **어렵게** 만든다 → ⑤ easier가 틀림(harder). ④ annoying은 ‘너무 긴 문단만큼 짜증 난다’라 맞는 말."
+    },
+    {
+     "no": "31번",
+     "source": "고1 2026(9월) 31번 · 빈칸",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "맛은 주변 사람들(가족, 친구, 마을)을 따라 배운다 → 우리의 입맛은 **social**."
+    },
+    {
+     "no": "32번",
+     "source": "고1 2026(9월) 32번 · 빈칸",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "감정은 상황을 ‘어떻게 해석하느냐’에서 생긴다 → 감정은 **② 우리의 판단에서 생긴다**. ⑤는 ‘처음 해석을 바꾼다’라서 빈칸 자리(감정의 정체)와 안 맞아."
+    },
+    {
+     "no": "33번",
+     "source": "고1 2026(9월) 33번 · 빈칸",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "그리스인은 예술 = 모방(mimesis)이라 봤지만, 폴록은 아무것도 따라 그리지 않고도 예술을 만들었다 → 모방이라는 정의는 **① 예술을 충분히 정의하지 못한다**."
+    },
+    {
+     "no": "34번",
+     "source": "고1 2026(9월) 34번 · 빈칸",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "뛰기는 슈퍼컴퓨터도 못 할 만큼 복잡한데 쉬워 보이는 건 → **② 우리 몸이 그걸 아주 잘하기 때문**. ⑤는 ‘의식적인 생각이 필요하다’라 글과 반대."
+    },
+    {
+     "no": "35번",
+     "source": "고1 2026(9월) 35번 · 무관한 문장",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "반려견 목욕 횟수 얘기 중에 ④ ‘정기 검진’은 혼자 딴 얘기."
+    },
+    {
+     "no": "36번",
+     "source": "고1 2026(9월) 36번 · 순서",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "주어진 글(수학은 패턴이다) → **(B)** 예: 스도쿠 → **(A)** But 숫자 값은 상관없다, 패턴이 중요 → **(C)** 수학이란 말만으로도 사람들이 겁먹는다. 정답 ② (B)-(A)-(C)."
+    },
+    {
+     "no": "37번",
+     "source": "고1 2026(9월) 37번 · 순서",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "망원경 이전 → **(C)** 고대인들, 코페르니쿠스의 맨눈 관측 → **(B)** He(코페르니쿠스)의 지동설, 17세기 망원경 발명 → **(A)** 망원경을 쓴 갈릴레이가 지동설 확인. 정답 ⑤ (C)-(B)-(A)."
+    },
+    {
+     "no": "38번",
+     "source": "고1 2026(9월) 38번 · 문장 삽입",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "‘these communities’가 가리킬 말이 필요 → ⑤ 바로 앞 ‘한 마을(single settlement)’. 공동체가 커지면 신체 부위 단위가 부족해진다 → 그다음 교역 분쟁 예시. 정답 ⑤."
+    },
+    {
+     "no": "39번",
+     "source": "고1 2026(9월) 39번 · 문장 삽입",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "‘Instead’ → 개미가 잎을 **먹지 않는다** 다음에 와야 해. ③ 뒤에 ‘The ants feed the fungus’로 자연스럽게 이어져. 정답 ③."
+    },
+    {
+     "no": "40번",
+     "source": "고1 2026(9월) 40번 · 요약문",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "자존감 = 관계에 **문제(problems)**가 생겼는지 알려주는 경보 → 행동을 조절해 **관계(relationships)**를 좋게 만든다. ① 맞혔어."
+    },
+    {
+     "no": "41번",
+     "source": "고1 2026(9월) 41번 · 장문 제목",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "인터넷 이후 slang이 어떻게 바뀌었나 → ① When Slang Meets New Media."
+    },
+    {
+     "no": "42번",
+     "source": "고1 2026(9월) 42번 · 장문 어휘",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "SNS에서는 지리적으로 이어져 있던 느슨한 관계가 오히려 **더 강해진다(stronger)** → (e) weaker가 틀림. 정답 ⑤."
+    },
+    {
+     "no": "43번",
+     "source": "고1 2026(9월) 43번 · 장문 순서",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "(A) 선물 묻기 → **(D)** 투티의 부탁, 인도에서 친구에게 전함 → **(C)** 친구 앵무새가 쓰러짐, 돌아와 전하니 투티도 쓰러짐 → **(B)** 상인이 안아 들자 투티가 날아감. 정답 ⑤ (D)-(C)-(B)."
+    },
+    {
+     "no": "44번",
+     "source": "고1 2026(9월) 44번 · 지칭",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "(b) you만 투티(상인이 투티에게 묻는 말), 나머지는 다 상인."
+    },
+    {
+     "no": "45번",
+     "source": "고1 2026(9월) 45번 · 장문 내용 일치",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "투티는 ‘새장에서 살고 싶지 않다’고 했어 → ③이 틀림."
+    }
+   ],
+   "id": "mock-eng-2609"
   }
  ],
  "sisterTasks": [
