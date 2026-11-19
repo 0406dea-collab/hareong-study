@@ -7368,6 +7368,379 @@
    "subject": "kor",
    "kind": "book",
    "mock": true,
+   "title": "2026 고1 9월 학평 국어",
+   "order": 11,
+   "basedOn": "2026학년도 9월 고1 전국연합학력평가 국어 (시험지를 펴놓고 풀기)",
+   "topicIds": [],
+   "minutes": 80,
+   "questions": [
+    {
+     "no": "1번",
+     "source": "고1 2026(9월) 국어 1번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "2번",
+     "source": "고1 2026(9월) 국어 2번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "3번",
+     "source": "고1 2026(9월) 국어 3번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "4번",
+     "source": "고1 2026(9월) 국어 4번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "5번",
+     "source": "고1 2026(9월) 국어 5번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "[가]엔 세 자료를 모두 써야 해. 점심시간 프로그램 요구(자료1) + 사제동행 산책(자료2) + 함께 걷기의 건강·세대 간 소통(자료3) → ⑤."
+    },
+    {
+     "no": "6번",
+     "source": "고1 2026(9월) 국어 6번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "작년엔 예산 부족으로 활동을 **못 했어**. '작년에 반응이 좋았던 활동을 유지'한다는 ㉡이 협상 내용과 안 맞아 → ②. ㉠은 맞는 말."
+    },
+    {
+     "no": "7번",
+     "source": "고1 2026(9월) 국어 7번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "8번",
+     "source": "고1 2026(9월) 국어 8번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "㉡ '아ᄃᆞᄅᆞᆯ'도 ㉢처럼 모음 조화가 지켜졌어. 그래서 '㉢에서는 ㉡과 달리'라는 ③이 틀려."
+    },
+    {
+     "no": "9번",
+     "source": "고1 2026(9월) 국어 9번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "10번",
+     "source": "고1 2026(9월) 국어 10번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "㉤ 단풍잎[단풍닙]은 ㄴ 첨가 + 교체로 음운 개수가 **늘고**, ㉦ 간지럽히던[간지러피던]은 축약이라 **줄어**. 둘 다 '변하지 않았다'는 ⑤가 틀려."
+    },
+    {
+     "no": "11번",
+     "source": "고1 2026(9월) 국어 11번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "12번",
+     "source": "고1 2026(9월) 국어 12번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "13번",
+     "source": "고1 2026(9월) 국어 13번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "특허 발명을 **부분적으로만 실시하도록 허락**하는 건 정당한 권리 범위 안이야(합리적 범위의 조건). 부당한 건 '차별적으로' 제한할 때 → ③."
+    },
+    {
+     "no": "14번",
+     "source": "고1 2026(9월) 국어 14번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "15번",
+     "source": "고1 2026(9월) 국어 15번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "16번",
+     "source": "고1 2026(9월) 국어 16번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "17번",
+     "source": "고1 2026(9월) 국어 17번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "헤겔은 국가의 법과 제도가 자유를 **제한하는 외적 강제가 아니라** 자유가 실현되기 위한 조건이라고 봤어 → ⑤가 틀려."
+    },
+    {
+     "no": "18번",
+     "source": "고1 2026(9월) 국어 18번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "19번",
+     "source": "고1 2026(9월) 국어 19번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "20번",
+     "source": "고1 2026(9월) 국어 20번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "2차 전달자(cAMP)는 신호를 **증폭**하는 거고, 신경전달물질 생산을 줄인다는 말은 지문에 없어 → ④."
+    },
+    {
+     "no": "21번",
+     "source": "고1 2026(9월) 국어 21번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "22번",
+     "source": "고1 2026(9월) 국어 22번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "23번",
+     "source": "고1 2026(9월) 국어 23번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "기대한 것과 **같은** 보상은 측좌핵 활성화 정도를 바꾸지 않아. 그래서 예상한 사탕을 받았을 때 '더 활성화'됐다는 ⑤가 틀려."
+    },
+    {
+     "no": "24번",
+     "source": "고1 2026(9월) 국어 24번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "25번",
+     "source": "고1 2026(9월) 국어 25번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "(나)에서 내용을 명료하게 전달하는 건 **정책 내용이 잘 전달되지 않은 경우**의 해결책이야. 정책 목표 재검토와 연결한 ④가 틀려."
+    },
+    {
+     "no": "26번",
+     "source": "고1 2026(9월) 국어 26번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "(다)의 전문가 견해는 '정책 오류 수정 → 양질의 정책'이야. '주민 참여를 높인다'는 근거는 없어 → ③."
+    },
+    {
+     "no": "27번",
+     "source": "고1 2026(9월) 국어 27번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "<보기>의 '갈등의 순기능(잠재된 문제 해결 기회)'을 (가)의 정제된 합의 의견 형성 과정과 연결해 [A]의 **반박**을 구체화한 ②가 정답."
+    },
+    {
+     "no": "28번",
+     "source": "고1 2026(9월) 국어 28번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "29번",
+     "source": "고1 2026(9월) 국어 29번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "2문단 '발목에 모래주머니를 찬 것처럼'이 비유적 표현 → ①. 4문단의 속담은 반성이 아니라 깨달음이야."
+    },
+    {
+     "no": "30번",
+     "source": "고1 2026(9월) 국어 30번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "31번",
+     "source": "고1 2026(9월) 국어 31번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "32번",
+     "source": "고1 2026(9월) 국어 32번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "33번",
+     "source": "고1 2026(9월) 국어 33번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "34번",
+     "source": "고1 2026(9월) 국어 34번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "35번",
+     "source": "고1 2026(9월) 국어 35번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "36번",
+     "source": "고1 2026(9월) 국어 36번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "장중거가 술친구들을 사절한 건 '나'의 조언을 **듣기 전**이야. → ②가 틀려."
+    },
+    {
+     "no": "37번",
+     "source": "고1 2026(9월) 국어 37번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "38번",
+     "source": "고1 2026(9월) 국어 38번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "'온가지로 협박'하는 건 화자가 아니라 **가난 귀신**이야. 화자가 벗어나려는 행동으로 본 ①이 틀려."
+    },
+    {
+     "no": "39번",
+     "source": "고1 2026(9월) 국어 39번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "40번",
+     "source": "고1 2026(9월) 국어 40번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "41번",
+     "source": "고1 2026(9월) 국어 41번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "42번",
+     "source": "고1 2026(9월) 국어 42번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "43번",
+     "source": "고1 2026(9월) 국어 43번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "(나) '차디찬 아침', '손이 꽁꽁 얼어서' = 시간적 배경을 **촉각적 이미지**로 구체화해 계집아이의 처지를 부각 → ①."
+    },
+    {
+     "no": "44번",
+     "source": "고1 2026(9월) 국어 44번",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "ⓑ 유리창 너머로 '한 사내'를 보고 화자의 감정이 흔들려 → ②."
+    },
+    {
+     "no": "45번",
+     "source": "고1 2026(9월) 국어 45번 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "(다)의 '나'가 그를 떠올리는 건 과거에 **직접 본 것**을 회상하는 거지, 외양으로 과거를 추측하는 게 아니야 → ④."
+    }
+   ],
+   "id": "mock-kor-2609"
+  },
+  {
+   "subject": "kor",
+   "kind": "book",
+   "mock": true,
    "title": "2027 6월 모의평가 국어 (화법과 작문)",
    "order": 10,
    "basedOn": "2027학년도 6월 모의평가 국어 (시험지를 펴놓고 풀기)",
