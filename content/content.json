@@ -4156,6 +4156,309 @@
   {
    "subject": "kor",
    "kind": "book",
+   "title": "소설 9~15강 개념 Quiz·Jump (시점·문체·변용·고전 소설)",
+   "order": 54,
+   "basedOn": "나비효과 입문편 소설 p.64–105",
+   "topicIds": [
+    "kor-novel-2",
+    "kor-novel-3"
+   ],
+   "questions": [
+    {
+     "no": "9강 Jump 02",
+     "source": "「역마」 (나)를 1인칭으로 바꿀 때 (적절한 것)",
+     "page": 64,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "시점을 바꾸면 서술자와 인물의 거리가 달라져. 하령이 정답!"
+    },
+    {
+     "no": "9강 Jump 03",
+     "source": "「역마」 ㉡ 엿판 (적절하지 않은 것)",
+     "page": 64,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "엿판은 성기의 내적 갈등이 해소되는 계기야. 하령이 정답!"
+    },
+    {
+     "no": "10강 Quiz Q1-①",
+     "source": "「화랑의 후예」 서술 O/X",
+     "page": 68,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "인물의 행동과 대화로 성격을 드러낸다.",
+     "explain": "황 진사의 말과 행동으로 성격이 드러나. O"
+    },
+    {
+     "no": "10강 Quiz Q1-②",
+     "source": "「화랑의 후예」 서술 O/X",
+     "page": 68,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "현재형 시제로 생동감을 높인다.",
+     "explain": "과거형 서술이야. X"
+    },
+    {
+     "no": "10강 Quiz Q1-③",
+     "source": "「화랑의 후예」 서술 O/X",
+     "page": 68,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "실제 공간을 자세히 묘사해 시대 상황을 드러낸다.",
+     "explain": "공간 묘사로 시대를 보여주는 방식이 아니야. X"
+    },
+    {
+     "no": "10강 Quiz Q2-①",
+     "source": "「청산댁」 서술 O/X",
+     "page": 69,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "요약적 서술로 과거 사건을 제시한다.",
+     "explain": "장면을 보여주는 방식이야. X"
+    },
+    {
+     "no": "10강 Quiz Q2-②",
+     "source": "「청산댁」 서술 O/X",
+     "page": 69,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "사투리를 써서 사실감을 높인다.",
+     "explain": "O"
+    },
+    {
+     "no": "10강 Quiz Q2-③",
+     "source": "「청산댁」 서술 O/X",
+     "page": 69,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "인물 간 대화로 성격 변화를 드러낸다.",
+     "explain": "성격이 변하는 게 아니야. X"
+    },
+    {
+     "no": "10강 Jump 01",
+     "source": "「완장」 서술상 특징 (가장 적절한 것)",
+     "page": 71,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": "사투리와 비속어로 인물의 성격과 현장감을 살려. 하령이 정답!"
+    },
+    {
+     "no": "10강 Jump 02",
+     "source": "「완장」 [A] (가장 적절한 것)",
+     "page": 71,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "서술자가 인물의 내면을 직접 알려줘. 하령이 정답!"
+    },
+    {
+     "no": "11강 Jump 01",
+     "source": "「론도」 (가장 적절한 것)",
+     "page": 79,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "12강 Quiz Q1-①",
+     "source": "「운수 좋은 날」 변용 O/X",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "김 첨지의 사랑이 행동으로 드러난다.",
+     "explain": "O"
+    },
+    {
+     "no": "12강 Quiz Q1-②",
+     "source": "「운수 좋은 날」 변용 O/X",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "행복한 결말로 바뀌었다.",
+     "explain": "O"
+    },
+    {
+     "no": "12강 Quiz Q1-③",
+     "source": "「운수 좋은 날」 변용 O/X",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "원작의 반어적 의미가 사라졌다.",
+     "explain": "결말이 행복해지니 '운수 좋은 날'의 반어가 사라져. O"
+    },
+    {
+     "no": "12강 Quiz Q1-④",
+     "source": "「운수 좋은 날」 변용 O/X",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 1,
+     "prompt": "시점이 달라져 독자와 인물의 거리가 가까워졌다.",
+     "explain": "시점은 바뀌지 않았어. X"
+    },
+    {
+     "no": "12강 Quiz Q1-⑤",
+     "source": "「운수 좋은 날」 변용 O/X",
+     "page": 83,
+     "type": "mc",
+     "nChoices": 2,
+     "choices": [
+      "O",
+      "X"
+     ],
+     "answer": 0,
+     "prompt": "무지개가 앞으로의 희망을 암시한다.",
+     "explain": "O"
+    },
+    {
+     "no": "12강 Jump 01",
+     "source": "「우리들의 일그러진 영웅」 각색 (적절하지 않은 것)",
+     "page": 86,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "하령이 정답!"
+    },
+    {
+     "no": "13강 Jump 02",
+     "source": "「황운전」 <보기> (적절하지 않은 것)",
+     "page": 91,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "정병을 모아 급습하는 건 전략이지 초월적 능력이 아니야. 하령이 정답!"
+    },
+    {
+     "no": "13강 Jump 03",
+     "source": "「옥란전」 (적절하지 않은 것)",
+     "page": 93,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": "하령이는 파란펜으로 답을 고쳤어. 정답은 ②. 인물 관계를 다시 확인하자."
+    },
+    {
+     "no": "13강 Jump 04",
+     "source": "「옥란전」 <보기> (적절하지 않은 것)",
+     "page": 93,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "하령이는 파란펜으로 답을 고쳤어. 정답은 ④. <보기>의 관점과 본문을 하나씩 맞춰 보자."
+    },
+    {
+     "no": "14강 Jump 01",
+     "source": "「왕시전」 (적절하지 않은 것)",
+     "page": 97,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": "인물이 뜻을 바로 말하지 않아. 하령이 정답!"
+    },
+    {
+     "no": "14강 Jump 02",
+     "source": "「왕시전」 <보기> (적절하지 않은 것)",
+     "page": 97,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "도술을 부리는 건 도사야. 주인공이 능력을 쓴 게 아니라서 ④. 하령이는 파란펜으로 고쳤어."
+    },
+    {
+     "no": "14강 Jump 03",
+     "source": "「배비장전」 <보기> (적절하지 않은 것)",
+     "page": 99,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "'배 걸렸쇠요'는 격식 있는 말이 아니라 해학이야. 하령이 정답!"
+    },
+    {
+     "no": "15강 Jump 01",
+     "source": "「이춘풍전」 (적절하지 않은 것)",
+     "page": 103,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "김 승지가 평양 감사가 된 거야. 하령이 정답!"
+    },
+    {
+     "no": "15강 Jump 02",
+     "source": "「이춘풍전」 <보기> (적절하지 않은 것)",
+     "page": 103,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "하령이 정답! (파란펜으로 다시 확인한 흔적도 있어)"
+    },
+    {
+     "no": "15강 Jump 04",
+     "source": "「두껍전」 <보기> (적절하지 않은 것)",
+     "page": 105,
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "사냥감을 양보하는 건 능력 발휘가 아니야. 하령이 정답!"
+    }
+   ],
+   "id": "book-novel-4"
+  },
+  {
+   "subject": "kor",
+   "kind": "book",
    "title": "시 1강 개념 Jump (산길에서·복숭아나무·잔디)",
    "order": 21,
    "basedOn": "나비효과 입문편 시 p.8–9",
