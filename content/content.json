@@ -5927,6 +5927,187 @@
    "id": "book-read-1"
   },
   {
+   "subject": "kor",
+   "kind": "book",
+   "title": "독서 기출 1주차 첫날·2일째 (독서 이론·인문)",
+   "order": 61,
+   "basedOn": "독서 기출 문제집 1주차 p.15–24 (하령이 11/4·11/11에 풂, 채점은 정답표 없이 Claude가 직접 풀어서 함)",
+   "topicIds": [
+    "kor-read-1"
+   ],
+   "questions": [
+    {
+     "no": "첫날 01",
+     "source": "첫날 · 2024 수능 독서 이론",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "첫날 02",
+     "source": "첫날 · 2024 수능 독서 이론",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "첫날 03",
+     "source": "첫날 · 2024 수능 독서 이론 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "첫날 04",
+     "source": "첫날 · 2024 9모 독서 이론",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "첫날 05",
+     "source": "첫날 · 2024 9모 독서 이론",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "첫날 06",
+     "source": "첫날 · 2024 9모 독서 이론 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "첫날 07",
+     "source": "첫날 · 2024 6모 독서 동기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "첫날 08",
+     "source": "첫날 · 2024 6모 독서 동기 [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "첫날 09",
+     "source": "첫날 · 2024 6모 독서 동기",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    },
+    {
+     "no": "2일째 01",
+     "source": "2일째 · 2023 수능 유서(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": ""
+    },
+    {
+     "no": "2일째 02",
+     "source": "2일째 · 2023 수능 유서(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "2일째 03",
+     "source": "2일째 · 2023 수능 유서(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "2일째 04",
+     "source": "2일째 · 2023 수능 유서(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "2일째 05",
+     "source": "2일째 · 2023 수능 유서(인문) [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 2,
+     "explain": ""
+    },
+    {
+     "no": "2일째 06",
+     "source": "2일째 · 2023 수능 유서(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 1,
+     "explain": ""
+    },
+    {
+     "no": "2일째 07",
+     "source": "2일째 · 2024 9모 신분제(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 3,
+     "explain": "(가)에서 법적 신분제(양천제)는 갑오개혁 전까지 **그대로 유지**됐어. 유학이 늘어난 건 양반과 비양반의 경계가 가까워진 사회 현상이지, 경국대전 신분 체계가 작동하지 않았다는 뜻이 아니야 → ④. ①은 속대전에서 속량된 노비를 **양인 납세자**로 바꾼 거라 맞아."
+    },
+    {
+     "no": "2일째 08",
+     "source": "2일째 · 2024 9모 신분제(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "㉠은 **상민층**이 양반으로 인정받으려는 노력이야. 양반층의 노력이라고 한 ①은 X. ①~④는 다 ㉠ 설명이 틀려서 남는 건 ⑤: ㉡은 사민을 구분해 사 집단을 재편하려는 것, ㉢은 세습 대신 도덕적 능력으로 사를 구성하려는 것."
+    },
+    {
+     "no": "2일째 09",
+     "source": "2일째 · 2024 9모 신분제(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": ""
+    },
+    {
+     "no": "2일째 10",
+     "source": "2일째 · 2024 9모 신분제(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "유형원은 과거제 **대신 공거제(추천)**로 뽑자고 했어. '모두 시험으로' 선발했다는 ⑤가 틀려. ④ 정약용이 사농공상별로 거주지를 나누려 한 건 지문 그대로야."
+    },
+    {
+     "no": "2일째 11",
+     "source": "2일째 · 2024 9모 신분제(인문) [3점]",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 4,
+     "explain": "유토피아의 학자 계급도 노동을 면제받는 **특권**이 있으니 계급 간 차등이 없는 게 아니야 → ⑤가 틀려. ④는 유토피아는 학업 능력 추천, (가)의 유학은 상민이 돈과 의례로 양반을 흉내 낸 거라 다르다는 말이라 맞아."
+    },
+    {
+     "no": "2일째 12",
+     "source": "2일째 · 2024 9모 신분제(인문)",
+     "type": "mc",
+     "nChoices": 5,
+     "answer": 0,
+     "explain": ""
+    }
+   ],
+   "id": "book-read-2"
+  },
+  {
    "subject": "eng",
    "kind": "book",
    "mock": true,
